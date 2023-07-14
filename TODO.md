@@ -18,6 +18,8 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
     - [ ] Remove Unstyled Button
     - [ ] Remove Unstyled & Monochrome Link
 
+- [x] Shift icons package to new branch (svgr-icons)
+
 - [ ] Remove unused icons
 
 - [ ] Upgrade story book to v7
