@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import styled from '@emotion/styled';
 import { Icon } from '../Icon';
-import { AlertMinor } from '@zenius-one/ursa-icons';
+import { AlertMinor } from "../../icons";
 import { generateUniqueID } from '../../utilities';
 
 export interface ErrorProps {

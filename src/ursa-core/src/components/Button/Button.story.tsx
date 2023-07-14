@@ -6,7 +6,7 @@ import {
 } from '@storybook/react';
 import { Button } from './Button';
 import { Icon } from '../Icon';
-import { HomeMajor } from '@zenius-one/ursa-icons';
+import { HomeMajor } from "../../icons";
 
 export default {
   title: 'Components/Button',

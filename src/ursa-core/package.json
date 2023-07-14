@@ -37,8 +37,8 @@
     "build-docs": "cp './src/**/*.md' './dist/docs'",
     "build:js": "rollup -c",
     "build:types": "tsc --declarationDir dist/types --declaration --emitDeclarationOnly",
-    "clean": "rm -rf dist .rollup.cache",
-    "clean:all": "rm -rf dist node_modules .rollup.cache",
+    "clean": "rimraf dist .rollup.cache",
+    "clean:all": "rimraf dist node_modules .rollup.cache",
     "format": "prettier --write src",
     "test": "jest",
     "test:w": "jest --watch",
@@ -49,12 +49,12 @@
   },
   "dependencies": {
     "@emotion/react": ">=11.9.0",
-    "@emotion/styled": ">=11.8.1",
-    "@zenius-one/ursa-icons": "*"
+    "@emotion/styled": ">=11.8.1"
   },
   "devDependencies": {
     "@types/react": ">=18.0.0",
-    "@types/react-dom": ">=18.0.0"
+    "@types/react-dom": ">=18.0.0",
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

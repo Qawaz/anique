@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 
 import { Icon } from '../Icon';
-import { ExternalSmallMinor } from '@zenius-one/ursa-icons';
+import { ExternalSmallMinor } from "../../icons";
 
 export interface LinkProps {
   url: string;

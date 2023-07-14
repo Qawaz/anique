@@ -25,7 +25,7 @@ import {
   CaretUpMinor,
   CaretDownMinor,
   SelectMinor
-} from '@zenius-one/ursa-icons';
+} from "../../icons";
 import { Popover } from '../Popover';
 import { ActionList } from '../ActionList';
 import { Invisible } from '../Invisible';

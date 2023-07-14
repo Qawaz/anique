@@ -5,7 +5,7 @@ import {
   ComponentStoryFn
 } from '@storybook/react';
 import { Icon } from '../Icon';
-import { NotificationMajor } from '@zenius-one/ursa-icons';
+import { NotificationMajor } from "../../icons";
 import { Badge } from './Badge';
 
 export default {

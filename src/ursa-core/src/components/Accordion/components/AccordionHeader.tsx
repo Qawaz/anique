@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import styled from '@emotion/styled';
 import { UnstyledButton } from '../../UnstyledButton';
 import { Icon } from '../../Icon';
-import { ChevronUpMinor, ChevronDownMinor } from '@zenius-one/ursa-icons';
+import { ChevronUpMinor, ChevronDownMinor } from "../../../icons";
 
 export interface AccordionHeaderProps {
   /** The unique ID of the Accordion Header */

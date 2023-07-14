@@ -56,7 +56,7 @@ const UrsaIcon: FC<IconProps> = ({
 
   /*********************************************************************************/
   // Show warning if color provided for sourceType "external" in development mode,
-  // i.e. if the icon is not a react component included in @zenius-one/ursa-icons
+  // i.e. if the icon is not a react component included in icons
   /*********************************************************************************/
   if (
     color &&

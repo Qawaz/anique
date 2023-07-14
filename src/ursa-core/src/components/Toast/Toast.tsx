@@ -7,7 +7,7 @@ import {
   InfoMinor,
   AlertMinor,
   MobileCancelMajor
-} from '@zenius-one/ursa-icons';
+} from "../../icons";
 import { ProgressBar, useCountdown } from '../ProgressBar';
 import { useAnimation } from '../../styles/useAnimation';
 

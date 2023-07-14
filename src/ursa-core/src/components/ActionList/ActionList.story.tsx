@@ -7,7 +7,7 @@ import {
 
 import { ActionList } from './ActionList';
 import { Icon } from '../Icon';
-import { ImportMinor, ExportMinor } from '@zenius-one/ursa-icons';
+import { ImportMinor, ExportMinor } from "../../icons";
 
 export default {
   title: 'Components/ActionList',

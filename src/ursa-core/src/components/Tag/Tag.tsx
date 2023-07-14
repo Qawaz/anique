@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import styled from '@emotion/styled';
 import { TagProps } from '../../types';
-import { MobileCancelMajor } from '@zenius-one/ursa-icons';
+import { MobileCancelMajor } from "../../icons";
 import { Icon } from '../Icon';
 import { UnstyledButton } from '../UnstyledButton';
 import { useTestId } from '../../utilities';

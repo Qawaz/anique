@@ -1,4 +1,3 @@
-import { readFileSync } from 'fs';
 import path from 'path';
 import { move } from 'fs-extra';
 import { fileURLToPath } from 'url';
@@ -9,12 +8,13 @@ import commonjs from '@rollup/plugin-commonjs';
 import externals from 'rollup-plugin-node-externals';
 import typescript from '@rollup/plugin-typescript';
 import summary from 'rollup-plugin-summary';
+import pkg from "./package.json"
 
 const input = 'src/index.ts';
 // Read package.json
-const pkg = JSON.parse(
-  readFileSync(new URL('./package.json', import.meta.url).pathname)
-);
+// const pkg = JSON.parse(
+//   readFileSync(new URL('./package.json', import.meta.url).pathname)
+// );
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

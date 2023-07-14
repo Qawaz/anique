@@ -13,7 +13,7 @@ import React, {
 
 import styled from '@emotion/styled';
 
-import { MinusMinor, TickMinor } from '@zenius-one/ursa-icons';
+import { MinusMinor, TickMinor } from "../../icons";
 import { Icon } from '../Icon';
 import { generateUniqueID } from '../../utilities';
 

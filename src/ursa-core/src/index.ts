@@ -29,9 +29,6 @@ export type { ActionListProps } from './components/ActionList';
 export { Avatar } from './components/Avatar';
 export type { AvatarProps } from './components/Avatar';
 
-export { Breadcrumbs } from './components/Breadcrumbs';
-export type { BreadcrumbsProps } from './components/Breadcrumbs';
-
 export { Button } from './components/Button';
 export type { ButtonProps } from './components/Button';
 
@@ -51,9 +48,6 @@ export { Collapsible } from './components/Collapsible';
 export type { CollapsibleProps } from './components/Collapsible';
 
 export { DataGrid } from './components/DataGrid';
-
-export { DropZone } from './components/DropZone';
-export type { DropZoneProps } from './components/DropZone';
 
 export { Error } from './components/Error';
 export type { ErrorProps } from './components/Error';
@@ -83,9 +77,6 @@ export { Modal } from './components/Modal';
 
 export { Navigation } from './components/Navigation';
 
-export { Page } from './components/Page';
-export type { PageProps } from './components/Page';
-
 export { Popover } from './components/Popover';
 export type { PopoverProps } from './components/Popover';
 
@@ -97,9 +88,6 @@ export type { ProgressBarProps } from './components/ProgressBar';
 
 export { Radio } from './components/Radio';
 export type { RadioProps } from './components/Radio';
-
-export { ResourceItem } from './components/ResourceItem';
-export type { ResourceItemProps } from './components/ResourceItem';
 
 export { Select } from './components/Select';
 

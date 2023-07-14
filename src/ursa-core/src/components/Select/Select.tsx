@@ -11,7 +11,7 @@ import React, {
 import { Icon } from '../Icon';
 import { Label } from '../Label';
 import { Invisible } from '../Invisible';
-import { SelectMinor } from '@zenius-one/ursa-icons';
+import { SelectMinor } from "../../icons";
 import { generateUniqueID, wrapWithComponent } from '../../utilities';
 import { SelectProps } from '../../types';
 

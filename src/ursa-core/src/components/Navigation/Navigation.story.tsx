@@ -6,7 +6,7 @@ import {
   DataVisualizationMajor,
   OrdersMajor,
   ProductsMajor
-} from '@zenius-one/ursa-icons';
+} from "../../icons";
 
 export default {
   title: 'Components/Navigation',

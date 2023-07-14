@@ -19,7 +19,7 @@ import {
   ViewMinor,
   HideMinor,
   CircleCancelMajor
-} from '@zenius-one/ursa-icons';
+} from "../../icons";
 
 type Type =
   | 'text'

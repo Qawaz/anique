@@ -5,7 +5,7 @@ import {
   ComponentStoryFn
 } from '@storybook/react';
 import { Icon } from '.';
-import { HomeMajor } from '@zenius-one/ursa-icons';
+import { HomeMajor } from "../../icons";
 
 export default {
   title: 'Components/Icon',

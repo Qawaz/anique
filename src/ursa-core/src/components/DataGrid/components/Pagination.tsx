@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React, { FC, ReactElement } from 'react';
-import { ArrowLeftMinor, ArrowRightMinor } from '@zenius-one/ursa-icons';
+import { ArrowLeftMinor, ArrowRightMinor } from "../../../icons";
 import { DataGridRow } from '../../../types';
 import { Icon } from '../../Icon';
 

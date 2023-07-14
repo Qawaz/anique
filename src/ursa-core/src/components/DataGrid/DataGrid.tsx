@@ -40,7 +40,7 @@ import {
   FilterMajor,
   HorizontalDotsMinor,
   SortMinor
-} from '@zenius-one/ursa-icons';
+} from "../../icons";
 
 import { Checkbox } from '../Checkbox';
 import { Icon } from '../Icon';
