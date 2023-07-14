@@ -20,6 +20,8 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Shift icons package to new branch (svgr-icons)
 
+- [ ] Create a demo package to view all components in action for docs website
+
 - [ ] Remove unused icons
 
 - [ ] Upgrade story book to v7
