@@ -47,12 +47,12 @@ export default relocate;
 // relocate(
 //   [
 //     {
-//       src: `dist/cjs/src/ursa-core/src`,
+//       src: `dist/cjs/src/lib/src`,
 //       dest: `dist/commonjs`,
 //       overwrite: true
 //     },
 //     {
-//       src: `dist/esm/src/ursa-core/src`,
+//       src: `dist/esm/src/lib/src`,
 //       dest: `dist/esmodules`,
 //       overwrite: true
 //     }

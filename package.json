@@ -8,7 +8,7 @@
   ],
   "main": "index.js",
   "author": "Jayanta Samaddar <jayanta@zenius.one>",
-  "repository": "https://github.com/jayantasamaddar/ursa.git",
+  "repository": "https://github.com/Qawaz/anique.git",
   "license": "MIT",
   "dependencies": {
     "@emotion/cache": "^11.10.3",

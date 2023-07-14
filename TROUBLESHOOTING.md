@@ -39,11 +39,11 @@
   nested icons, for example the `<Link external>Link</Link>` component might
   have a problem. (`Error: React__namespace.createElement is not a function`). -
   This is resolved by creating a valid Mock - e.g.
-  [SVGMock](/src/ursa-core/config/__mocks__/SvgMock.tsx). It then needs to be
+  [SVGMock](/src/lib/config/__mocks__/SvgMock.tsx). It then needs to be
   mapped accurately with **`moduleNameMapper`**.
 - [**`moduleNameMapper`** seems to map React SVG Icon files correctly, but not replace the modules which now show up as `undefined`](https://github.com/facebook/jest/issues/13445) -
   The error was due to incorrect name of exports. Visit the Jest issues link to
   view the detailed solution.
 - **Jest Snapshot tests fail when using Dynamic IDs** - Fixed by writing a
-  **[Custom Serializer](/src/ursa-core/config/dynamic-id-serializer.js)** that
+  **[Custom Serializer](/src/lib/config/dynamic-id-serializer.js)** that
   provides deterministic IDs that Jest can use for Snapshot testing.

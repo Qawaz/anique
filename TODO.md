@@ -2,7 +2,7 @@
 
 We will be moving to a lightweight ui library that doesn't include icons and other things
 
-- [x] Remove any usages of ursa-icons from ursa-core
+- [x] Remove any usages of ursa-icons from lib
 
 - [x] Get rid of ursa-icons package and build the storybook
 
@@ -21,6 +21,8 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 - [x] Shift icons package to new branch (svgr-icons)
 
 - [ ] Create a demo package to view all components in action for docs website
+
+- [ ] Rename folder ursa-core to lib
 
 - [ ] Remove unused icons
 

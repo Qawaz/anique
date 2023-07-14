@@ -1,8 +1,8 @@
 import React from 'react';
 import { addDecorator } from '@storybook/react';
 import { withThemes } from '@react-theming/storybook-addon';
-import { ThemeProvider } from '../../src/ursa-core/src/components/ThemeProvider';
-import { lightTheme, darkTheme } from '../../src/ursa-core/src/styles';
+import { ThemeProvider } from '../../src/lib/src/components/ThemeProvider';
+import { lightTheme, darkTheme } from '../../src/lib/src/styles';
 
 /** Enable Switching Background Color to a Custom Color */
 export const onThemeSwitch = (ctx) => {

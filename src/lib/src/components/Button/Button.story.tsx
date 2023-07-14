@@ -161,7 +161,7 @@ Outline_Button_with_External_Link.args = {
   children: 'View on GitHub',
   outline: true,
   uppercase: false,
-  url: 'https://www.github.com/jayantasamaddar/ursa',
+  url: 'https://www.github.com/Qawaz/anique',
   external: true
 };
 
@@ -170,7 +170,7 @@ export const IconLinkButton: ComponentStoryFn<typeof Button> =
 IconLinkButton.args = {
   children: 'View on GitHub',
   primary: true,
-  url: 'https://www.github.com/jayantasamaddar/ursa'
+  url: 'https://www.github.com/Qawaz/anique'
 };
 
 const DisclosureTemplate: ComponentStory<typeof Button> = (args) => {

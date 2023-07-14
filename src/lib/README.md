@@ -125,6 +125,6 @@ export default MyApp;
 ## License
 
 See
-[LICENSE.md](https://github.com/jayantasamaddar/ursa/blob/main/src/ursa-core/LICENSE.md)
+[LICENSE.md](https://github.com/Qawaz/anique/blob/main/src/lib/LICENSE.md)
 
 ---

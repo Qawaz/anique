@@ -12,9 +12,9 @@
     "!dist/ts/**/*.tsbuildinfo"
   ],
   "repository": {
-    "url": "https://github.com/jayantasamaddar/ursa.git",
+    "url": "https://github.com/Qawaz/anique.git",
     "type": "git",
-    "directory": "src/ursa-core"
+    "directory": "src/lib"
   },
   "publishConfig": {
     "access": "public"
