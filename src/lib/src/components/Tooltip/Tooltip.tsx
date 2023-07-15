@@ -58,7 +58,7 @@ export const Tooltip = ({
   /*****************************************************************************************/
   const [isOpen, setIsOpen] = useState(false);
   const isValidElement = isReactElement(children);
-  const _id = generateUniqueID('Ursa-Tooltip');
+  const _id = generateUniqueID('Anique-Tooltip');
   const elementRef = useRef<HTMLSpanElement>(null);
 
   const { top, left } = useOffsetPosition(elementRef);
@@ -78,22 +78,22 @@ export const Tooltip = ({
   /*****************************************************************************************/
   return (
     <div
-      className="Ursa-ElementWithTooltip"
+      className="Anique-ElementWithTooltip"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
     >
       <span
         ref={elementRef}
-        className="Ursa-TooltipContent"
+        className="Anique-TooltipContent"
         aria-describedby={_id}
       >
         {children}
       </span>
 
       {isOpen && (
-        <Portal idPrefix="Ursa-TooltipContainer">
+        <Portal idPrefix="Anique-TooltipContainer">
           <StyledTooltip
-            className="Ursa-Tooltip"
+            className="Anique-Tooltip"
             role="tooltip"
             style={{
               left,
@@ -101,7 +101,7 @@ export const Tooltip = ({
                 top + (elementRef.current as HTMLSpanElement).offsetHeight + 12
             }}
           >
-            <span id={_id} className="Ursa-TooltipText" aria-label={ariaLabel}>
+            <span id={_id} className="Anique-TooltipText" aria-label={ariaLabel}>
               {content}
             </span>
           </StyledTooltip>

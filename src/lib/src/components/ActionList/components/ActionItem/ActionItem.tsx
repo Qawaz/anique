@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { ActionListItem } from '../../../../types';
 import { UnstyledButton } from '../../../UnstyledButton';
 
-const UrsaActionItem = ({
+const AniqueActionItem = ({
   id,
   className,
   label,
@@ -23,22 +23,22 @@ const UrsaActionItem = ({
   /** Content Markup */
   /*****************************************************************************************/
   const prefixMarkup = prefix ? (
-    <span className="Ursa-ActionItemPrefix">{prefix}</span>
+    <span className="Anique-ActionItemPrefix">{prefix}</span>
   ) : undefined;
 
   const contentMarkup = (
-    <span className="Ursa-ActionItemContent">
-      <span className="Ursa-ActionItemLabel">{label}</span>
-      {helpText && <p className="Ursa-ActionItemHelpText">{helpText}</p>}
+    <span className="Anique-ActionItemContent">
+      <span className="Anique-ActionItemLabel">{label}</span>
+      {helpText && <p className="Anique-ActionItemHelpText">{helpText}</p>}
     </span>
   );
 
   const suffixMarkup = suffix ? (
-    <span className="Ursa-ActionItemSuffix">{suffix}</span>
+    <span className="Anique-ActionItemSuffix">{suffix}</span>
   ) : undefined;
 
   const actionItemMarkup = (
-    <span className="Ursa-ActionItemContainer">
+    <span className="Anique-ActionItemContainer">
       {prefixMarkup}
       {contentMarkup}
       {suffixMarkup}
@@ -51,7 +51,7 @@ const UrsaActionItem = ({
   return (
     <UnstyledButton
       id={id}
-      className={`Ursa-ActionItem ${className || ''}`}
+      className={`Anique-ActionItem ${className || ''}`}
       url={disabled ? undefined : url}
       disabled={disabled}
       aria-label={ariaLabel}
@@ -63,7 +63,7 @@ const UrsaActionItem = ({
   );
 };
 
-export const ActionItem = styled(UrsaActionItem)(
+export const ActionItem = styled(AniqueActionItem)(
   ({ theme: { color }, helpText }) => `
       cursor: pointer;
       border: 0;
@@ -89,7 +89,7 @@ export const ActionItem = styled(UrsaActionItem)(
         background: ${color.actionPressed};
       }
 
-      .Ursa-ActionItemContainer {
+      .Anique-ActionItemContainer {
         margin: 0;
         padding: 0;
         line-height: 1;
@@ -97,12 +97,12 @@ export const ActionItem = styled(UrsaActionItem)(
         gap: 1.25rem;
       }
 
-      & .Ursa-ActionItemContent {
+      & .Anique-ActionItemContent {
         display: flex;
         flex-direction: ${helpText ? 'column' : 'row'};
         align-items: ${helpText ? 'flex-start' : 'center'};
 
-        & > .Ursa-ActionItemLabel {
+        & > .Anique-ActionItemLabel {
             min-width: 0;
             max-width: 100%;
             flex: 1 1 auto;
@@ -110,7 +110,7 @@ export const ActionItem = styled(UrsaActionItem)(
           }
         ${
           helpText &&
-          `& > .Ursa-ActionItemHelpText {
+          `& > .Anique-ActionItemHelpText {
             color: ${color.textSecondary};
             padding-top: 0.325rem;
           }`

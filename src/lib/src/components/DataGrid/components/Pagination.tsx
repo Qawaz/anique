@@ -13,7 +13,7 @@ export interface PaginationProps {
   className?: string;
 }
 
-export const UrsaPagination: FC<PaginationProps> = ({
+export const AniquePagination: FC<PaginationProps> = ({
   view,
   rowsPerPage,
   currentPageNumber,
@@ -29,9 +29,9 @@ export const UrsaPagination: FC<PaginationProps> = ({
   return (
     <>
       {view && view.length > rowsPerPage && (
-        <div className={`Ursa-Pagination ${className || ''}`}>
+        <div className={`Anique-Pagination ${className || ''}`}>
           <div
-            className={`Ursa-PaginationPrevious ${
+            className={`Anique-PaginationPrevious ${
               prevPageExists ? active : 'border-slate-900'
             }`}
             title="Previous"
@@ -45,7 +45,7 @@ export const UrsaPagination: FC<PaginationProps> = ({
             />
           </div>
           <div
-            className={`Ursa-PaginationNext ${
+            className={`Anique-PaginationNext ${
               nextPageExists ? active : 'border-slate-900'
             }`}
             title="Next"
@@ -64,7 +64,7 @@ export const UrsaPagination: FC<PaginationProps> = ({
   );
 };
 
-export const Pagination = styled(UrsaPagination)(
+export const Pagination = styled(AniquePagination)(
   ({ theme: { color, border } }) => `
     display: flex;
     justify-content: center;
@@ -72,14 +72,14 @@ export const Pagination = styled(UrsaPagination)(
     margin-bottom: 20px;
     bottom: 0;
 
-    & > .Ursa-PaginationPrevious, .Ursa-PaginationNext {
+    & > .Anique-PaginationPrevious, .Anique-PaginationNext {
       padding: 10px;
       border-width: 1px;
       border-style: solid;
       border-color: ${color.borderPrimary};
     }
 
-    & > .Ursa-PaginationPrevious.active, .Ursa-PaginationNext.active {
+    & > .Anique-PaginationPrevious.active, .Anique-PaginationNext.active {
       cursor: pointer;
       border-color: ${color.borderSecondary};
     }

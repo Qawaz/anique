@@ -38,11 +38,11 @@ export const Error = ({
   return (
     <StyledError
       id={_id}
-      className={`Ursa-Error ${className || ''}`}
+      className={`Anique-Error ${className || ''}`}
       role="alert"
     >
       {icon && <Icon source={AlertMinor} color="btnAlert" />}
-      <span id={`${_id}-text`} className="Ursa-ErrorText">
+      <span id={`${_id}-text`} className="Anique-ErrorText">
         {children}
       </span>
     </StyledError>

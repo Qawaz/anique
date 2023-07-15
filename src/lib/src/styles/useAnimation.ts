@@ -81,7 +81,7 @@ interface AnimationProps {
  * Allows the user to access the Animation preset available in the
  * `@zenius-one/ursa-animation` library.
  */
-export class UrsaAnimation {
+export class AniqueAnimation {
   name: AnimationPreset;
   duration: number;
   timingFunction: AnimationTimingFunction;
@@ -335,8 +335,8 @@ export const useAnimation = ({
     [];
   const animationExitProps: (Keyframes | AnimationTimingFunction | string)[] =
     [];
-  const animationEnter = new UrsaAnimation(enter);
-  const animationExit = exit ? new UrsaAnimation(exit) : undefined;
+  const animationEnter = new AniqueAnimation(enter);
+  const animationExit = exit ? new AniqueAnimation(exit) : undefined;
   const enterKeyframes = animationEnter.getKeyframes(enterFrom, enterTo);
   if (!enterKeyframes) return;
 

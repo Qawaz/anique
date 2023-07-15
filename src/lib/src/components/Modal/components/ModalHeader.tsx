@@ -3,15 +3,15 @@ import styled from '@emotion/styled';
 import { ModalHeaderProps } from '../../../types';
 import { ModalCloseButton } from './ModalCloseButton';
 
-const UrsaModalHeader: FC<ModalHeaderProps> = ({
+const AniqueModalHeader: FC<ModalHeaderProps> = ({
   title,
   className,
   onClose
 }): ReactElement => {
   return (
-    <div className={`UrsaModalHeader ${className || ''}`}>
+    <div className={`AniqueModalHeader ${className || ''}`}>
       {title && (
-        <div className="UrsaModalHeader-title">
+        <div className="AniqueModalHeader-title">
           <h2>{title}</h2>
         </div>
       )}
@@ -20,7 +20,7 @@ const UrsaModalHeader: FC<ModalHeaderProps> = ({
   );
 };
 
-export const ModalHeader = styled(UrsaModalHeader)(
+export const ModalHeader = styled(AniqueModalHeader)(
   ({ theme: { color } }) => `
       position: relative;
       display: flex;

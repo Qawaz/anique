@@ -22,7 +22,7 @@ const Template: ComponentStory<typeof Modal> = ({ children, ...args }) => {
   };
 
   return (
-    <div className="Ursa-ModalProvider">
+    <div className="Anique-ModalProvider">
       <Button primary onClick={() => setOpenModal(true)}>
         Open
       </Button>

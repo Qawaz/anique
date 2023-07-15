@@ -34,9 +34,9 @@ export const Accordion = ({
     );
 
   return (
-    <div className={`Ursa-AccordionGroup ${className || ''}`}>
+    <div className={`Anique-AccordionGroup ${className || ''}`}>
       {data?.map(({ id, label, content, active }, indx) => (
-        <div className="Ursa-AccordionItem" key={indx}>
+        <div className="Anique-AccordionItem" key={indx}>
           <AccordionHeader
             id={id}
             label={label}

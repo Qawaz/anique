@@ -48,7 +48,7 @@ export const CardHeader = ({
   /** Render CardHeader */
   /*****************************************************************************************/
   return (
-    <StyledCardHeader className="Ursa-CardHeader">
+    <StyledCardHeader className="Anique-CardHeader">
       {actionMarkup || children ? (
         <Stack align="baseline" justify="between">
           <Stack.Item>{titleMarkup}</Stack.Item>

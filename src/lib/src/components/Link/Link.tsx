@@ -33,9 +33,9 @@ export const UnstyledLink: FC<LinkProps> = forwardRef(
     const target = external ? '_blank' : undefined;
     const rel = external ? 'noopener noreferrer' : undefined;
     return (
-      <span className="Ursa-LinkElement">
+      <span className="Anique-LinkElement">
         <UnstyledAnchorTag
-          className={`Ursa-AnchorTag`}
+          className={`Anique-AnchorTag`}
           ref={ref}
           target={target}
           href={url}
@@ -43,9 +43,9 @@ export const UnstyledLink: FC<LinkProps> = forwardRef(
           data-testid="link"
           {...rest}
         >
-          <span className="Ursa-LinkText">{children}</span>
+          <span className="Anique-LinkText">{children}</span>
           {external && !unstyled && typeof children === 'string' && (
-            <span className="Ursa-LinkExternalIcon">
+            <span className="Anique-LinkExternalIcon">
               <Icon
                 source={ExternalSmallMinor}
                 size="large"

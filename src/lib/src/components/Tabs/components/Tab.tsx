@@ -2,20 +2,20 @@ import React, { ReactElement, forwardRef } from 'react';
 import styled from '@emotion/styled';
 import { TabProps } from '../../../types';
 
-const UrsaTab = forwardRef<HTMLButtonElement, TabProps>(
+const AniqueTab = forwardRef<HTMLButtonElement, TabProps>(
   (
     { id, label, selected, className, index, onClick, onKeyUp },
     ref
   ): ReactElement => {
     return (
       <li
-        className={`Ursa-TabHeadItem ${selected ? 'selected' : ''} ${
+        className={`Anique-TabHeadItem ${selected ? 'selected' : ''} ${
           className || ''
         }`}
         role="presentation"
       >
         <button
-          className="Ursa-Tab"
+          className="Anique-Tab"
           id={id}
           ref={ref}
           type="button"
@@ -28,14 +28,14 @@ const UrsaTab = forwardRef<HTMLButtonElement, TabProps>(
           tabIndex={selected ? 0 : -1}
           data-index={index}
         >
-          <span className="Ursa-TabTitle">{label}</span>
+          <span className="Anique-TabTitle">{label}</span>
         </button>
       </li>
     );
   }
 );
 
-export const Tab = styled(UrsaTab)(
+export const Tab = styled(AniqueTab)(
   ({ theme: { color }, layout, selected }) => `
       display: flex;
       cursor: pointer;
@@ -46,7 +46,7 @@ export const Tab = styled(UrsaTab)(
       };
       
   
-      .Ursa-Tab {
+      .Anique-Tab {
           all: unset;
           cursor: pointer;
           margin: 0;
@@ -75,7 +75,7 @@ export const Tab = styled(UrsaTab)(
       &:hover {
           color: ${color.textPrimary};
   
-          .Ursa-Tab {
+          .Anique-Tab {
             padding: ${layout === 'vertical' ? '0.75em 1.5em' : '0.6em 1.5em'};
             border-bottom: ${
               layout === 'vertical'

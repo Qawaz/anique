@@ -49,7 +49,7 @@ export interface CheckboxProps {
   helpText?: string;
 }
 
-const UrsaCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
+const AniqueCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
   (
     {
       id,
@@ -68,10 +68,10 @@ const UrsaCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
     },
     ref
   ): ReactElement => {
-    const uniqueID = generateUniqueID('Ursa-Checkbox');
-    const _id = id || `Ursa-Checkbox-${uniqueID}`;
-    const labelID = `Ursa-CheckboxLabel-${uniqueID}`;
-    const helpTextID = `Ursa-CheckboxHelpText-${uniqueID}`;
+    const uniqueID = generateUniqueID('Anique-Checkbox');
+    const _id = id || `Anique-Checkbox-${uniqueID}`;
+    const labelID = `Anique-CheckboxLabel-${uniqueID}`;
+    const helpTextID = `Anique-CheckboxHelpText-${uniqueID}`;
     const [isChecked, setIsChecked] = useState(checked == true || false);
     const inputRef = useRef<HTMLInputElement>(null);
 
@@ -111,11 +111,11 @@ const UrsaCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
     /********************************************************************/
 
     return (
-      <div className={`Ursa-CheckboxContainer ${className || ''}`}>
-        <label id={labelID} className="Ursa-CheckboxLabel" htmlFor={_id}>
+      <div className={`Anique-CheckboxContainer ${className || ''}`}>
+        <label id={labelID} className="Anique-CheckboxLabel" htmlFor={_id}>
           <input
             id={_id}
-            className="Ursa-Checkbox"
+            className="Anique-Checkbox"
             ref={inputRef}
             name={name}
             value={value}
@@ -132,14 +132,14 @@ const UrsaCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
             aria-controls={ariaControls}
             {...indeterminateAttributes}
           />
-          <span className="Ursa-CheckboxIcon">
+          <span className="Anique-CheckboxIcon">
             <Icon source={iconSource} color={"white"} />
           </span>
 
-          <span className="Ursa-CheckboxLabelText">{label}</span>
+          <span className="Anique-CheckboxLabelText">{label}</span>
         </label>
         {helpText && (
-          <p id={helpTextID} className="Ursa-CheckboxHelpText">
+          <p id={helpTextID} className="Anique-CheckboxHelpText">
             {helpText}
           </p>
         )}
@@ -152,9 +152,9 @@ const UrsaCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
 // Styled Checkbox
 /********************************************************************/
 
-export const Checkbox = styled(UrsaCheckbox)(
+export const Checkbox = styled(AniqueCheckbox)(
   ({ theme: { color }, labelHidden, checked }) => `
-    label.Ursa-CheckboxLabel {
+    label.Anique-CheckboxLabel {
         display: inline-flex;
         align-items: center;
         padding-left: 0.25rem;
@@ -162,7 +162,7 @@ export const Checkbox = styled(UrsaCheckbox)(
         padding-top: 0.625rem;
         padding-bottom: 0.625rem;
     }
-    input[type="checkbox"].Ursa-Checkbox {
+    input[type="checkbox"].Anique-Checkbox {
         width: 1.2em;
         height: 1.2em;
         border: 2px solid ${color.textPrimary};
@@ -174,7 +174,7 @@ export const Checkbox = styled(UrsaCheckbox)(
         white-space: nowrap;
         width: 1px;
     }
-    .Ursa-CheckboxIcon {
+    .Anique-CheckboxIcon {
       display: inline-flex;
       cursor: pointer;
       height: 1.2em;
@@ -192,10 +192,10 @@ export const Checkbox = styled(UrsaCheckbox)(
           : color.borderSecondary
       };
     }
-    .Ursa-CheckboxLabelText {
+    .Anique-CheckboxLabelText {
       visibility: ${labelHidden ? 'hidden' : 'visible'};
     }
-    & > .Ursa-CheckboxHelpText {
+    & > .Anique-CheckboxHelpText {
       padding-left: calc(1.2rem + 2px + 0.625rem);
       color: ${color.textSecondary}
     }

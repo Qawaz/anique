@@ -45,25 +45,25 @@ exports[`components/Button Renders Button Renders Disabled Button 1`] = `
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -80,17 +80,17 @@ exports[`components/Button Renders Button Renders Disabled Button 1`] = `
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     disabled={true}
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-ButtonText
+      className=Anique-ButtonText
     >
       Button
     </span>
@@ -143,25 +143,25 @@ exports[`components/Button Renders Button Renders FullWidth Button 1`] = `
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -178,16 +178,16 @@ exports[`components/Button Renders Button Renders FullWidth Button 1`] = `
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-ButtonText
+      className=Anique-ButtonText
     >
       Button
     </span>
@@ -240,25 +240,25 @@ exports[`components/Button Renders Button Renders Loading Button 1`] = `
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -280,17 +280,17 @@ exports[`components/Button Renders Button Renders Loading Button 1`] = `
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
     aria-busy={true}
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-Spinner
+      className=Anique-Spinner
     >
       <svg
         className=emotion-2
@@ -356,25 +356,25 @@ exports[`components/Button Renders Button Test Icon Button Renders IconButton Bu
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -409,33 +409,33 @@ exports[`components/Button Renders Button Test Icon Button Renders IconButton Bu
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     disabled={false}
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-ButtonIcon
+      className=Anique-ButtonIcon
     >
       <span
-        className=Ursa-Icon emotion-2
-        id="Ursa-Icon-0"
+        className=Anique-Icon emotion-2
+        id="Anique-Icon-0"
       >
         <img
           alt=
           aria-hidden=true
-          className=Ursa-IconSVG
+          className=Anique-IconSVG
           data-testid=icon-external
           src=data:image/svg+xml;utf8,[object Object]
         />
       </span>
        
       <span
-        className=Ursa-ButtonText
+        className=Anique-ButtonText
       >
         Home
       </span>
@@ -489,25 +489,25 @@ exports[`components/Button Renders Button Test Icon Only Button Run Snapshot Tes
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -542,23 +542,23 @@ exports[`components/Button Renders Button Test Icon Only Button Run Snapshot Tes
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     disabled={false}
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-Icon emotion-2
-      id="Ursa-Icon-1"
+      className=Anique-Icon emotion-2
+      id="Anique-Icon-1"
     >
       <img
         alt=
         aria-hidden=true
-        className=Ursa-IconSVG
+        className=Anique-IconSVG
         data-testid=icon-external
         src=data:image/svg+xml;utf8,[object Object]
       />
@@ -612,25 +612,25 @@ exports[`components/Button Renders Button Tests Alert Button Renders Alert Butto
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -647,17 +647,17 @@ exports[`components/Button Renders Button Tests Alert Button Renders Alert Butto
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     onClick={[Function]}
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-ButtonText
+      className=Anique-ButtonText
     >
       Button
     </span>
@@ -710,25 +710,25 @@ exports[`components/Button Renders Button Tests Basic Button Basic Button - Snap
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -745,17 +745,17 @@ exports[`components/Button Renders Button Tests Basic Button Basic Button - Snap
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     onClick={[Function]}
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-ButtonText
+      className=Anique-ButtonText
     >
       Button
     </span>
@@ -808,25 +808,25 @@ exports[`components/Button Renders Button Tests Outline Button Renders Outline B
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -843,10 +843,10 @@ exports[`components/Button Renders Button Tests Outline Button Renders Outline B
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     disabled={false}
     onClick={[Function]}
     role=button
@@ -854,7 +854,7 @@ exports[`components/Button Renders Button Tests Outline Button Renders Outline B
     type=button
   >
     <span
-      className=Ursa-ButtonText
+      className=Anique-ButtonText
     >
       Button
     </span>
@@ -907,25 +907,25 @@ exports[`components/Button Renders Button Tests Primary Button Primary Button - 
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -942,17 +942,17 @@ exports[`components/Button Renders Button Tests Primary Button Primary Button - 
 }
 
 <div
-  className=Ursa-ButtonContainer emotion-0
+  className=Anique-ButtonContainer emotion-0
 >
   <button
-    className=Ursa-Button emotion-1
+    className=Anique-Button emotion-1
     onClick={[Function]}
     role=button
     tabIndex={0}
     type=button
   >
     <span
-      className=Ursa-ButtonText
+      className=Anique-ButtonText
     >
       Button
     </span>

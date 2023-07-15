@@ -29,7 +29,7 @@ export interface CardProps {
   footerActionAlignment?: 'left' | 'right' | 'space-between';
 }
 
-const UrsaCard = ({
+const AniqueCard = ({
   title,
   className,
   children,
@@ -81,7 +81,7 @@ const UrsaCard = ({
 
   const footerMarkup: ReactElement<HTMLDivElement> | undefined =
     primaryFooterActionMarkup || secondaryFooterActionMarkup ? (
-      <div className="Ursa-CardFooter">
+      <div className="Anique-CardFooter">
         <ButtonGroup>
           {secondaryFooterActionMarkup}
           {primaryFooterActionMarkup}
@@ -93,7 +93,7 @@ const UrsaCard = ({
   /** Render Card */
   /*****************************************************************************************/
   return (
-    <div className={`Ursa-Card ${className || ''}`}>
+    <div className={`Anique-Card ${className || ''}`}>
       {headerMarkup}
       {contentMarkup}
       {footerMarkup}
@@ -104,7 +104,7 @@ const UrsaCard = ({
 /*****************************************************************************************/
 /** Styled Component */
 /*****************************************************************************************/
-const StyledCard = styled(UrsaCard)(
+const StyledCard = styled(AniqueCard)(
   ({ theme: { color, fontSize, border }, footerActionAlignment }) => {
     let justifyContent: 'flex-start' | 'flex-end' | 'space-between';
     switch (footerActionAlignment) {
@@ -126,7 +126,7 @@ const StyledCard = styled(UrsaCard)(
       boxShadow:
         '0 0 0.3125rem rgb(23 24 25 / 10%), 0 0 0.625rem rgb(23 24 25 / 15%)',
 
-      '& > .Ursa-CardFooter': {
+      '& > .Anique-CardFooter': {
         display: 'flex',
         alignItems: 'center',
         justifyContent,
@@ -137,7 +137,7 @@ const StyledCard = styled(UrsaCard)(
         color: color.textPrimary
       },
 
-      '& > .Ursa-CardSection + .Ursa-CardSection': {
+      '& > .Anique-CardSection + .Anique-CardSection': {
         borderTop: `1px solid ${color.btnDisabled}`
       }
     };

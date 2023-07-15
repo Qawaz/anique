@@ -7,14 +7,14 @@ export interface BackdropProps {
   className?: string;
 }
 
-const UrsaBackdrop: FC<BackdropProps> = ({
+const AniqueBackdrop: FC<BackdropProps> = ({
   className,
   onClick
 }): ReactElement => (
-  <div className={`Ursa-Backdrop ${className || ''}`} onClick={onClick} />
+  <div className={`Anique-Backdrop ${className || ''}`} onClick={onClick} />
 );
 
-export const Backdrop = styled(UrsaBackdrop)(
+export const Backdrop = styled(AniqueBackdrop)(
   ({ theme: { color }, transparent }) => `
   background-color: ${transparent ? 'transparent' : color.backdrop};
   position: fixed;

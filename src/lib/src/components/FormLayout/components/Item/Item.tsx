@@ -6,6 +6,6 @@ export interface FormLayoutItemProps {
 
 export const Item = ({ children }: FormLayoutItemProps) => {
   return children ? (
-    <div className="Ursa-FormLayoutGroupItem">{children}</div>
+    <div className="Anique-FormLayoutGroupItem">{children}</div>
   ) : null;
 };

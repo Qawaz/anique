@@ -183,8 +183,8 @@ const AniqueTextfield = forwardRef<
       .toLowerCase();
 
     /** Generate the ID */
-    const id = _id || generateUniqueID('Ursa-Textfield');
-    const _labelid = generateUniqueID('Ursa-TextfieldLabel');
+    const id = _id || generateUniqueID('Anique-Textfield');
+    const _labelid = generateUniqueID('Anique-TextfieldLabel');
 
     const inputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
     const textAreaRef = useRef<HTMLTextAreaElement>(null);
@@ -255,7 +255,7 @@ const AniqueTextfield = forwardRef<
     /** Categorize Global Attributes */
     const globalAttributes = {
       id,
-      className: 'Ursa-Input',
+      className: 'Anique-Input',
       ref: multiline ? textAreaRef : inputRef,
       name: Name,
       type: multiline ? undefined : typeParsed,
@@ -305,7 +305,7 @@ const AniqueTextfield = forwardRef<
     /** Generate Content */
     /***************************************************************************************/
     const prefixMarkup = prefix && (
-      <div className="Ursa-TextfieldPrefix" id={`${id}-Prefix`}>
+      <div className="Anique-TextfieldPrefix" id={`${id}-Prefix`}>
         {prefix}
       </div>
     );
@@ -324,7 +324,7 @@ const AniqueTextfield = forwardRef<
     const toggleShowPasswordMarkup = type === 'password' &&
       togglePasswordIcon && (
         <Icon
-          className="Ursa-PasswordShowHide"
+          className="Anique-PasswordShowHide"
           source={showPassword ? HideMinor : ViewMinor}
           onClick={() => setShowPassword((prev) => !prev)}
         />
@@ -332,7 +332,7 @@ const AniqueTextfield = forwardRef<
 
     const clearMarkup = clearButton && value !== '' && type !== 'password' && (
       <Icon
-        className="Ursa-TextClearButton"
+        className="Anique-TextClearButton"
         source={CircleCancelMajor}
         onClick={handleClearButton}
       />
@@ -343,20 +343,20 @@ const AniqueTextfield = forwardRef<
     /***************************************************************************************/
 
     return (
-      <div className={`Ursa-TextfieldContainer ${className || ''}`}>
-        <div className="Ursa-LabelContainer">
+      <div className={`Anique-TextfieldContainer ${className || ''}`}>
+        <div className="Anique-LabelContainer">
           <label
             id={_labelid}
-            className={`Ursa-TextfieldLabel ${labelHidden ? 'hidden' : ''}`}
+            className={`Anique-TextfieldLabel ${labelHidden ? 'hidden' : ''}`}
             htmlFor={id}
           >
             {label}
           </label>
           {labelAction && (
-            <div className="Ursa-TextfieldLabelAction">{labelAction}</div>
+            <div className="Anique-TextfieldLabelAction">{labelAction}</div>
           )}
         </div>
-        <div className={`Ursa-Textfield`} data-field={name}>
+        <div className={`Anique-Textfield`} data-field={name}>
           {prefixMarkup}
           {textfieldMarkup}
           {toggleShowPasswordMarkup}
@@ -364,7 +364,7 @@ const AniqueTextfield = forwardRef<
         </div>
         {/* Error Handling - If errors = [] is passed as props */}
         {errors?.length && (
-          <div id={`${id}-errors`} className="Ursa-TextfieldErrors">
+          <div id={`${id}-errors`} className="Anique-TextfieldErrors">
             {errors.map((error, indx) => (
               <Error id={`${id}-${indx + 1}-error`} key={indx}>
                 {error}
@@ -392,17 +392,17 @@ export const Textfield = styled(AniqueTextfield)(
         align-items: flex-start;
         width: 100%;
         
-        .Ursa-LabelContainer {
+        .Anique-LabelContainer {
           display: flex;
           justify-content: space-between;
           align-items: center;
 
-          & > .Ursa-TextfieldLabel {
+          & > .Anique-TextfieldLabel {
             font-size: ${fontSize.fontSize4};
           }
         }
 
-        .Ursa-Textfield {
+        .Anique-Textfield {
           position: relative;
           display: flex;
           align-items: center;
@@ -411,13 +411,13 @@ export const Textfield = styled(AniqueTextfield)(
           padding-top: 0.375rem;
           padding-bottom: 0.375rem;
 
-          & > .Ursa-TextfieldPrefix {
+          & > .Anique-TextfieldPrefix {
             position: absolute;
             left: 0.5rem;
             color: ${color.textSecondary}
           }
 
-          & > .Ursa-Input {
+          & > .Anique-Input {
             width: 100%;
             min-height: ${multiline ? '6.75rem' : 'inherit'};
             padding: 0.625rem;
@@ -437,14 +437,14 @@ export const Textfield = styled(AniqueTextfield)(
             }
           }
 
-          & > .Ursa-PasswordShowHide, .Ursa-TextClearButton {
+          & > .Anique-PasswordShowHide, .Anique-TextClearButton {
             cursor: pointer;
             position: absolute;
             right: 0.5rem;
           }
         }
         
-        .Ursa-TextfieldErrors {
+        .Anique-TextfieldErrors {
           display: flex;
           flex-direction: column;
         }

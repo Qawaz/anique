@@ -60,7 +60,7 @@ const ButtonContainer = styled.div(() => ({
   display: 'inline-flex'
 }));
 
-const UrsaButton = forwardRef<
+const AniqueButton = forwardRef<
   HTMLButtonElement | HTMLInputElement,
   ButtonProps
 >(
@@ -110,7 +110,7 @@ const UrsaButton = forwardRef<
     /***************************************************************************************/
     /** Declare variables, refs, state */
     /***************************************************************************************/
-    const classes = `Ursa-Button ${className ?? ''}`;
+    const classes = `Anique-Button ${className ?? ''}`;
 
     const [disclosureActive, setDisclosureActive] = useState(false);
 
@@ -152,7 +152,7 @@ const UrsaButton = forwardRef<
 
     const childMarkup =
       typeof children === 'string' ? (
-        <span className="Ursa-ButtonText">{children}</span>
+        <span className="Anique-ButtonText">{children}</span>
       ) : (
         children
       );
@@ -195,7 +195,7 @@ const UrsaButton = forwardRef<
       iconMarkup = iconOnly ? (
         iconSource
       ) : (
-        <span className="Ursa-ButtonIcon">
+        <span className="Anique-ButtonIcon">
           {iconSource} {childMarkup}
         </span>
       );
@@ -217,7 +217,7 @@ const UrsaButton = forwardRef<
     /** Markup: Disclosure icon */
     const disclosureMarkup = disclosure ? (
       <Icon
-        className="Ursa-ButtonDisclosure"
+        className="Anique-ButtonDisclosure"
         source={loading ? 'placeholder' : getDisclosureIconSource(disclosure)}
         size="large"
       />
@@ -232,7 +232,7 @@ const UrsaButton = forwardRef<
       const connectedDisclosureTrigger = (
         <button
           type="button"
-          className={`Ursa-ConnectedDisclosure ${classes}`}
+          className={`Anique-ConnectedDisclosure ${classes}`}
           aria-disabled={disabled}
           aria-label={ariaLabel ?? 'Button Actions'}
           aria-describedBy={ariaDescribedBy}
@@ -321,7 +321,7 @@ const UrsaButton = forwardRef<
     /***************************************************************************************/
 
     return (
-      <ButtonContainer className="Ursa-ButtonContainer">
+      <ButtonContainer className="Anique-ButtonContainer">
         {buttonMarkup}
         {connectedDisclosureMarkup}
         {uploadMarkup}
@@ -330,7 +330,7 @@ const UrsaButton = forwardRef<
   }
 );
 
-export const Button = styled(UrsaButton)(
+export const Button = styled(AniqueButton)(
   ({
     theme: { color, fontSize },
     fullWidth,
@@ -440,22 +440,22 @@ export const Button = styled(UrsaButton)(
     };
     white-space: nowrap;
   }
-  .Ursa-Icon {
+  .Anique-Icon {
     margin: auto;
   }
-  & > .Ursa-Icon.Ursa-ButtonDisclosure {
+  & > .Anique-Icon.Anique-ButtonDisclosure {
     margin-left: 0.75rem;
     margin-right: 0;
     padding-right: 0;
     padding-left: 0;
   }
-  &.Ursa-ConnectedDisclosure {
+  &.Anique-ConnectedDisclosure {
     min-width: auto;
     margin-left: 0.125rem;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
   }
-  .Ursa-ButtonIcon {
+  .Anique-ButtonIcon {
     display: inline-flex;
     justify-content: ${
       textAlign === 'left'

@@ -45,7 +45,7 @@ export interface FormProps {
   onSubmit(event: FormEvent<HTMLFormElement>): void;
 }
 
-const UrsaForm = forwardRef<HTMLFormElement, FormProps>(
+const AniqueForm = forwardRef<HTMLFormElement, FormProps>(
   (
     {
       id,
@@ -63,7 +63,7 @@ const UrsaForm = forwardRef<HTMLFormElement, FormProps>(
     },
     ref
   ): ReactElement => {
-    const _id = id || generateUniqueID('Ursa-Form');
+    const _id = id || generateUniqueID('Anique-Form');
     const testid = useTestId('test-form');
 
     const handleSubmit = useCallback(
@@ -97,7 +97,7 @@ const UrsaForm = forwardRef<HTMLFormElement, FormProps>(
       <form
         id={_id}
         name={name}
-        className={`Ursa-Form ${className || ''}`}
+        className={`Anique-Form ${className || ''}`}
         ref={ref}
         autoComplete={autoCompleteValue}
         encType={encType}
@@ -115,7 +115,7 @@ const UrsaForm = forwardRef<HTMLFormElement, FormProps>(
   }
 );
 
-export const Form = styled(UrsaForm)(
+export const Form = styled(AniqueForm)(
   ({ theme }) => `
     
   `

@@ -4,13 +4,13 @@ import { Button } from '../../Button';
 
 import { ModalFooterProps } from '../../../types';
 
-const UrsaModalFooter: FC<ModalFooterProps> = ({
+const AniqueModalFooter: FC<ModalFooterProps> = ({
   primaryButton,
   secondaryButton,
   className
 }): ReactElement | null => {
   return (
-    <div className={`Ursa-Modal-Buttons ${className || ''}`}>
+    <div className={`Anique-Modal-Buttons ${className || ''}`}>
       {secondaryButton?.onClick && (
         <Button outline onClick={secondaryButton?.onClick}>
           {secondaryButton?.name || 'Cancel'}
@@ -23,7 +23,7 @@ const UrsaModalFooter: FC<ModalFooterProps> = ({
   );
 };
 
-export const ModalFooter = styled(UrsaModalFooter)(
+export const ModalFooter = styled(AniqueModalFooter)(
   ({ theme: { color } }) => `
     display: flex;
     flex-direction: row;

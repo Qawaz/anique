@@ -42,7 +42,7 @@ export interface ToastProps {
   className?: string;
 }
 
-const UrsaToast = ({
+const AniqueToast = ({
   children,
   duration = 5,
   pauseOnHover,
@@ -62,7 +62,7 @@ const UrsaToast = ({
 
   const progressMarkup = progress ? (
     <ProgressBar
-      className="Ursa-ToastCountdown"
+      className="Anique-ToastCountdown"
       progress={countdown}
       size="small"
       preset="countdown"
@@ -70,16 +70,16 @@ const UrsaToast = ({
   ) : undefined;
 
   const contentMarkup = children ? (
-    <span className="Ursa-ToastContent">
+    <span className="Anique-ToastContent">
       {children} - (Closing in {TTL}s)
     </span>
   ) : undefined;
 
   return (
-    <Portal idPrefix="Ursa-ToastPortal">
-      <div className={`Ursa-ToastContainer ${className || ''}`}>
+    <Portal idPrefix="Anique-ToastPortal">
+      <div className={`Anique-ToastContainer ${className || ''}`}>
         <div
-          className="Ursa-Toast"
+          className="Anique-Toast"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
@@ -87,7 +87,7 @@ const UrsaToast = ({
           {progressMarkup}
           <Icon
             source={MobileCancelMajor}
-            className="Ursa-ToastClose"
+            className="Anique-ToastClose"
             size="medium"
             onClick={onDismiss}
           />
@@ -97,7 +97,7 @@ const UrsaToast = ({
   );
 };
 
-export const Toast = styled(UrsaToast)(
+export const Toast = styled(AniqueToast)(
   ({ theme: { color, animation }, duration = 5, position, pauseOnHover }) => {
     const computedWrapperPosition: {
       top?: number | string;
@@ -163,7 +163,7 @@ export const Toast = styled(UrsaToast)(
         animationPlayState: pauseOnHover ? 'paused' : undefined
       },
 
-      '& > .Ursa-Toast': {
+      '& > .Anique-Toast': {
         position: 'relative',
         cursor: 'pointer',
         backgroundColor: color.accentColor,
@@ -174,7 +174,7 @@ export const Toast = styled(UrsaToast)(
         textAlign: 'center',
         margin: '0 auto',
 
-        '& > .Ursa-ToastCountdown': {
+        '& > .Anique-ToastCountdown': {
           position: 'absolute',
           bottom: 0,
           left: 0,
@@ -182,7 +182,7 @@ export const Toast = styled(UrsaToast)(
           borderBottomRightRadius: '0.25rem'
         },
 
-        '& > .Ursa-ToastClose': {
+        '& > .Anique-ToastClose': {
           position: 'absolute',
           cursor: 'pointer',
           top: '0.625rem',

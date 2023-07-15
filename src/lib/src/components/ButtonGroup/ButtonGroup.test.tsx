@@ -59,7 +59,7 @@ describe('components/ButtonGroup', () => {
           ? '1.25rem'
           : '0.625rem',
         {
-          target: '.Ursa-ButtonItem:not(:first-of-type)'
+          target: '.Anique-ButtonItem:not(:first-of-type)'
         }
       );
     });
@@ -109,7 +109,7 @@ describe('components/ButtonGroup', () => {
       render(<FullWidth />);
       const buttonGroup = screen.getByRole('group');
       expect(buttonGroup).toBeInTheDocument(); // Button Group is present in the DOM
-      buttonGroup.querySelectorAll('.Ursa-ButtonItem').forEach((node) => {
+      buttonGroup.querySelectorAll('.Anique-ButtonItem').forEach((node) => {
         expect(node).toHaveStyle({ flex: '1 1 auto' }); // Full Width ButtonItem
       });
     });
@@ -156,7 +156,7 @@ describe('components/ButtonGroup', () => {
       // Border-radius on the right is unset
       for (const style in firstItemStyles) {
         expect(buttonGroup).toHaveStyleRule(style, firstItemStyles[style], {
-          target: '.Ursa-ButtonItem:first-of-type>.Ursa-ButtonContainer>button'
+          target: '.Anique-ButtonItem:first-of-type>.Anique-ButtonContainer>button'
         });
       }
 
@@ -167,7 +167,7 @@ describe('components/ButtonGroup', () => {
           notfirstItemStyles[style],
           {
             target:
-              '.Ursa-ButtonItem:first-of-type>.Ursa-ButtonContainer>button'
+              '.Anique-ButtonItem:first-of-type>.Anique-ButtonContainer>button'
           }
         );
       }
@@ -177,7 +177,7 @@ describe('components/ButtonGroup', () => {
       const buttonGroup = renderer.create(<Segmented />).toJSON();
       expect(buttonGroup).toHaveStyleRule('border-radius', 'unset', {
         target:
-          '.Ursa-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)>.Ursa-ButtonContainer>button'
+          '.Anique-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)>.Anique-ButtonContainer>button'
       });
     });
 
@@ -195,7 +195,7 @@ describe('components/ButtonGroup', () => {
       // Border-radius on the left is unset
       for (const style in lastItemStyles) {
         expect(buttonGroup).toHaveStyleRule(style, lastItemStyles[style], {
-          target: '.Ursa-ButtonItem:last-of-type>.Ursa-ButtonContainer>button'
+          target: '.Anique-ButtonItem:last-of-type>.Anique-ButtonContainer>button'
         });
       }
 
@@ -205,7 +205,7 @@ describe('components/ButtonGroup', () => {
           style,
           notLastItemStyles[style],
           {
-            target: '.Ursa-ButtonItem:last-of-type>.Ursa-ButtonContainer>button'
+            target: '.Anique-ButtonItem:last-of-type>.Anique-ButtonContainer>button'
           }
         );
       }

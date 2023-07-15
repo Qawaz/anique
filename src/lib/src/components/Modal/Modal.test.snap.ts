@@ -45,25 +45,25 @@ exports[`components/Modal <BasicModal /> Run Snapshot Test 1`] = `
   white-space: nowrap;
 }
 
-.emotion-1 .Ursa-Icon {
+.emotion-1 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-1>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-1>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-1.Ursa-ConnectedDisclosure {
+.emotion-1.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-1 .Ursa-ButtonIcon {
+.emotion-1 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -80,20 +80,20 @@ exports[`components/Modal <BasicModal /> Run Snapshot Test 1`] = `
 }
 
 <div
-  className=Ursa-ModalProvider
+  className=Anique-ModalProvider
 >
   <div
-    className=Ursa-ButtonContainer emotion-0
+    className=Anique-ButtonContainer emotion-0
   >
     <button
-      className=Ursa-Button emotion-1
+      className=Anique-Button emotion-1
       onClick={[Function]}
       role=button
       tabIndex={0}
       type=button
     >
       <span
-        className=Ursa-ButtonText
+        className=Anique-ButtonText
       >
         Open
       </span>

@@ -67,11 +67,11 @@ export interface TextProps {
   wrap?: boolean;
 }
 
-const UrsaText = ({ id, className, children, as, hidden }: TextProps) => {
+const AniqueText = ({ id, className, children, as, hidden }: TextProps) => {
   const Element = !as || as === 'inherit' ? 'p' : as;
 
   const textMarkup = (
-    <Element id={id} className={`Ursa-Text ${className || ''}`}>
+    <Element id={id} className={`Anique-Text ${className || ''}`}>
       {children}
     </Element>
   );
@@ -79,7 +79,7 @@ const UrsaText = ({ id, className, children, as, hidden }: TextProps) => {
   return hidden ? <Invisible>{textMarkup}</Invisible> : textMarkup;
 };
 
-export const Text = styled(UrsaText)(
+export const Text = styled(AniqueText)(
   ({
     theme: { color, fontSize },
     as: inputAs,

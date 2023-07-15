@@ -24,10 +24,10 @@ const UnstyledHeading = ({
                              className,
                              id
                          }: HeadingProps): ReactElement => {
-    const _id = id || generateUniqueID('Ursa-Heading');
+    const _id = id || generateUniqueID('Anique-Heading');
 
     return (
-        <Element id={_id} className={`Ursa-Heading ${className || ''}`}>
+        <Element id={_id} className={`Anique-Heading ${className || ''}`}>
             {children}
         </Element>
     );

@@ -10,7 +10,7 @@ import styled from '@emotion/styled';
 import { Tab, TabPanel } from './components';
 import { TabsProps } from '../../types';
 
-const UrsaTabs = ({ className, items, layout }: TabsProps): ReactElement => {
+const AniqueTabs = ({ className, items, layout }: TabsProps): ReactElement => {
   /************************************************************************/
   // Initialize State, Variables, Ref and Memoize startingTabIndex
   /************************************************************************/
@@ -106,8 +106,8 @@ const UrsaTabs = ({ className, items, layout }: TabsProps): ReactElement => {
   /************************************************************************/
 
   return (
-    <div className={`Ursa-Tabs ${className || ''}`}>
-      <ul className="Ursa-TabsHead" role="tablist">
+    <div className={`Anique-Tabs ${className || ''}`}>
+      <ul className="Anique-TabsHead" role="tablist">
         {data?.map(({ id, label, selected }, indx) => (
           <Tab
             id={id}
@@ -123,7 +123,7 @@ const UrsaTabs = ({ className, items, layout }: TabsProps): ReactElement => {
         ))}
       </ul>
 
-      <div className="Ursa-TabContent">
+      <div className="Anique-TabContent">
         {data?.map(({ id, content, selected }, indx) => (
           <TabPanel
             id={`${id}-panel`}
@@ -139,7 +139,7 @@ const UrsaTabs = ({ className, items, layout }: TabsProps): ReactElement => {
   );
 };
 
-export const Tabs = styled(UrsaTabs)(
+export const Tabs = styled(AniqueTabs)(
   ({ layout }) => `
     display: flex;
     flex-direction: ${layout === 'vertical' ? 'row' : 'column'};
@@ -147,7 +147,7 @@ export const Tabs = styled(UrsaTabs)(
     justify-items: flex-start;
     gap: 0.25rem;
 
-    .Ursa-TabsHead {
+    .Anique-TabsHead {
       display: flex;
       flex-direction: ${layout === 'vertical' ? 'column' : 'row'};
     }

@@ -17,6 +17,6 @@ exports[`components/Backdrop Snapshot Test 1`] = `
 }
 
 <div
-  className=Ursa-Backdrop emotion-0
+  className=Anique-Backdrop emotion-0
 />
 `;

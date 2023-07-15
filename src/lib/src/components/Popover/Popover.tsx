@@ -139,9 +139,9 @@ export const Popover = ({
     : undefined;
 
   const popoverMarkup = active ? (
-    <Portal idPrefix="Ursa-Popover">
+    <Portal idPrefix="Anique-Popover">
       <PopoverContent
-        className="Ursa-PopoverContent"
+        className="Anique-PopoverContent"
         ref={popoverRef}
         // onBlur={handlePopoverBlur}
         style={{
@@ -157,7 +157,7 @@ export const Popover = ({
   /** Render Popover */
   /*****************************************************************************************/
   return (
-    <div className="Ursa-PopoverWrapper" onKeyUp={closeOnEscape}>
+    <div className="Anique-PopoverWrapper" onKeyUp={closeOnEscape}>
       {triggerMarkup}
       {popoverMarkup}
     </div>

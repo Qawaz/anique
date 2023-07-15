@@ -78,7 +78,7 @@ const ActionList = forwardRef<
       <StyledActionList
         as={Element}
         ref={actionListRef}
-        className="Ursa-ActionListContainer"
+        className="Anique-ActionListContainer"
         role={actionListRole}
         tabIndex={actionListTabIndex}
       >

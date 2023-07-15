@@ -40,13 +40,13 @@ export const ModalCloseButton: FC<CloseButtonProps> = ({
   return (
     <CloseButton
       name="close-button"
-      className="Ursa-ModalClose"
+      className="Anique-ModalClose"
       role="button"
       onClick={onClick}
     >
       <Icon
         source={MobileCancelMajor}
-        className="Ursa-ModalCloseButton"
+        className="Anique-ModalCloseButton"
         size="large"
       />
     </CloseButton>

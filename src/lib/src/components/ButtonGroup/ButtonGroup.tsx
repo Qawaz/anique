@@ -24,7 +24,7 @@ export interface ButtonGroupProps {
   className?: string;
 }
 
-const UrsaButtonGroup = ({
+const AniqueButtonGroup = ({
   children,
   className
 }: ButtonGroupProps): ReactElement => {
@@ -34,13 +34,13 @@ const UrsaButtonGroup = ({
   ));
 
   return (
-    <div className={`Ursa-ButtonGroup ${className || ''}`} role="group">
+    <div className={`Anique-ButtonGroup ${className || ''}`} role="group">
       {content}
     </div>
   );
 };
 
-export const ButtonGroup = styled(UrsaButtonGroup)(
+export const ButtonGroup = styled(AniqueButtonGroup)(
   ({
     spacing,
     justify,
@@ -55,26 +55,26 @@ export const ButtonGroup = styled(UrsaButtonGroup)(
     min-width: ${fullWidth ? '100%' : 'auto'};
     align-items: stretch;
     
-    .Ursa-ButtonContainer {
+    .Anique-ButtonContainer {
       height: 100%;
     }
 
     ${
       segmented
-        ? `.Ursa-ButtonItem:nth-of-type(n+1) > .Ursa-ButtonContainer > button, 
-        .Ursa-ButtonItem:nth-of-type(n+1) > .Ursa-ButtonContainer > a {}
+        ? `.Anique-ButtonItem:nth-of-type(n+1) > .Anique-ButtonContainer > button, 
+        .Anique-ButtonItem:nth-of-type(n+1) > .Anique-ButtonContainer > a {}
       
-      .Ursa-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)
-        > .Ursa-ButtonContainer
-        > button, .Ursa-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)
-        > .Ursa-ButtonContainer
+      .Anique-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)
+        > .Anique-ButtonContainer
+        > button, .Anique-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)
+        > .Anique-ButtonContainer
         > a {
         border-radius: unset;
         margin-right: -1px;
       }
 
-      .Ursa-ButtonItem:last-of-type > .Ursa-ButtonContainer > button, 
-      .Ursa-ButtonItem:last-of-type > .Ursa-ButtonContainer > a {
+      .Anique-ButtonItem:last-of-type > .Anique-ButtonContainer > button, 
+      .Anique-ButtonItem:last-of-type > .Anique-ButtonContainer > a {
         margin-left: ${fullWidth ? '-1px' : '0'};
         border-top-left-radius: unset;
         border-bottom-left-radius: unset;
@@ -82,8 +82,8 @@ export const ButtonGroup = styled(UrsaButtonGroup)(
         border-bottom-right-radius: ${connectedBottom ? 'unset' : '4px'};
       }
 
-      .Ursa-ButtonItem:first-of-type > .Ursa-ButtonContainer > button, 
-      .Ursa-ButtonItem:first-of-type > .Ursa-ButtonContainer > a {
+      .Anique-ButtonItem:first-of-type > .Anique-ButtonContainer > button, 
+      .Anique-ButtonItem:first-of-type > .Anique-ButtonContainer > a {
         margin-right: -1px;
         border-top-right-radius: unset;
         border-bottom-right-radius: unset;
@@ -105,7 +105,7 @@ export const ButtonGroup = styled(UrsaButtonGroup)(
           ? 'around'
           : 'flex-start'
       };
-      & .Ursa-ButtonItem:not(:first-of-type) {
+      & .Anique-ButtonItem:not(:first-of-type) {
         margin-left: ${
           spacing === 'extraTight'
             ? '0.3125rem'
@@ -120,7 +120,7 @@ export const ButtonGroup = styled(UrsaButtonGroup)(
     ${
       fullWidth &&
       `
-      .Ursa-ButtonItem {
+      .Anique-ButtonItem {
         flex: 1 1 auto;
 
         button {

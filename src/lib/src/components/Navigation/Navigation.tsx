@@ -41,8 +41,8 @@ export const Navigation: FC<NavigationProps> & CompoundProps = (
 
   return (
     <NavigationContext.Provider value={context}>
-      <StyledNavigation className={`Ursa-Navigation ${className || ''}`}>
-        <nav className="Ursa-Navigation">{children}</nav>
+      <StyledNavigation className={`Anique-Navigation ${className || ''}`}>
+        <nav className="Anique-Navigation">{children}</nav>
       </StyledNavigation>
     </NavigationContext.Provider>
   );

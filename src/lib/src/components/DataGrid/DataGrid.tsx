@@ -50,7 +50,7 @@ import { Button } from '../Button';
 import { generateUniqueID } from '../../utilities';
 import { ActionBar } from './components/ActionButtons/ActionBar';
 
-const UrsaDataGrid: FC<DataGridProps> = ({
+const AniqueDataGrid: FC<DataGridProps> = ({
   views = DATAGRID_DEFAULTS.views,
   columns,
   rows,
@@ -71,7 +71,7 @@ const UrsaDataGrid: FC<DataGridProps> = ({
   const [currentPageNumber, setCurrentPageNumber] = useState(1); // the current page number
   const [currentPage, setCurrentPage] = useState<typeof rows>([]); //contains all rows in current page
   const [selectedRows, setSelectedRows] = useState<typeof rows>([]); // the selected rows of the current page
-  const [checked, setChecked] = useState<boolean | 'indeterminate'>(false); //All rows, .Ursa-DataGridCheckbox checkbox on or off
+  const [checked, setChecked] = useState<boolean | 'indeterminate'>(false); //All rows, .Anique-DataGridCheckbox checkbox on or off
   const [checkboxes, setCheckboxes] = useState<{ [key: string]: boolean }>({});
 
   const tbodyRef = useRef<HTMLTableSectionElement>(null);
@@ -253,9 +253,9 @@ const UrsaDataGrid: FC<DataGridProps> = ({
 
   const controllerMarkup =
     selectedRows?.length !== 0 ? (
-      <Button className="Ursa-DataGridControllerButton">
+      <Button className="Anique-DataGridControllerButton">
         <Checkbox
-          className="Ursa-DataGridRowController"
+          className="Anique-DataGridRowController"
           name="ursa-controller"
           label={`${selectedRows?.length} selected`}
           checked={checked}
@@ -269,8 +269,8 @@ const UrsaDataGrid: FC<DataGridProps> = ({
   /*****************************************************************************************/
 
   return (
-    <div className={`Ursa-DataGridComponent ${className || ''}`}>
-      <div className="Ursa-DataGridToolbar">
+    <div className={`Anique-DataGridComponent ${className || ''}`}>
+      <div className="Anique-DataGridToolbar">
         <NavMenu
           NavItems={
             <>
@@ -320,9 +320,9 @@ const UrsaDataGrid: FC<DataGridProps> = ({
 
       {selectedRows?.length !== 0 && (
         // <ButtonGroup segmented connectedBottom>
-        //   <Button className="Ursa-DataGridControllerButton">
+        //   <Button className="Anique-DataGridControllerButton">
         //     <Checkbox
-        //       className="Ursa-DataGridRowController"
+        //       className="Anique-DataGridRowController"
         //       name="ursa-controller"
         //       label={`${selectedRows?.length} selected`}
         //       checked={checked}
@@ -341,17 +341,17 @@ const UrsaDataGrid: FC<DataGridProps> = ({
         />
       )}
 
-      <div className="Ursa-DataGridContainer">
-        <table className="Ursa-DataGrid">
+      <div className="Anique-DataGridContainer">
+        <table className="Anique-DataGrid">
           <thead
-            className={`Ursa-DataGridHeader ${
+            className={`Anique-DataGridHeader ${
               selectedRows?.length ? 'hidden' : ''
             }`}
           >
-            <tr className={`Ursa-DataGridRow`}>
-              <th className="Ursa-DataGridColumn data-selector p-10">
+            <tr className={`Anique-DataGridRow`}>
+              <th className="Anique-DataGridColumn data-selector p-10">
                 <Checkbox
-                  className="Ursa-AllRowsCheckbox"
+                  className="Anique-AllRowsCheckbox"
                   name="ursa-allrows-checkbox"
                   label={`${selectedRows?.length} selected`}
                   labelHidden={true}
@@ -377,19 +377,19 @@ const UrsaDataGrid: FC<DataGridProps> = ({
             </tr>
           </thead>
 
-          <tbody className="Ursa-DataGridBody" ref={tbodyRef}>
+          <tbody className="Anique-DataGridBody" ref={tbodyRef}>
             {currentPage?.map((row, index) => {
               return (
                 <tr
-                  className="Ursa-DataGridRow"
+                  className="Anique-DataGridRow"
                   data-id={row.id || (row._id as string)}
                   key={row.id || (row._id as string) || index}
                 >
-                  <td className="Ursa-DataGridCell text-center">
+                  <td className="Anique-DataGridCell text-center">
                     <Checkbox
-                      id={generateUniqueRowID(row, 'Ursa-DataGridRowCheckbox')}
-                      className="Ursa-DataGridRowCheckbox"
-                      name="Ursa-DataGridRowCheckbox"
+                      id={generateUniqueRowID(row, 'Anique-DataGridRowCheckbox')}
+                      className="Anique-DataGridRowCheckbox"
+                      name="Anique-DataGridRowCheckbox"
                       label={`${row.id || (row._id as string)}`}
                       labelHidden={true}
                       checked={checkboxes[row.id]}
@@ -403,10 +403,10 @@ const UrsaDataGrid: FC<DataGridProps> = ({
                     columns.map(({ name, to }, index) => {
                       return (
                         <td
-                          className="Ursa-DataGridCell text-slate-400"
+                          className="Anique-DataGridCell text-slate-400"
                           key={index}
                         >
-                          <div className="Ursa-DataGridCellItem">
+                          <div className="Anique-DataGridCellItem">
                             <span
                               className={`w-auto${
                                 to && ' hover:text-slate-200'
@@ -477,7 +477,7 @@ const UrsaDataGrid: FC<DataGridProps> = ({
 // Styled Component: DataGrid
 /*****************************************************************************************/
 
-export const DataGrid = styled(UrsaDataGrid)(
+export const DataGrid = styled(AniqueDataGrid)(
   ({ theme: { color, fontSize } }) => `
         background-color: ${color.bgPrimary};
         color: ${color.textPrimary};
@@ -488,7 +488,7 @@ export const DataGrid = styled(UrsaDataGrid)(
         min-width: 100%;
         min-height: 100%;
 
-        .Ursa-DataGridToolbar {
+        .Anique-DataGridToolbar {
           display: flex;
           justify-content: space-between;
           margin-top: 1.5rem;
@@ -496,62 +496,62 @@ export const DataGrid = styled(UrsaDataGrid)(
           cursor: pointer;
         }
 
-        .Ursa-DataGridControllerButton {
+        .Anique-DataGridControllerButton {
           font-size: ${fontSize.fontSize5};
           padding-left: 10px;
 
-          .Ursa-CheckboxLabelText {
+          .Anique-CheckboxLabelText {
             font-size: ${fontSize.fontSize3};
           }
         }
 
-        .Ursa-DataGridActionButtons > .Ursa-ButtonItem > .Ursa-PopoverWrapper {
+        .Anique-DataGridActionButtons > .Anique-ButtonItem > .Anique-PopoverWrapper {
           height: 100%;
         }
 
-        .Ursa-DataGridActionButtons > 
-        .Ursa-ButtonItem > 
-        .Ursa-PopoverWrapper >
-        .Ursa-ButtonContainer >
-        .Ursa-Button {
+        .Anique-DataGridActionButtons > 
+        .Anique-ButtonItem > 
+        .Anique-PopoverWrapper >
+        .Anique-ButtonContainer >
+        .Anique-Button {
           border-top-left-radius: unset;
           border-bottom-left-radius: unset;
           border-bottom-right-radius: unset;
         }
 
-        .Ursa-DataGridColumn {
+        .Anique-DataGridColumn {
           padding: 0.875rem 10px;
         }
 
-        .Ursa-DataGridContainer {
+        .Anique-DataGridContainer {
           overflow-x: auto;
           overscroll-behavior-x: contain;
 
-          .Ursa-DataGrid {
+          .Anique-DataGrid {
             border-collapse: collapse;
             min-width: max-content;
             width: 100%;
           }
         }
 
-        .Ursa-DataGridHeader {
+        .Anique-DataGridHeader {
           align-items: flex-start;
           border: 1px solid ${color.borderSecondary};
         }
 
-        tbody.Ursa-DataGridBody {
+        tbody.Anique-DataGridBody {
           border: 1px solid ${color.borderSecondary};
           
-          & > .Ursa-DataGridRow {
+          & > .Anique-DataGridRow {
             border: 1px solid ${color.borderSecondary};
           }
         }
 
-        .Ursa-DataGridCell {
+        .Anique-DataGridCell {
           padding: 10px;
           cursor: pointer;
 
-          & > .Ursa-DataGridCellItem {
+          & > .Anique-DataGridCellItem {
             padding: 10px;
           }
         }

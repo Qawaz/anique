@@ -7,7 +7,7 @@ import { useTestId } from '../../utilities';
 const UnstyledStack = ({ className, children }: StackProps): ReactElement => {
   const testid = useTestId('test-stack');
   return (
-    <div className={`Ursa-Stack ${className || ''}`} {...testid}>
+    <div className={`Anique-Stack ${className || ''}`} {...testid}>
       {children}
     </div>
   );

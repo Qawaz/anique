@@ -6,7 +6,7 @@ import { Icon } from '../Icon';
 import { UnstyledButton } from '../UnstyledButton';
 import { useTestId } from '../../utilities';
 
-const UrsaTag = ({
+const AniqueTag = ({
   name,
   className,
   onClick,
@@ -15,25 +15,25 @@ const UrsaTag = ({
   const testid = useTestId('test-tag');
   return (
     <div
-      className={`Ursa-Tag ${className || ''}`}
+      className={`Anique-Tag ${className || ''}`}
       onClick={onClick}
       {...testid}
     >
-      <span className="Ursa-TagName">{name}</span>
+      <span className="Anique-TagName">{name}</span>
       {onRemove && (
         <UnstyledButton
-          className="Ursa-TagCloseButton"
+          className="Anique-TagCloseButton"
           ariaLabel={`Remove ${name}`}
           onClick={onRemove}
         >
-          <Icon className="Ursa-TagClose" source={MobileCancelMajor} />
+          <Icon className="Anique-TagClose" source={MobileCancelMajor} />
         </UnstyledButton>
       )}
     </div>
   );
 };
 
-export const Tag = styled(UrsaTag)(
+export const Tag = styled(AniqueTag)(
   ({ theme: { color, fontSize, border }, onRemove }) => `
         cursor: pointer;
         display: inline-flex;
@@ -52,7 +52,7 @@ export const Tag = styled(UrsaTag)(
 
         ${
           onRemove &&
-          `.Ursa-TagClose {
+          `.Anique-TagClose {
             & > svg {
               fill: ${color.tagText};
               transition: opacity .15s ease-in-out;

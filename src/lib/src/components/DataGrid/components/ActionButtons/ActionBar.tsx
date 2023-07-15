@@ -30,7 +30,7 @@ export const ActionBar = ({
 
   return (
     <ButtonGroup
-      className="Ursa-DataGridActionButtons"
+      className="Anique-DataGridActionButtons"
       segmented
       connectedBottom
     >
@@ -39,7 +39,7 @@ export const ActionBar = ({
       {actions?.slice(0, truncateAfter).map((button, index) => {
         return (
           <Button
-            className="Ursa-ActionButton"
+            className="Anique-ActionButton"
             onClick={button.onAction}
             key={
               button.label

@@ -65,7 +65,7 @@ describe('components/Avatar', () => {
     expect(iconEl).toHaveTextContent(
       (Square_with_NoImage_Avatar.args?.children as string)[0]
     ); // Match Children
-    expect(iconEl.closest('.Ursa-Avatar')).toHaveStyle({
+    expect(iconEl.closest('.Anique-Avatar')).toHaveStyle({
       'border-radius': borderRadius
     }); // Match square border;
   });

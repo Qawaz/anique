@@ -57,7 +57,7 @@ export const ActionSection = ({
   /** Content Markup */
   /****************************************************************************************/
   const titleMarkup = section.title ? (
-    <p className="Ursa-ActionSectionTitle">{section.title}</p>
+    <p className="Anique-ActionSectionTitle">{section.title}</p>
   ) : undefined;
 
   const actionMarkup = section.items?.map(
@@ -78,10 +78,10 @@ export const ActionSection = ({
   );
 
   const sectionMarkup = (
-    <div className="Ursa-ActionSectionContainer">
+    <div className="Anique-ActionSectionContainer">
       {titleMarkup}
       <ActionList
-        className="Ursa-ActionList"
+        className="Anique-ActionList"
         role={sectionRole}
         tabIndex={!hasMultipleSections ? -1 : undefined}
       >
@@ -93,7 +93,7 @@ export const ActionSection = ({
   /** Render ActionSection */
   /****************************************************************************************/
   return hasMultipleSections ? (
-    <li className="Ursa-ActionSection">{sectionMarkup}</li>
+    <li className="Anique-ActionSection">{sectionMarkup}</li>
   ) : (
     sectionMarkup
   );

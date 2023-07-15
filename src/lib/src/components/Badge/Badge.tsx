@@ -19,7 +19,7 @@ export interface BadgeProps {
   };
 }
 
-const UrsaBadge = ({
+const AniqueBadge = ({
   children,
   className,
   badgeContent,
@@ -34,12 +34,12 @@ const UrsaBadge = ({
     badgeContent && max && badgeContent > max ? `${max}+` : badgeContent;
 
   return (
-    <div className={`Ursa-BadgeContainer ${className || ''}`}>
-      {children && <div className="Ursa-BadgeComponent">{children}</div>}
+    <div className={`Anique-BadgeContainer ${className || ''}`}>
+      {children && <div className="Anique-BadgeComponent">{children}</div>}
       {!invisible && (
-        <div className="Ursa-Badge">
+        <div className="Anique-Badge">
           {variant === 'dot' ? null : (
-            <div className="Ursa-BadgeContent">{content}</div>
+            <div className="Anique-BadgeContent">{content}</div>
           )}
         </div>
       )}
@@ -47,7 +47,7 @@ const UrsaBadge = ({
   );
 };
 
-export const Badge = styled(UrsaBadge)(
+export const Badge = styled(AniqueBadge)(
   ({
     theme: { color, fontSize, border },
     color: badgeColor,
@@ -58,7 +58,7 @@ export const Badge = styled(UrsaBadge)(
   display: inline-flex;
   position: relative;
 
-    .Ursa-Badge {
+    .Anique-Badge {
       display: flex;
       position: ${!children ? 'static' : 'absolute'};;
       bottom: ${!children ? 0 : '0.2em'};
@@ -73,7 +73,7 @@ export const Badge = styled(UrsaBadge)(
       background-color: ${badgeColor ? badgeColor : color.btnAlert};
       transform: scale(0.9);
 
-      & > .Ursa-BadgeContent {
+      & > .Anique-BadgeContent {
         font-size: ${fontSize.fontSize1};
         font-weight: bold;
         color: #fff;

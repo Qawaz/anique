@@ -6,14 +6,14 @@ export interface StackItemProps extends StackProps {
   fill?: boolean;
 }
 
-const UrsaStackItem = ({
+const AniqueStackItem = ({
   className,
   children
 }: StackItemProps): ReactElement => {
-  return <div className={`Ursa-StackItem ${className || ''}`}>{children}</div>;
+  return <div className={`Anique-StackItem ${className || ''}`}>{children}</div>;
 };
 
-export const Item = styled(UrsaStackItem)(
+export const Item = styled(AniqueStackItem)(
   ({
     vertical = false,
     wrap = true,

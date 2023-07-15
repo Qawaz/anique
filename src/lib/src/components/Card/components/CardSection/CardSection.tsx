@@ -20,7 +20,7 @@ export interface CardSectionProps {
 const StyledCardSection = styled.div(() => ({
   padding: '1.25rem',
 
-  '& .Ursa-CardSectionTitle': {
+  '& .Anique-CardSectionTitle': {
     paddingBottom: '0.75rem'
   }
 }));
@@ -52,7 +52,7 @@ export const CardSection = ({
 
   const titleAreaMarkup =
     titleMarkup || actionMarkup ? (
-      <div className="Ursa-CardSectionTitle">
+      <div className="Anique-CardSectionTitle">
         {actionMarkup ? (
           <Stack align="baseline">
             <Stack.Item>{titleMarkup}</Stack.Item>
@@ -67,7 +67,7 @@ export const CardSection = ({
   /** Render Card Section */
   /*****************************************************************************************/
   return (
-    <StyledCardSection className="Ursa-CardSection">
+    <StyledCardSection className="Anique-CardSection">
       {titleAreaMarkup}
       {children}
     </StyledCardSection>

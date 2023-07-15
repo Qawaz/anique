@@ -22,7 +22,7 @@ export interface CollapsibleProps {
   className?: string;
 }
 
-const UrsaCollapsible: FC<CollapsibleProps> = (props): ReactElement => {
+const AniqueCollapsible: FC<CollapsibleProps> = (props): ReactElement => {
   const { id, open, children, className } = props;
 
   const [isOpen, setIsOpen] = useState(open || false);
@@ -41,7 +41,7 @@ const UrsaCollapsible: FC<CollapsibleProps> = (props): ReactElement => {
   );
 };
 
-export const Collapsible = styled(UrsaCollapsible)(
+export const Collapsible = styled(AniqueCollapsible)(
   () => `
         padding-top: 0;
         padding-bottom: 0;

@@ -14,7 +14,7 @@ export interface AccordionPanelProps {
   ariaLabelledBy?: string;
 }
 
-const UrsaAccordionPanel = ({
+const AniqueAccordionPanel = ({
   id,
   className,
   children,
@@ -24,7 +24,7 @@ const UrsaAccordionPanel = ({
   return (
     <div
       id={id}
-      className={`Ursa-AccordionPanel ${className || ''}`}
+      className={`Anique-AccordionPanel ${className || ''}`}
       aria-labelledby={ariaLabelledBy}
       aria-hidden={!active}
     >
@@ -33,7 +33,7 @@ const UrsaAccordionPanel = ({
   );
 };
 
-export const AccordionPanel = styled(UrsaAccordionPanel)(
+export const AccordionPanel = styled(AniqueAccordionPanel)(
   ({ theme: { color }, active }) => `
         display: ${active ? 'flex' : 'none'};
         color: ${color.textPrimary};

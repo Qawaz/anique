@@ -20,7 +20,7 @@ const NavigationSection: FC<NavigationSectionProps> = ({
   className
 }): ReactElement => {
   return (
-    <ul className={`Ursa-NavigationSection ${className || ''}`}>
+    <ul className={`Anique-NavigationSection ${className || ''}`}>
       {items.map(({ url, label, icon }, indx) => (
         <Item url={url} label={label} icon={icon} key={indx} />
       ))}

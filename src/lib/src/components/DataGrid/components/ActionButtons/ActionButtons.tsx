@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { ActionButtonProps } from '../../../../types';
 import { Button, Popover, ActionList, ButtonGroup } from '../../../..';
 
-const UrsaActionButtons = ({
+const AniqueActionButtons = ({
   actions,
   truncateAfter = 3,
   truncateLabel = 'More Actions'
@@ -33,7 +33,7 @@ const UrsaActionButtons = ({
       {actions?.slice(0, truncateAfter).map((button, index) => {
         return (
           <Button
-            className="Ursa-ActionButton"
+            className="Anique-ActionButton"
             onClick={button.onAction}
             key={
               button.label
@@ -64,7 +64,7 @@ const UrsaActionButtons = ({
   );
 };
 
-export const ActionButtons = styled(UrsaActionButtons)(
+export const ActionButtons = styled(AniqueActionButtons)(
   ({ theme: { color, border, fontSize } }) => `
     `
 );

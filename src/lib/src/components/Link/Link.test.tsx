@@ -13,7 +13,7 @@ describe('components/Link', () => {
     const textContent = 'Link';
     render(<DefaultLink>{textContent}</DefaultLink>);
     const linkEl = screen.getByTestId('link');
-    const linkText = linkEl.querySelector('.Ursa-LinkText') as HTMLElement;
+    const linkText = linkEl.querySelector('.Anique-LinkText') as HTMLElement;
     expect(linkEl).not.toBeNull();
     expect(linkEl).toHaveAttribute('href', DefaultLink.args?.url);
     expect(linkText).toHaveTextContent(textContent);
@@ -25,7 +25,7 @@ describe('components/Link', () => {
   it('Renders External Link', () => {
     render(<ExternalLink />);
     const linkEl = screen.getByTestId('link');
-    const linkText = linkEl.querySelector('.Ursa-LinkText');
+    const linkText = linkEl.querySelector('.Anique-LinkText');
     const externalIcon = screen.getByTestId('icon-external');
     expect(linkEl).not.toBeNull();
     expect(linkEl).toHaveAttribute('href', ExternalLink.args?.url);
@@ -40,7 +40,7 @@ describe('components/Link', () => {
   it('Renders Monochrome Link', () => {
     render(<MonochromeLink />);
     const linkEl = screen.getByTestId('link');
-    const linkText = linkEl.querySelector('.Ursa-LinkText');
+    const linkText = linkEl.querySelector('.Anique-LinkText');
     expect(linkEl).not.toBeNull();
     expect(linkEl).toHaveAttribute('href', MonochromeLink.args?.url);
     expect(linkText).toHaveTextContent(MonochromeLink.args?.children as string);
@@ -52,7 +52,7 @@ describe('components/Link', () => {
   it('Renders Unstyled Link', () => {
     render(<UnstyledLink />);
     const linkEl = screen.getByTestId('link');
-    const linkText = linkEl.querySelector('.Ursa-LinkText');
+    const linkText = linkEl.querySelector('.Anique-LinkText');
     expect(linkEl).not.toBeNull();
     expect(linkEl).toHaveAttribute('href', UnstyledLink.args?.url);
     expect(linkText).toHaveTextContent(UnstyledLink.args?.children as string);

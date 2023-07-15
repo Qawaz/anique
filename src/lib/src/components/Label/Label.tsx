@@ -14,11 +14,11 @@ export interface LabelProps {
   required?: boolean;
 }
 
-const UrsaLabel = ({ id, className, htmlFor, children }: LabelProps) => {
+const AniqueLabel = ({ id, className, htmlFor, children }: LabelProps) => {
   return (
     <label
       id={id}
-      className={`Ursa-Label ${className || ''}`}
+      className={`Anique-Label ${className || ''}`}
       htmlFor={htmlFor}
     >
       {children}
@@ -26,7 +26,7 @@ const UrsaLabel = ({ id, className, htmlFor, children }: LabelProps) => {
   );
 };
 
-export const Label = styled(UrsaLabel)(
+export const Label = styled(AniqueLabel)(
   ({ required }) => `
        ${
          required &&

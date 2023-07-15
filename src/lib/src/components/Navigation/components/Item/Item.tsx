@@ -107,17 +107,17 @@ const NavigationItem: FC<NavigationItemProps> = ({
     <UnstyledLink
       url={url || ''}
       external={external}
-      className="Ursa-NavigationItemLink"
+      className="Anique-NavigationItemLink"
       onClick={handleClick}
     >
-      <li className={`Ursa-NavigationItem ${className || ''}`}>
-        <div className="Ursa-NavigationItemWrapper">
+      <li className={`Anique-NavigationItem ${className || ''}`}>
+        <div className="Anique-NavigationItemWrapper">
           {icon && (
-            <div className="Ursa-NavigationIcon">
+            <div className="Anique-NavigationIcon">
               <Icon source={icon} />
             </div>
           )}
-          <span className="Ursa-NavigationLabel">{label}</span>
+          <span className="Anique-NavigationLabel">{label}</span>
         </div>
       </li>
     </UnstyledLink>
@@ -146,7 +146,7 @@ export const Item = styled(NavigationItem)(
             padding-top: 4px;
             padding-bottom: 4px;
         }
-        .Ursa-NavigationItemWrapper {
+        .Anique-NavigationItemWrapper {
             width: 100%;
             padding-left: 20px;
             padding-right: 20px;

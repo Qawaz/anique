@@ -7,5 +7,5 @@ export interface PopoverSectionProps {
 export const PopoverSection = ({
   children
 }: PopoverSectionProps): ReactElement => {
-  return <div className="Ursa-PopoverSection">{children}</div>;
+  return <div className="Anique-PopoverSection">{children}</div>;
 };

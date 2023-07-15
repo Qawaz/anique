@@ -8,7 +8,7 @@ export interface UnstyledButtonProps extends BaseButton {
   [key: string]: any;
 }
 
-const UrsaUnstyledButton: FC<UnstyledButtonProps> = ({
+const AniqueUnstyledButton: FC<UnstyledButtonProps> = ({
   id,
   name,
   children,
@@ -96,7 +96,7 @@ const UrsaUnstyledButton: FC<UnstyledButtonProps> = ({
   return buttonMarkup;
 };
 
-export const UnstyledButton = styled(UrsaUnstyledButton)(
+export const UnstyledButton = styled(AniqueUnstyledButton)(
   ({ theme: { color, fontSize } }) => `
         background: none;
         color: ${color.textPrimary};

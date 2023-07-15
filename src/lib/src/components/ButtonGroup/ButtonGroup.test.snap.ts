@@ -25,11 +25,11 @@ exports[`components/ButtonGroup Test Default Button Group Snapshot Test Button G
   justify-content: flex-start;
 }
 
-.emotion-0 .Ursa-ButtonContainer {
+.emotion-0 .Anique-ButtonContainer {
   height: 100%;
 }
 
-.emotion-0 .Ursa-ButtonItem:not(:first-of-type) {
+.emotion-0 .Anique-ButtonItem:not(:first-of-type) {
   margin-left: 0.625rem;
 }
 
@@ -77,25 +77,25 @@ exports[`components/ButtonGroup Test Default Button Group Snapshot Test Button G
   white-space: nowrap;
 }
 
-.emotion-2 .Ursa-Icon {
+.emotion-2 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-2>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-2>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-2.Ursa-ConnectedDisclosure {
+.emotion-2.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-2 .Ursa-ButtonIcon {
+.emotion-2 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -148,25 +148,25 @@ exports[`components/ButtonGroup Test Default Button Group Snapshot Test Button G
   white-space: nowrap;
 }
 
-.emotion-4 .Ursa-Icon {
+.emotion-4 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-4>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-4>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-4.Ursa-ConnectedDisclosure {
+.emotion-4.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-4 .Ursa-ButtonIcon {
+.emotion-4 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -183,23 +183,23 @@ exports[`components/ButtonGroup Test Default Button Group Snapshot Test Button G
 }
 
 <div
-  className=Ursa-ButtonGroup emotion-0
+  className=Anique-ButtonGroup emotion-0
   role=group
 >
   <div
-    className=Ursa-ButtonItem
+    className=Anique-ButtonItem
   >
     <div
-      className=Ursa-ButtonContainer emotion-1
+      className=Anique-ButtonContainer emotion-1
     >
       <button
-        className=Ursa-Button emotion-2
+        className=Anique-Button emotion-2
         role=button
         tabIndex={0}
         type=button
       >
         <span
-          className=Ursa-ButtonText
+          className=Anique-ButtonText
         >
           Cancel
         </span>
@@ -207,19 +207,19 @@ exports[`components/ButtonGroup Test Default Button Group Snapshot Test Button G
     </div>
   </div>
   <div
-    className=Ursa-ButtonItem
+    className=Anique-ButtonItem
   >
     <div
-      className=Ursa-ButtonContainer emotion-1
+      className=Anique-ButtonContainer emotion-1
     >
       <button
-        className=Ursa-Button emotion-4
+        className=Anique-Button emotion-4
         role=button
         tabIndex={0}
         type=button
       >
         <span
-          className=Ursa-ButtonText
+          className=Anique-ButtonText
         >
           Save
         </span>
@@ -250,18 +250,18 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
   align-items: stretch;
 }
 
-.emotion-0 .Ursa-ButtonContainer {
+.emotion-0 .Anique-ButtonContainer {
   height: 100%;
 }
 
-.emotion-0 .Ursa-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)>.Ursa-ButtonContainer>button,
-.emotion-0 .Ursa-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)>.Ursa-ButtonContainer>a {
+.emotion-0 .Anique-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)>.Anique-ButtonContainer>button,
+.emotion-0 .Anique-ButtonItem:nth-of-type(n+2):nth-last-of-type(n+2)>.Anique-ButtonContainer>a {
   border-radius: unset;
   margin-right: -1px;
 }
 
-.emotion-0 .Ursa-ButtonItem:last-of-type>.Ursa-ButtonContainer>button,
-.emotion-0 .Ursa-ButtonItem:last-of-type>.Ursa-ButtonContainer>a {
+.emotion-0 .Anique-ButtonItem:last-of-type>.Anique-ButtonContainer>button,
+.emotion-0 .Anique-ButtonItem:last-of-type>.Anique-ButtonContainer>a {
   margin-left: 0;
   border-top-left-radius: unset;
   border-bottom-left-radius: unset;
@@ -269,8 +269,8 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
   border-bottom-right-radius: 4px;
 }
 
-.emotion-0 .Ursa-ButtonItem:first-of-type>.Ursa-ButtonContainer>button,
-.emotion-0 .Ursa-ButtonItem:first-of-type>.Ursa-ButtonContainer>a {
+.emotion-0 .Anique-ButtonItem:first-of-type>.Anique-ButtonContainer>button,
+.emotion-0 .Anique-ButtonItem:first-of-type>.Anique-ButtonContainer>a {
   margin-right: -1px;
   border-top-right-radius: unset;
   border-bottom-right-radius: unset;
@@ -322,25 +322,25 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
   white-space: nowrap;
 }
 
-.emotion-2 .Ursa-Icon {
+.emotion-2 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-2>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-2>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-2.Ursa-ConnectedDisclosure {
+.emotion-2.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-2 .Ursa-ButtonIcon {
+.emotion-2 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -357,23 +357,23 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
 }
 
 <div
-  className=Ursa-ButtonGroup emotion-0
+  className=Anique-ButtonGroup emotion-0
   role=group
 >
   <div
-    className=Ursa-ButtonItem
+    className=Anique-ButtonItem
   >
     <div
-      className=Ursa-ButtonContainer emotion-1
+      className=Anique-ButtonContainer emotion-1
     >
       <button
-        className=Ursa-Button emotion-2
+        className=Anique-Button emotion-2
         role=button
         tabIndex={0}
         type=button
       >
         <span
-          className=Ursa-ButtonText
+          className=Anique-ButtonText
         >
           Bold
         </span>
@@ -381,19 +381,19 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
     </div>
   </div>
   <div
-    className=Ursa-ButtonItem
+    className=Anique-ButtonItem
   >
     <div
-      className=Ursa-ButtonContainer emotion-1
+      className=Anique-ButtonContainer emotion-1
     >
       <button
-        className=Ursa-Button emotion-2
+        className=Anique-Button emotion-2
         role=button
         tabIndex={0}
         type=button
       >
         <span
-          className=Ursa-ButtonText
+          className=Anique-ButtonText
         >
           Italic
         </span>
@@ -401,19 +401,19 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
     </div>
   </div>
   <div
-    className=Ursa-ButtonItem
+    className=Anique-ButtonItem
   >
     <div
-      className=Ursa-ButtonContainer emotion-1
+      className=Anique-ButtonContainer emotion-1
     >
       <button
-        className=Ursa-Button emotion-2
+        className=Anique-Button emotion-2
         role=button
         tabIndex={0}
         type=button
       >
         <span
-          className=Ursa-ButtonText
+          className=Anique-ButtonText
         >
           Underline
         </span>
@@ -421,19 +421,19 @@ exports[`components/ButtonGroup Test Outline Buttons in a Segmented Group Snapsh
     </div>
   </div>
   <div
-    className=Ursa-ButtonItem
+    className=Anique-ButtonItem
   >
     <div
-      className=Ursa-ButtonContainer emotion-1
+      className=Anique-ButtonContainer emotion-1
     >
       <button
-        className=Ursa-Button emotion-2
+        className=Anique-Button emotion-2
         role=button
         tabIndex={0}
         type=button
       >
         <span
-          className=Ursa-ButtonText
+          className=Anique-ButtonText
         >
           Strikethrough
         </span>

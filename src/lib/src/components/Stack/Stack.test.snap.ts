@@ -57,45 +57,45 @@ exports[`components/Stack Run Snapshot Test 1`] = `
 }
 
 <div
-  className=Ursa-Stack emotion-0
+  className=Anique-Stack emotion-0
   data-testid=test-stack
 >
   <div
-    className=Ursa-Tag emotion-1
+    className=Anique-Tag emotion-1
     data-testid=test-tag
   >
     <span
-      className=Ursa-TagName
+      className=Anique-TagName
     >
       Pending
     </span>
   </div>
   <div
-    className=Ursa-Tag emotion-1
+    className=Anique-Tag emotion-1
     data-testid=test-tag
   >
     <span
-      className=Ursa-TagName
+      className=Anique-TagName
     >
       Unfulfilled
     </span>
   </div>
   <div
-    className=Ursa-Tag emotion-1
+    className=Anique-Tag emotion-1
     data-testid=test-tag
   >
     <span
-      className=Ursa-TagName
+      className=Anique-TagName
     >
       Cancelled
     </span>
   </div>
   <div
-    className=Ursa-Tag emotion-1
+    className=Anique-Tag emotion-1
     data-testid=test-tag
   >
     <span
-      className=Ursa-TagName
+      className=Anique-TagName
     >
       Returned
     </span>

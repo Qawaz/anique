@@ -10,7 +10,7 @@ interface DataGridHeaderProps {
   onClick: (event: MouseEvent<HTMLTableCellElement>) => void;
 }
 
-const UrsaDataGridHeader = forwardRef<
+const AniqueDataGridHeader = forwardRef<
   HTMLTableCellElement,
   DataGridHeaderProps
 >(
@@ -20,16 +20,16 @@ const UrsaDataGridHeader = forwardRef<
   ): ReactElement => {
     return (
       <th
-        className={`Ursa-DataGridColumn ${className || ''}`}
+        className={`Anique-DataGridColumn ${className || ''}`}
         key={index}
         data-name={name}
         data-sort={''}
         onClick={onClick}
         ref={ref}
       >
-        <div className="Ursa-DataGridColumnContent">
-          <span className="Ursa-DataGridColumnLabel">{label}</span>
-          <span className={`Ursa-DataGridColumnSort`}>
+        <div className="Anique-DataGridColumnContent">
+          <span className="Anique-DataGridColumnLabel">{label}</span>
+          <span className={`Anique-DataGridColumnSort`}>
             <i className={`text-base text-slate-600 fas `}></i>
           </span>
         </div>
@@ -38,18 +38,18 @@ const UrsaDataGridHeader = forwardRef<
   }
 );
 
-export const DataGridHeader = styled(UrsaDataGridHeader)(
+export const DataGridHeader = styled(AniqueDataGridHeader)(
   ({ theme: { color, fontSize } }) => `
     cursor: pointer;
     padding: 10px;
     
-    .Ursa-DataGridColumnContent {
+    .Anique-DataGridColumnContent {
 
-      .Ursa-DataGridColumnLabel {
+      .Anique-DataGridColumnLabel {
         font-size: ${fontSize.fontSize4};
       }
 
-      .Ursa-DataGridColumnSort {
+      .Anique-DataGridColumnSort {
         padding-left: 8px;
         padding-right: 8px;
       }

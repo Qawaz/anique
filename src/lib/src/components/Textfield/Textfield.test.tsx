@@ -75,7 +75,7 @@ describe('components/Textfield', () => {
       if (Password_with_Errors.args?.togglePasswordIcon) {
         const eyeIcon = screen
           .getByTestId('icon-external')
-          .closest('.Ursa-Icon') as HTMLElement;
+          .closest('.Anique-Icon') as HTMLElement;
         /** Confirm that input field is a password field */
         expect(inputEl).toHaveAttribute('type', 'password');
         /** Simulate a click on the View Icon */
@@ -242,7 +242,7 @@ describe('components/Textfield', () => {
       const inputEl = screen.getByDisplayValue(dummyText); // Main input element
       const clearIcon = screen.getByTestId('icon-external'); // Icon element
       expect(clearIcon).toBeInTheDocument(); // Icon shows up
-      expect(inputEl.nextSibling).toBe(clearIcon.closest('.Ursa-Icon')); // Elements are siblings
+      expect(inputEl.nextSibling).toBe(clearIcon.closest('.Anique-Icon')); // Elements are siblings
     });
     it('Does not render the Clear Button when there is no Text', async () => {
       let dummyText = 'John Doe';
@@ -263,7 +263,7 @@ describe('components/Textfield', () => {
       const inputEl = await screen.findByDisplayValue(dummyText); // Main input element
       const clearIcon = await screen.findByTestId('icon-external'); // Get the icon that shows up
       /** Fire an onChange event that makes the value '' */
-      fireEvent.click(clearIcon.closest('.Ursa-Icon') as HTMLElement);
+      fireEvent.click(clearIcon.closest('.Anique-Icon') as HTMLElement);
       await waitFor(() => {
         expect(inputEl).toHaveValue(''); // Input Element has no value
         expect(clearIcon).not.toBeInTheDocument(); // Clear Icon does not show up in the document

@@ -32,21 +32,21 @@ const UnstyledProgress = styled.progress(() => ({
   whiteSpace: 'nowrap'
 }));
 
-const UrsaProgressBar = ({
+const AniqueProgressBar = ({
   progress,
   className
 }: ProgressBarProps): ReactElement => {
   return (
-    <div className={`Ursa-ProgressBar ${className || ''}`}>
-      <UnstyledProgress className="Ursa-Progress" value={progress} max={100}>
+    <div className={`Anique-ProgressBar ${className || ''}`}>
+      <UnstyledProgress className="Anique-Progress" value={progress} max={100}>
         {progress}
       </UnstyledProgress>
-      <div className="Ursa-ProgressBarIndicator"></div>
+      <div className="Anique-ProgressBarIndicator"></div>
     </div>
   );
 };
 
-export const ProgressBar = styled(UrsaProgressBar)(
+export const ProgressBar = styled(AniqueProgressBar)(
   ({
     theme: { color, animation },
     progress,
@@ -73,7 +73,7 @@ export const ProgressBar = styled(UrsaProgressBar)(
       borderRadius: rounded ? '0.825rem' : 'initial',
       backgroundColor: color.neutral,
 
-      '& > .Ursa-ProgressBarIndicator': {
+      '& > .Anique-ProgressBarIndicator': {
         transform: computedTransform,
         transformOrigin: '0 50%',
         height: 'inherit',

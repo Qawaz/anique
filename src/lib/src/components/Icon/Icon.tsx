@@ -24,7 +24,7 @@ export interface IconProps {
     onClick?: MouseEventHandler<HTMLSpanElement> | undefined
 }
 
-const UrsaIcon: FC<IconProps> = (
+const AniqueIcon: FC<IconProps> = (
     {
         source: IconSVGComponent,
         color,
@@ -83,20 +83,20 @@ const UrsaIcon: FC<IconProps> = (
     /*********************************************************************************/
     /** Content Markup based on sourceType */
     /*********************************************************************************/
-    const _id = generateUniqueID('Ursa-Icon');
+    const _id = generateUniqueID('Anique-Icon');
     const iconMarkup = {
         function: (
             <IconSVGComponent
-                className="Ursa-IconSVG"
+                className="Anique-IconSVG"
                 focusable="false"
                 aria-hidden="true"
                 {...testid}
             />
         ),
-        placeholder: <div className="Ursa-IconPlaceholder" {...testid} />,
+        placeholder: <div className="Anique-IconPlaceholder" {...testid} />,
         external: (
             <img
-                className="Ursa-IconSVG"
+                className="Anique-IconSVG"
                 src={`data:image/svg+xml;utf8,${IconSVGComponent}`}
                 alt=""
                 aria-hidden="true"
@@ -105,13 +105,13 @@ const UrsaIcon: FC<IconProps> = (
         )
     };
     return (
-        <span id={_id} className={`Ursa-Icon ${className || ''}`} onClick={onClick}>
+        <span id={_id} className={`Anique-Icon ${className || ''}`} onClick={onClick}>
       {iconMarkup[sourceType]}
     </span>
     );
 };
 
-export const Icon = styled(UrsaIcon)(
+export const Icon = styled(AniqueIcon)(
     (props) => {
         const {theme: {color, fontSize}, color: IconColor, bgColor, size} = props
         const x = props.color

@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof Label> = (args) => <Label {...args} />;
 
 export const DefaultLabel: ComponentStoryFn<typeof Label> = Template.bind({});
 DefaultLabel.args = {
-  id: 'Ursa-Label',
+  id: 'Anique-Label',
   children: 'Email',
   required: true
 };

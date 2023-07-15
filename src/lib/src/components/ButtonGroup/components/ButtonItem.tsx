@@ -5,5 +5,5 @@ export interface ButtonItemProps {
 }
 
 export const ButtonItem = ({ button }: ButtonItemProps): ReactElement => {
-  return <div className="Ursa-ButtonItem">{button}</div>;
+  return <div className="Anique-ButtonItem">{button}</div>;
 };

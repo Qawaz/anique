@@ -23,6 +23,6 @@ const StyledInvisible = styled.span`
 
 export const Invisible = ({ children }: InvisibleProps): ReactElement => {
   return (
-    <StyledInvisible className="Ursa-Invisible">{children}</StyledInvisible>
+    <StyledInvisible className="Anique-Invisible">{children}</StyledInvisible>
   );
 };

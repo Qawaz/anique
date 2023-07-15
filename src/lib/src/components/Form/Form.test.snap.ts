@@ -16,7 +16,7 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
   width: 100%;
 }
 
-.emotion-1 .Ursa-LabelContainer {
+.emotion-1 .Anique-LabelContainer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,11 +30,11 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
   align-items: center;
 }
 
-.emotion-1 .Ursa-LabelContainer>.Ursa-TextfieldLabel {
+.emotion-1 .Anique-LabelContainer>.Anique-TextfieldLabel {
   font-size: 0.9375rem;
 }
 
-.emotion-1 .Ursa-Textfield {
+.emotion-1 .Anique-Textfield {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -50,13 +50,13 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
   padding-bottom: 0.375rem;
 }
 
-.emotion-1 .Ursa-Textfield>.Ursa-TextfieldPrefix {
+.emotion-1 .Anique-Textfield>.Anique-TextfieldPrefix {
   position: absolute;
   left: 0.5rem;
   color: rgba(109, 113, 117, 1);
 }
 
-.emotion-1 .Ursa-Textfield>.Ursa-Input {
+.emotion-1 .Anique-Textfield>.Anique-Input {
   width: 100%;
   min-height: inherit;
   padding: 0.625rem;
@@ -72,19 +72,19 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
   resize: none;
 }
 
-.emotion-1 .Ursa-Textfield>.Ursa-Input:focus {
+.emotion-1 .Anique-Textfield>.Anique-Input:focus {
   outline: 2px solid blue;
   outline-offset: 0.1rem;
 }
 
-.emotion-1 .Ursa-Textfield>.Ursa-PasswordShowHide,
-.emotion-1 .Ursa-Textfield .Ursa-TextClearButton {
+.emotion-1 .Anique-Textfield>.Anique-PasswordShowHide,
+.emotion-1 .Anique-Textfield .Anique-TextClearButton {
   cursor: pointer;
   position: absolute;
   right: 0.5rem;
 }
 
-.emotion-1 .Ursa-TextfieldErrors {
+.emotion-1 .Anique-TextfieldErrors {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -138,25 +138,25 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
   white-space: nowrap;
 }
 
-.emotion-5 .Ursa-Icon {
+.emotion-5 .Anique-Icon {
   margin: auto;
 }
 
-.emotion-5>.Ursa-Icon.Ursa-ButtonDisclosure {
+.emotion-5>.Anique-Icon.Anique-ButtonDisclosure {
   margin-left: 0.75rem;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-.emotion-5.Ursa-ConnectedDisclosure {
+.emotion-5.Anique-ConnectedDisclosure {
   min-width: auto;
   margin-left: 0.125rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.emotion-5 .Ursa-ButtonIcon {
+.emotion-5 .Anique-ButtonIcon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -174,34 +174,34 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
 
 <form
   autoComplete=off
-  className=Ursa-Form emotion-0
+  className=Anique-Form emotion-0
   data-testid=test-form
-  id="Ursa-Form-0"
+  id="Anique-Form-0"
   name=subscribe-form
   onSubmit={[Function]}
 >
   <div
-    className=Ursa-TextfieldContainer emotion-1
+    className=Anique-TextfieldContainer emotion-1
   >
     <div
-      className=Ursa-LabelContainer
+      className=Anique-LabelContainer
     >
       <label
-        className=Ursa-TextfieldLabel 
-        htmlFor="Ursa-Textfield-1"
-        id="Ursa-TextfieldLabel-2"
+        className=Anique-TextfieldLabel 
+        htmlFor="Anique-Textfield-1"
+        id="Anique-TextfieldLabel-2"
       >
         First Name
       </label>
     </div>
     <div
-      className=Ursa-Textfield
+      className=Anique-Textfield
       data-field=firstname
     >
       <input
-        aria-labelledby="Ursa-TextfieldLabel-3"
-        className=Ursa-Input
-        id="Ursa-Textfield-4"
+        aria-labelledby="Anique-TextfieldLabel-3"
+        className=Anique-Input
+        id="Anique-Textfield-4"
         name=firstname
         onBlur={[Function]}
         onChange={[Function]}
@@ -213,27 +213,27 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
     </div>
   </div>
   <div
-    className=Ursa-TextfieldContainer emotion-1
+    className=Anique-TextfieldContainer emotion-1
   >
     <div
-      className=Ursa-LabelContainer
+      className=Anique-LabelContainer
     >
       <label
-        className=Ursa-TextfieldLabel 
-        htmlFor="Ursa-Textfield-5"
-        id="Ursa-TextfieldLabel-6"
+        className=Anique-TextfieldLabel 
+        htmlFor="Anique-Textfield-5"
+        id="Anique-TextfieldLabel-6"
       >
         Last Name
       </label>
     </div>
     <div
-      className=Ursa-Textfield
+      className=Anique-Textfield
       data-field=lastname
     >
       <input
-        aria-labelledby="Ursa-TextfieldLabel-7"
-        className=Ursa-Input
-        id="Ursa-Textfield-8"
+        aria-labelledby="Anique-TextfieldLabel-7"
+        className=Anique-Input
+        id="Anique-Textfield-8"
         name=lastname
         onBlur={[Function]}
         onChange={[Function]}
@@ -245,27 +245,27 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
     </div>
   </div>
   <div
-    className=Ursa-TextfieldContainer emotion-1
+    className=Anique-TextfieldContainer emotion-1
   >
     <div
-      className=Ursa-LabelContainer
+      className=Anique-LabelContainer
     >
       <label
-        className=Ursa-TextfieldLabel 
-        htmlFor="Ursa-Textfield-9"
-        id="Ursa-TextfieldLabel-10"
+        className=Anique-TextfieldLabel 
+        htmlFor="Anique-Textfield-9"
+        id="Anique-TextfieldLabel-10"
       >
         Email
       </label>
     </div>
     <div
-      className=Ursa-Textfield
+      className=Anique-Textfield
       data-field=email
     >
       <input
-        aria-labelledby="Ursa-TextfieldLabel-11"
-        className=Ursa-Input
-        id="Ursa-Textfield-12"
+        aria-labelledby="Anique-TextfieldLabel-11"
+        className=Anique-Input
+        id="Anique-Textfield-12"
         name=email
         onBlur={[Function]}
         onChange={[Function]}
@@ -277,16 +277,16 @@ exports[`components/Form <BasicForm /> Run Snapshot Test 1`] = `
     </div>
   </div>
   <div
-    className=Ursa-ButtonContainer emotion-4
+    className=Anique-ButtonContainer emotion-4
   >
     <button
-      className=Ursa-Button emotion-5
+      className=Anique-Button emotion-5
       role=button
       tabIndex={0}
       type=submit
     >
       <span
-        className=Ursa-ButtonText
+        className=Anique-ButtonText
       >
         Submit
       </span>

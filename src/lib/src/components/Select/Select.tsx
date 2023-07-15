@@ -15,7 +15,7 @@ import { SelectMinor } from "../../icons";
 import { generateUniqueID, wrapWithComponent } from '../../utilities';
 import { SelectProps } from '../../types';
 
-const UrsaSelect = forwardRef<HTMLSelectElement, SelectProps>(
+const AniqueSelect = forwardRef<HTMLSelectElement, SelectProps>(
   (
     {
       id,
@@ -39,9 +39,9 @@ const UrsaSelect = forwardRef<HTMLSelectElement, SelectProps>(
     /** Variables, state, ref */
     /***************************************************************************************/
     const uniqueID = generateUniqueID();
-    const _id = id || `Ursa-Select-${uniqueID}`;
-    const labelID = `Ursa-SelectLabel-${uniqueID}`;
-    const helpTextID = `Ursa-SelectHelpText-${uniqueID}`;
+    const _id = id || `Anique-Select-${uniqueID}`;
+    const labelID = `Anique-SelectLabel-${uniqueID}`;
+    const helpTextID = `Anique-SelectHelpText-${uniqueID}`;
     const [isDirty, setIsDirty] = useState(false);
 
     /***************************************************************************************/
@@ -61,7 +61,7 @@ const UrsaSelect = forwardRef<HTMLSelectElement, SelectProps>(
     let labelMarkup: ReactNode = (
       <Label
         id={labelID}
-        className="Ursa-SelectLabel"
+        className="Anique-SelectLabel"
         htmlFor={_id}
         required={required}
       >
@@ -80,7 +80,7 @@ const UrsaSelect = forwardRef<HTMLSelectElement, SelectProps>(
     if (required && isDirty) placeholderMarkup = undefined;
 
     const helpTextMarkup = helpText ? (
-      <p id={helpTextID} className="Ursa-SelectLabelHelpText">
+      <p id={helpTextID} className="Anique-SelectLabelHelpText">
         {helpText}
       </p>
     ) : undefined;
@@ -89,13 +89,13 @@ const UrsaSelect = forwardRef<HTMLSelectElement, SelectProps>(
     /** Render JSX */
     /***************************************************************************************/
     return (
-      <div className={`Ursa-SelectContainer ${className || ''}`}>
+      <div className={`Anique-SelectContainer ${className || ''}`}>
         {labelMarkup}
-        <div className="Ursa-SelectContent">
+        <div className="Anique-SelectContent">
           <select
             id={_id}
             ref={ref}
-            className="Ursa-Select"
+            className="Anique-Select"
             name={name}
             value={value}
             onChange={handleChange}
@@ -128,7 +128,7 @@ const UrsaSelect = forwardRef<HTMLSelectElement, SelectProps>(
   }
 );
 
-const Select = styled(UrsaSelect)(
+const Select = styled(AniqueSelect)(
   ({ theme: { color, font, fontSize }, disabled }) => `
         display: flex;
         flex-direction: column;     
@@ -137,7 +137,7 @@ const Select = styled(UrsaSelect)(
         & > label {
             padding-bottom: 2px;
         }
-        & > .Ursa-SelectContent {
+        & > .Anique-SelectContent {
           position: relative;
           display: inline-flex;
           align-items: center;
@@ -165,16 +165,16 @@ const Select = styled(UrsaSelect)(
             background-color: ${color.btnBasic};
             color: ${"#000"};
           }
-          & > .Ursa-Icon {
+          & > .Anique-Icon {
             position: absolute;
             right: 1rem;
             color: ${disabled ? color.btnDisabled : 'currentColor'}
           }
         }
-        & > .Ursa-SelectCurrentSelected {
+        & > .Anique-SelectCurrentSelected {
           padding: 0.625rem;
         }
-        & > .Ursa-SelectLabelHelpText {
+        & > .Anique-SelectLabelHelpText {
           color: ${color.textSecondary};
         }
         

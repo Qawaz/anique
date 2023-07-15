@@ -19,7 +19,7 @@ const AvatarImage = styled.img(
     `
 );
 
-const UrsaAvatar: FC<AvatarProps> = (props): ReactElement => {
+const AniqueAvatar: FC<AvatarProps> = (props): ReactElement => {
   const { children, className, src, alt, size } = props;
 
   let avatarType: 'image' | 'external' | 'placeholder';
@@ -42,7 +42,7 @@ const UrsaAvatar: FC<AvatarProps> = (props): ReactElement => {
   const avatarMarkup = {
     image: (
       <AvatarImage
-        className="Ursa-AvatarImage"
+        className="Anique-AvatarImage"
         src={src}
         alt={alt}
         width={px}
@@ -52,7 +52,7 @@ const UrsaAvatar: FC<AvatarProps> = (props): ReactElement => {
     ),
     placeholder: (
       <span
-        className="Ursa-AvatarPlaceholder"
+        className="Anique-AvatarPlaceholder"
         title={alt || (children as string)}
         {...testid}
       >
@@ -60,20 +60,20 @@ const UrsaAvatar: FC<AvatarProps> = (props): ReactElement => {
       </span>
     ),
     external: (
-      <span className="Ursa-AvatarExternal" {...testid}>
+      <span className="Anique-AvatarExternal" {...testid}>
         {children}
       </span>
     )
   };
 
   return (
-    <div className={`Ursa-Avatar ${className || ''}`}>
+    <div className={`Anique-Avatar ${className || ''}`}>
       {avatarMarkup[avatarType]}
     </div>
   );
 };
 
-export const Avatar = styled(UrsaAvatar)(
+export const Avatar = styled(AniqueAvatar)(
   ({ theme: { color, border }, src, variant, size, bgColor }) => {
     const avatarPx = `${
       !src

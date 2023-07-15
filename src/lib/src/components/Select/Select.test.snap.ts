@@ -16,7 +16,7 @@ exports[`components/Select <DefaultSelect /> Snapshot Test 1`] = `
   padding-bottom: 2px;
 }
 
-.emotion-0>.Ursa-SelectContent {
+.emotion-0>.Anique-SelectContent {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -30,7 +30,7 @@ exports[`components/Select <DefaultSelect /> Snapshot Test 1`] = `
   padding-bottom: 0.375rem;
 }
 
-.emotion-0>.Ursa-SelectContent>select {
+.emotion-0>.Anique-SelectContent>select {
   width: 100%;
   padding: 0.625rem;
   border: 1px solid rgba(203, 213, 225, 1);
@@ -47,27 +47,27 @@ exports[`components/Select <DefaultSelect /> Snapshot Test 1`] = `
   z-index: 1;
 }
 
-.emotion-0>.Ursa-SelectContent>select:focus {
+.emotion-0>.Anique-SelectContent>select:focus {
   outline: 2px solid blue;
   outline-offset: 0.1rem;
 }
 
-.emotion-0>.Ursa-SelectContent>select option {
+.emotion-0>.Anique-SelectContent>select option {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
 }
 
-.emotion-0>.Ursa-SelectContent>.Ursa-Icon {
+.emotion-0>.Anique-SelectContent>.Anique-Icon {
   position: absolute;
   right: 1rem;
   color: currentColor;
 }
 
-.emotion-0>.Ursa-SelectCurrentSelected {
+.emotion-0>.Anique-SelectCurrentSelected {
   padding: 0.625rem;
 }
 
-.emotion-0>.Ursa-SelectLabelHelpText {
+.emotion-0>.Anique-SelectLabelHelpText {
   color: rgba(109, 113, 117, 1);
 }
 
@@ -90,23 +90,23 @@ exports[`components/Select <DefaultSelect /> Snapshot Test 1`] = `
 }
 
 <div
-  className=Ursa-SelectContainer emotion-0
+  className=Anique-SelectContainer emotion-0
 >
   <label
-    className=Ursa-Label Ursa-SelectLabel emotion-1
-    htmlFor="Ursa-Select-0"
-    id="Ursa-SelectLabel-1"
+    className=Anique-Label Anique-SelectLabel emotion-1
+    htmlFor="Anique-Select-0"
+    id="Anique-SelectLabel-1"
   >
     Order Type
   </label>
   <div
-    className=Ursa-SelectContent
+    className=Anique-SelectContent
   >
     <select
-      aria-describedby="Ursa-SelectHelpText-2"
-      aria-labelledby="Ursa-SelectLabel-3"
-      className=Ursa-Select
-      id="Ursa-Select-4"
+      aria-describedby="Anique-SelectHelpText-2"
+      aria-labelledby="Anique-SelectLabel-3"
+      className=Anique-Select
+      id="Anique-Select-4"
       name=order_type
       onChange={[Function]}
       value=
@@ -123,13 +123,13 @@ exports[`components/Select <DefaultSelect /> Snapshot Test 1`] = `
       </option>
     </select>
     <span
-      className=Ursa-Icon emotion-2
-      id="Ursa-Icon-5"
+      className=Anique-Icon emotion-2
+      id="Anique-Icon-5"
     >
       <img
         alt=
         aria-hidden=true
-        className=Ursa-IconSVG
+        className=Anique-IconSVG
         data-testid=icon-external
         src=data:image/svg+xml;utf8,[object Object]
       />

@@ -7,7 +7,7 @@ import { Spinner } from '../Spinner';
 import { Backdrop } from '../Backdrop';
 import { ModalHeader, ModalFooter } from './components';
 
-const UrsaModal: FC<ModalProps> = ({
+const AniqueModal: FC<ModalProps> = ({
   title,
   className,
   children,
@@ -43,14 +43,14 @@ const UrsaModal: FC<ModalProps> = ({
   return (
     <Portal idPrefix="portal">
       <Backdrop />
-      <div className={`Ursa-ModalContainer ${className || ''}`}>
-        <div className="Ursa-Modal">
+      <div className={`Anique-ModalContainer ${className || ''}`}>
+        <div className="Anique-Modal">
           <ModalHeader title={title} onClose={onClose} />
 
           {loading ? (
             <Spinner />
           ) : (
-            <div className="Ursa-ModalContent">{children}</div>
+            <div className="Anique-ModalContent">{children}</div>
           )}
 
           <ModalFooter
@@ -66,7 +66,7 @@ const UrsaModal: FC<ModalProps> = ({
 /*********************************************************************************/
 // Render Styled Modal
 /********************************************************************************/
-export const Modal = styled(UrsaModal)(
+export const Modal = styled(AniqueModal)(
   ({ theme: { color }, width, height, yPosition }) => `
   position: fixed;
   display: flex;
@@ -79,7 +79,7 @@ export const Modal = styled(UrsaModal)(
   z-index: 9999;
   color: ${color.textPrimary};
     
-  .Ursa-Modal {
+  .Anique-Modal {
     display: flex;
     flex-direction: column;
     background-color: ${color.bgPrimary};
@@ -93,7 +93,7 @@ export const Modal = styled(UrsaModal)(
     overscroll-behavior-y: contain;
     z-index: 9999;
   }
-  .Ursa-ModalContent {
+  .Anique-ModalContent {
     display: flex;
     flex-direction: column;
     flex-grow: 1;

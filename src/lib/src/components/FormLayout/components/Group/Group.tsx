@@ -25,7 +25,7 @@ const UnstyledFormGroup = ({
   children,
   helpText
 }: FormLayoutGroupProps) => {
-  const _id = generateUniqueID('Ursa-FormLayoutGroup');
+  const _id = generateUniqueID('Anique-FormLayoutGroup');
 
   /** Generate Content */
   const groupItemsMarkup = Children.map(children, (child, index) => {
@@ -39,7 +39,7 @@ const UnstyledFormGroup = ({
   if (helpText) {
     helpTextID = `${_id}-HelpText`;
     helpTextMarkup = (
-      <div id={helpTextID} className="Ursa-FormLayoutGroupHelpText">
+      <div id={helpTextID} className="Anique-FormLayoutGroupHelpText">
         {helpText}
       </div>
     );
@@ -48,7 +48,7 @@ const UnstyledFormGroup = ({
   if (title) {
     titleID = `${_id}-Title`;
     titleMarkup = (
-      <div id={titleID} className="Ursa-FormLayoutGroupTitle">
+      <div id={titleID} className="Anique-FormLayoutGroupTitle">
         {title}
       </div>
     );
@@ -56,13 +56,13 @@ const UnstyledFormGroup = ({
 
   return (
     <div
-      className={`Ursa-FormLayoutGroup ${className || ''}`}
+      className={`Anique-FormLayoutGroup ${className || ''}`}
       role="group"
       aria-labelledby={titleID}
       aria-describedby={helpTextID}
     >
       {titleMarkup}
-      <div className="Ursa-FormLayoutGroupItems">{groupItemsMarkup}</div>
+      <div className="Anique-FormLayoutGroupItems">{groupItemsMarkup}</div>
       {helpTextMarkup}
     </div>
   );
@@ -70,11 +70,11 @@ const UnstyledFormGroup = ({
 
 export const Group = styled(UnstyledFormGroup)(
   ({ condensed }) => `
-    & > .Ursa-FormLayoutGroupItems {
+    & > .Anique-FormLayoutGroupItems {
       display: flex;
       gap: ${condensed ? '0.625rem' : '2.325rem'};
 
-      & > div.Ursa-FormLayoutGroupItem {
+      & > div.Anique-FormLayoutGroupItem {
         flex-grow: 1;
       }
     }

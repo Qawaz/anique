@@ -47,7 +47,7 @@ exports[`components/Invisible <Invisible /> Run Snapshot Test 1`] = `
   width: 100%;
 }
 
-.emotion-4 .Ursa-LabelContainer {
+.emotion-4 .Anique-LabelContainer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61,11 +61,11 @@ exports[`components/Invisible <Invisible /> Run Snapshot Test 1`] = `
   align-items: center;
 }
 
-.emotion-4 .Ursa-LabelContainer>.Ursa-TextfieldLabel {
+.emotion-4 .Anique-LabelContainer>.Anique-TextfieldLabel {
   font-size: 0.9375rem;
 }
 
-.emotion-4 .Ursa-Textfield {
+.emotion-4 .Anique-Textfield {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -81,13 +81,13 @@ exports[`components/Invisible <Invisible /> Run Snapshot Test 1`] = `
   padding-bottom: 0.375rem;
 }
 
-.emotion-4 .Ursa-Textfield>.Ursa-TextfieldPrefix {
+.emotion-4 .Anique-Textfield>.Anique-TextfieldPrefix {
   position: absolute;
   left: 0.5rem;
   color: rgba(109, 113, 117, 1);
 }
 
-.emotion-4 .Ursa-Textfield>.Ursa-Input {
+.emotion-4 .Anique-Textfield>.Anique-Input {
   width: 100%;
   min-height: inherit;
   padding: 0.625rem;
@@ -103,19 +103,19 @@ exports[`components/Invisible <Invisible /> Run Snapshot Test 1`] = `
   resize: none;
 }
 
-.emotion-4 .Ursa-Textfield>.Ursa-Input:focus {
+.emotion-4 .Anique-Textfield>.Anique-Input:focus {
   outline: 2px solid blue;
   outline-offset: 0.1rem;
 }
 
-.emotion-4 .Ursa-Textfield>.Ursa-PasswordShowHide,
-.emotion-4 .Ursa-Textfield .Ursa-TextClearButton {
+.emotion-4 .Anique-Textfield>.Anique-PasswordShowHide,
+.emotion-4 .Anique-Textfield .Anique-TextClearButton {
   cursor: pointer;
   position: absolute;
   right: 0.5rem;
 }
 
-.emotion-4 .Ursa-TextfieldErrors {
+.emotion-4 .Anique-TextfieldErrors {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,49 +126,49 @@ exports[`components/Invisible <Invisible /> Run Snapshot Test 1`] = `
 }
 
 <form
-  className=Ursa-Form emotion-0
+  className=Anique-Form emotion-0
   data-testid=test-form
-  id="Ursa-Form-0"
+  id="Anique-Form-0"
   onSubmit={[Function]}
 >
   <span
-    className=Ursa-Invisible emotion-1
+    className=Anique-Invisible emotion-1
   >
     <h2
-      className=Ursa-Heading emotion-2
-      id="Ursa-Heading-1"
+      className=Anique-Heading emotion-2
+      id="Anique-Heading-1"
     >
       This Title is Hidden
     </h2>
   </span>
   <div
-    className=Ursa-FormLayout emotion-3
+    className=Anique-FormLayout emotion-3
   >
     <div
-      className=Ursa-FormLayoutGroupItem
+      className=Anique-FormLayoutGroupItem
     >
       <div
-        className=Ursa-TextfieldContainer emotion-4
+        className=Anique-TextfieldContainer emotion-4
       >
         <div
-          className=Ursa-LabelContainer
+          className=Anique-LabelContainer
         >
           <label
-            className=Ursa-TextfieldLabel 
-            htmlFor="Ursa-Textfield-2"
-            id="Ursa-TextfieldLabel-3"
+            className=Anique-TextfieldLabel 
+            htmlFor="Anique-Textfield-2"
+            id="Anique-TextfieldLabel-3"
           >
             Email
           </label>
         </div>
         <div
-          className=Ursa-Textfield
+          className=Anique-Textfield
           data-field=email
         >
           <input
-            aria-labelledby="Ursa-TextfieldLabel-4"
-            className=Ursa-Input
-            id="Ursa-Textfield-5"
+            aria-labelledby="Anique-TextfieldLabel-4"
+            className=Anique-Input
+            id="Anique-Textfield-5"
             name=email
             onBlur={[Function]}
             onFocus={[Function]}

@@ -17,7 +17,7 @@ export interface AccordionHeaderProps {
 
 const StyledAccordionHeader = styled.h4(
   ({ theme: { color } }) => `
-    .Ursa-AccordionHeader {
+    .Anique-AccordionHeader {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -28,7 +28,7 @@ const StyledAccordionHeader = styled.h4(
         padding: 0.25rem;
         border-bottom: 1px solid ${color.borderPrimary};
 
-        & > span.Ursa-AccordionLabelText {
+        & > span.Anique-AccordionLabelText {
             flex-grow: 1;
             padding: 1.25rem 0.625rem;
         }
@@ -43,16 +43,16 @@ export const AccordionHeader = ({
   onClick
 }: AccordionHeaderProps): ReactElement => {
   return (
-    <StyledAccordionHeader className="Ursa-AccordionHeaderContainer">
+    <StyledAccordionHeader className="Anique-AccordionHeaderContainer">
       <UnstyledButton
         id={id}
-        className="Ursa-AccordionHeader"
+        className="Anique-AccordionHeader"
         onClick={onClick}
         ariaExpanded={active}
         ariaControls={`${id}-label`}
         data-active={active}
       >
-        <span className="Ursa-AccordionLabelText">{label}</span>
+        <span className="Anique-AccordionLabelText">{label}</span>
         <Icon source={active ? ChevronUpMinor : ChevronDownMinor} />
       </UnstyledButton>
     </StyledAccordionHeader>

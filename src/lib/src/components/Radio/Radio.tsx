@@ -34,7 +34,7 @@ export interface RadioProps {
   helpText?: string;
 }
 
-const UrsaRadio = forwardRef<HTMLInputElement, RadioProps>(
+const AniqueRadio = forwardRef<HTMLInputElement, RadioProps>(
   (
     {
       id,
@@ -52,16 +52,16 @@ const UrsaRadio = forwardRef<HTMLInputElement, RadioProps>(
     ref
   ): ReactElement => {
     const uniqueID = generateUniqueID();
-    const _id = id || `Ursa-RadioButtonInput-${uniqueID}`;
-    const labelID = `Ursa-RadioButtonLabel-${uniqueID}`;
-    const helpTextID = `Ursa-RadioButtonHelpText-${uniqueID}`;
+    const _id = id || `Anique-RadioButtonInput-${uniqueID}`;
+    const labelID = `Anique-RadioButtonLabel-${uniqueID}`;
+    const helpTextID = `Anique-RadioButtonHelpText-${uniqueID}`;
 
     return (
-      <div className={`Ursa-RadioButtonContainer ${className || ''}`}>
-        <span className="Ursa-RadioButton">
+      <div className={`Anique-RadioButtonContainer ${className || ''}`}>
+        <span className="Anique-RadioButton">
           <input
             id={_id}
-            className="Ursa-RadioButtonInput"
+            className="Anique-RadioButtonInput"
             ref={ref}
             name={name}
             type="radio"
@@ -75,12 +75,12 @@ const UrsaRadio = forwardRef<HTMLInputElement, RadioProps>(
             aria-labelledby={labelID}
             aria-describedby={helpTextID}
           />
-          <label id={labelID} className="Ursa-RadioButtonLabel" htmlFor={_id}>
+          <label id={labelID} className="Anique-RadioButtonLabel" htmlFor={_id}>
             {label}
           </label>
         </span>
         {helpText && (
-          <p id={helpTextID} className="Ursa-RadioButtonHelpText">
+          <p id={helpTextID} className="Anique-RadioButtonHelpText">
             {helpText}
           </p>
         )}
@@ -89,14 +89,14 @@ const UrsaRadio = forwardRef<HTMLInputElement, RadioProps>(
   }
 );
 
-export const Radio = styled(UrsaRadio)(
+export const Radio = styled(AniqueRadio)(
   ({ theme: { color, fontSize } }) => `
    
-    & > .Ursa-RadioButton {
+    & > .Anique-RadioButton {
       display: inline-flex;
       align-items: center;
 
-      & > input[type="radio"].Ursa-RadioButtonInput {
+      & > input[type="radio"].Anique-RadioButtonInput {
         flex: 1 1 auto;
         font-size: ${fontSize.fontSize5};
         width: 1.2em;
@@ -105,7 +105,7 @@ export const Radio = styled(UrsaRadio)(
         cursor: pointer;
       }
   
-      & > label.Ursa-RadioButtonLabel {
+      & > label.Anique-RadioButtonLabel {
         flex: 1 1 auto;
         font-size: ${fontSize.fontSize5};
         padding-left: 10px;
@@ -113,7 +113,7 @@ export const Radio = styled(UrsaRadio)(
       }
     }
 
-    & > .Ursa-RadioButtonHelpText {
+    & > .Anique-RadioButtonHelpText {
       padding-left: calc(2 * 1.2rem);
       color: ${color.textSecondary}
     }

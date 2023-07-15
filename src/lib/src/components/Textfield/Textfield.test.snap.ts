@@ -16,7 +16,7 @@ exports[`components/Textfield Default Textfield Snapshot Test 1`] = `
   width: 100%;
 }
 
-.emotion-0 .Ursa-LabelContainer {
+.emotion-0 .Anique-LabelContainer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,11 +30,11 @@ exports[`components/Textfield Default Textfield Snapshot Test 1`] = `
   align-items: center;
 }
 
-.emotion-0 .Ursa-LabelContainer>.Ursa-TextfieldLabel {
+.emotion-0 .Anique-LabelContainer>.Anique-TextfieldLabel {
   font-size: 0.9375rem;
 }
 
-.emotion-0 .Ursa-Textfield {
+.emotion-0 .Anique-Textfield {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -50,13 +50,13 @@ exports[`components/Textfield Default Textfield Snapshot Test 1`] = `
   padding-bottom: 0.375rem;
 }
 
-.emotion-0 .Ursa-Textfield>.Ursa-TextfieldPrefix {
+.emotion-0 .Anique-Textfield>.Anique-TextfieldPrefix {
   position: absolute;
   left: 0.5rem;
   color: rgba(109, 113, 117, 1);
 }
 
-.emotion-0 .Ursa-Textfield>.Ursa-Input {
+.emotion-0 .Anique-Textfield>.Anique-Input {
   width: 100%;
   min-height: inherit;
   padding: 0.625rem;
@@ -72,19 +72,19 @@ exports[`components/Textfield Default Textfield Snapshot Test 1`] = `
   resize: none;
 }
 
-.emotion-0 .Ursa-Textfield>.Ursa-Input:focus {
+.emotion-0 .Anique-Textfield>.Anique-Input:focus {
   outline: 2px solid blue;
   outline-offset: 0.1rem;
 }
 
-.emotion-0 .Ursa-Textfield>.Ursa-PasswordShowHide,
-.emotion-0 .Ursa-Textfield .Ursa-TextClearButton {
+.emotion-0 .Anique-Textfield>.Anique-PasswordShowHide,
+.emotion-0 .Anique-Textfield .Anique-TextClearButton {
   cursor: pointer;
   position: absolute;
   right: 0.5rem;
 }
 
-.emotion-0 .Ursa-TextfieldErrors {
+.emotion-0 .Anique-TextfieldErrors {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,26 +95,26 @@ exports[`components/Textfield Default Textfield Snapshot Test 1`] = `
 }
 
 <div
-  className=Ursa-TextfieldContainer emotion-0
+  className=Anique-TextfieldContainer emotion-0
 >
   <div
-    className=Ursa-LabelContainer
+    className=Anique-LabelContainer
   >
     <label
-      className=Ursa-TextfieldLabel 
-      htmlFor="Ursa-Textfield-0"
-      id="Ursa-TextfieldLabel-1"
+      className=Anique-TextfieldLabel 
+      htmlFor="Anique-Textfield-0"
+      id="Anique-TextfieldLabel-1"
     >
       Name
     </label>
   </div>
   <div
-    className=Ursa-Textfield
+    className=Anique-Textfield
   >
     <input
-      aria-labelledby="Ursa-TextfieldLabel-2"
-      className=Ursa-Input
-      id="Ursa-Textfield-3"
+      aria-labelledby="Anique-TextfieldLabel-2"
+      className=Anique-Input
+      id="Anique-Textfield-3"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}

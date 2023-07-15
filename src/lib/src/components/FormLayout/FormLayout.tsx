@@ -16,7 +16,7 @@ const StyledFormLayout = styled.div`
 
 const FormLayout = memo(({ children }) => {
   return (
-    <StyledFormLayout className="Ursa-FormLayout">
+    <StyledFormLayout className="Anique-FormLayout">
       {Children.map(children, (child, index) => {
         if (isElementOfType(child, Group)) {
           return child;

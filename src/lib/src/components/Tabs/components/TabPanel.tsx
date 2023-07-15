@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import styled from '@emotion/styled';
 import { TabPanelProps } from '../../../types';
 
-const UrsaTabPanel = ({
+const AniqueTabPanel = ({
   id,
   ariaLabelledBy,
   children,
@@ -10,7 +10,7 @@ const UrsaTabPanel = ({
 }: TabPanelProps): ReactElement => {
   return (
     <div
-      className={`Ursa-TabPanel ${className || ''}`}
+      className={`Anique-TabPanel ${className || ''}`}
       id={id}
       role="tabpanel"
       aria-labelledby={ariaLabelledBy}
@@ -21,7 +21,7 @@ const UrsaTabPanel = ({
   );
 };
 
-export const TabPanel = styled(UrsaTabPanel)(
+export const TabPanel = styled(AniqueTabPanel)(
   ({ className }) => `
         display: ${className?.includes('hidden') ? 'none' : 'flex'};
         flex-grow: 1;
