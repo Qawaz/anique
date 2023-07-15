@@ -43,3 +43,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 - [x] Remove turbo
 
 - [ ] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access
+
+- [ ] Fix components compatibility with both themes
+
+- [ ] Build a simple site for the main page as a demo

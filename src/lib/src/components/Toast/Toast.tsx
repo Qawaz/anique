@@ -4,8 +4,6 @@ import styled from '@emotion/styled';
 import { Portal } from '../Portal';
 import { Icon } from '../Icon';
 import {
-  InfoMinor,
-  AlertMinor,
   MobileCancelMajor
 } from "../../icons";
 import { ProgressBar, useCountdown } from '../ProgressBar';
