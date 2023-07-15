@@ -16,7 +16,7 @@ export const darkTheme: AniqueTheme = {
         backdrop: 'rgba(15, 23, 42, 1)',
         borderPrimary: 'rgba(71, 85, 105, 1)',
         navBgPrimary: 'rgba(22, 78, 99, 1)',
-        actionPressed: 'rgba(241, 242, 243, 1)',
+        actionPressed: 'rgb(14,14,14)',
         navItemBgActive: 'rgba(204, 251, 241, 1)',
         navItemBgHovered: 'rgba(21, 94, 117, 1)'
     }

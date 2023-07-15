@@ -48,7 +48,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [ ] Fix components compatibility with both themes
 
-    - [ ] ActionList
+    - [x] ActionList
     - [ ] Card
     - [ ] Icon (in stories) not displaying in both themes
     - [ ] Input (in DarkMode) the border is too visible

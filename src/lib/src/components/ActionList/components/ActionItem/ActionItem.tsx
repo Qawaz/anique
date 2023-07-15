@@ -106,7 +106,7 @@ export const ActionItem = styled(UrsaActionItem)(
             min-width: 0;
             max-width: 100%;
             flex: 1 1 auto;
-            color: ${"#000"};
+            color: ${color.textPrimary};
           }
         ${
           helpText &&
