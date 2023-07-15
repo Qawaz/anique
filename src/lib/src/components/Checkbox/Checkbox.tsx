@@ -184,12 +184,12 @@ export const Checkbox = styled(AniqueCheckbox)(
       border-radius: 2px;
       margin-right: ${labelHidden ? '0' : '10px'};
       background-color: ${
-        checked ? color.accentColor : "#fff"
+        checked ? color.accentColor : color.bgPrimary
       };
       border-color: ${
         checked
           ? color.accentColor
-          : color.borderSecondary
+          : color.textSecondary
       };
     }
     .Anique-CheckboxLabelText {
