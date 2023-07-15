@@ -36,8 +36,10 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Upgrade story book to v7
 
-- [x] Build storybook working
+- [ ] Build docs site to public/
 
-- [ ] Deploy Storybook to gh-pages
+- [x] Build storybook to public/storybook folder
+
+- [ ] Remove turbo
 
 - [ ] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access

@@ -48,7 +48,6 @@
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.0.27",
     "@storybook/react-webpack5": "7.0.27",
-    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/testing-react": "^2.0.1",
     "@storybook/theming": "^7.0.27",
@@ -88,18 +87,12 @@
     "dev": "turbo run dev --parallel",
     "syncpack": "syncpack list-mismatches",
     "storybook": "storybook dev",
-    "build-storybook": "storybook build",
-    "deploy-storybook": "storybook-to-ghpages -o storybook-static",
+    "build-storybook": "storybook build -o public/storybook",
     "format:test": "prettier --check \"**/*.{ts,tsx}\"",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "clean": "turbo run clean",
     "clean:all": "turbo run clean:all",
     "ts-check": "tsc --noemit",
     "release": "turbo run build && changeset publish"
-  },
-  "storybook-deployer": {
-    "gitUsername": "Waqas Tahir",
-    "gitEmail": "wakaztahir@gmail.com",
-    "commitMessage": "Deploy Storybook to GitHub Pages"
   }
 }
