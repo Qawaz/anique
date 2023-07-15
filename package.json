@@ -87,7 +87,7 @@
     "dev": "turbo run dev --parallel",
     "syncpack": "syncpack list-mismatches",
     "storybook": "storybook dev",
-    "build-storybook": "storybook build -o public/storybook",
+    "build-storybook": "storybook build -o docs/storybook",
     "format:test": "prettier --check \"**/*.{ts,tsx}\"",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "clean": "turbo run clean",

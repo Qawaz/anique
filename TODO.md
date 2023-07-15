@@ -36,9 +36,9 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Upgrade story book to v7
 
-- [ ] Build docs site to public/
+- [ ] Build docs site to docs/
 
-- [x] Build storybook to public/storybook folder
+- [x] Build storybook to docs/storybook folder
 
 - [ ] Remove turbo
 
