@@ -7,7 +7,7 @@ import {
 
 import { Stack } from '.';
 import { Tag } from '../Tag';
-import { Heading } from '../Heading';
+import {H2} from '../Heading';
 import { Button } from '../Button';
 import { ButtonGroup } from '../ButtonGroup';
 
@@ -28,7 +28,7 @@ const Template: ComponentStory<typeof Stack> = (args) => (
 const StackItemTemplate: ComponentStory<typeof Stack> = (args) => (
   <Stack {...args}>
     <Stack.Item fill={true}>
-      <Heading>Shipments</Heading>
+      <H2>Shipments</H2>
     </Stack.Item>
     <Stack.Item justify="end">
       <ButtonGroup>

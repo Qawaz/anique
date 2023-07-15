@@ -1,8 +1,8 @@
 {
-  "name": "anique",
+  "name": "anique-docs",
   "version": "1.0.0",
   "private": true,
-  "description": "anique",
+  "description": "Anique UI Component Library Docs",
   "author": "Waqas Tahir",
   "keywords": [
     "gatsby"

@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { DataGrid } from '.';
-import { Button, Page, Stack, Heading } from '../../';
+import { Button, Stack } from '../../';
 import { views, columns, rows, actions } from './data.mock';
+import {H2} from "../Heading";
 
 export default {
   title: 'Components/DataGrid',
@@ -17,7 +18,7 @@ const Template: ComponentStory<typeof DataGrid> = (args) => {
     <div className="main-container col-span-6 overflow-x-auto overscroll-x-contain">
       <Stack>
         <Stack.Item fill>
-          <Heading>Orders</Heading>
+          <H2>Orders</H2>
         </Stack.Item>
         <Stack.Item>
           <Button>Sync Orders</Button>

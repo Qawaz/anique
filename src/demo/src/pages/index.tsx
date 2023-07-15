@@ -1,23 +1,14 @@
 import * as React from "react"
 import type {HeadFC, PageProps} from "gatsby"
 import styled from "@emotion/styled"
-import {css, Global} from "@emotion/react"
-import {Heading, AniqueSystemThemeProvider} from "@qawaz/anique";
-
-const GlobalStyles = css`
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-`
+import {AniqueSystemThemeProvider, H1, Link} from "@qawaz/anique";
 
 const Container = styled.main`
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  gap: 0.5em;
 `
 
 const Header = styled.div`
@@ -31,8 +22,13 @@ const IndexPage: React.FC<PageProps> = (props) => {
             <AniqueSystemThemeProvider>
                 <Container>
                     <Header>
-                        <Heading element={"h1"}>Anique</Heading>
+                        <H1>Anique</H1>
                     </Header>
+                    <p>
+                        Anique is a UI component library build with React & Emotion, This is is docs site
+                        At the moment You can view Anique components in the storybook as this site is under development
+                    </p>
+                    <Link href={"./storybook"}>Anique Storybook</Link>
                 </Container>
             </AniqueSystemThemeProvider>
         </>
@@ -41,4 +37,4 @@ const IndexPage: React.FC<PageProps> = (props) => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>Anique | UI Component Library</title>

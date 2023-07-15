@@ -6,7 +6,7 @@ import {
 } from '@storybook/react';
 
 import { Invisible } from './Invisible';
-import { Heading } from '../Heading';
+import {H2} from '../Heading';
 import { FormLayout } from '../FormLayout';
 import { Textfield } from '../Textfield';
 import { Form } from '../Form';
@@ -19,7 +19,7 @@ export default {
 const Template: ComponentStory<typeof Invisible> = () => (
   <Form onSubmit={() => {}}>
     <Invisible>
-      <Heading>This Title is Hidden</Heading>
+      <H2>This Title is Hidden</H2>
     </Invisible>
     <FormLayout>
       <Textfield name="email" label="Email" />

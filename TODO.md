@@ -22,11 +22,11 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Rename folder ursa-core to lib
 
-- [ ] Make headings simpler , use H1,H2,H3,H4,H5,H6
+- [x] Make headings simpler , use H1,H2,H3,H4,H5,H6
 
-- [ ] Create a demo package to view all components in action for docs website
+- [x] Create a demo package
 
-- [ ] Test generated test in link library in demo package
+- [x] Test generated test in link library in demo package
 
 - [ ] Migrate storybook components types
 
@@ -36,7 +36,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Upgrade story book to v7
 
-- [ ] Build docs site to docs/
+- [x] Build docs site to docs/
 
 - [x] Build storybook to docs/storybook folder
 
