@@ -40,6 +40,6 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Build storybook to docs/storybook folder
 
-- [ ] Remove turbo
+- [x] Remove turbo
 
 - [ ] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access

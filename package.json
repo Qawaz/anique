@@ -78,21 +78,15 @@
     "syncpack": "^10.7.3",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
     "tslib": "^2.6.0",
-    "turbo": "^1.10.7",
     "typescript": "^5.1.6",
     "webpack": "5"
   },
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
     "syncpack": "syncpack list-mismatches",
     "storybook": "storybook dev",
     "build-storybook": "storybook build -o docs/storybook",
     "format:test": "prettier --check \"**/*.{ts,tsx}\"",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
-    "clean": "turbo run clean",
-    "clean:all": "turbo run clean:all",
-    "ts-check": "tsc --noemit",
-    "release": "turbo run build && changeset publish"
+    "ts-check": "tsc --noemit"
   }
 }
