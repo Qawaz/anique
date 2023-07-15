@@ -32,8 +32,8 @@ const StyledTooltip = styled.div(({ theme: { color } }) => {
     position: 'absolute',
     marginTop: '0.25rem',
     padding: '0.625rem',
-    backgroundColor: "#fff",
-    color: "#000",
+    backgroundColor: color.actionPressed,
+    color: color.textPrimary,
     boxShadow:
       '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
     borderRadius: '0.25rem',

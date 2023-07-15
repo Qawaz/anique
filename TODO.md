@@ -50,12 +50,12 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
     - [x] ActionList
     - [x] Card
-    - [ ] Icon (in stories) not displaying in both themes
-    - [ ] Input (in DarkMode) the border is too visible
-    - [ ] Link component hides underline on hover , remove it
-    - [ ] Popover menu
-    - [ ] Radio story displays a card , in Docs mode , radio doesn't display right in dark mode
-    - [ ] Toast
-    - [ ] Tooltip background color
+    - [x] Icon (in stories) not displaying in both themes
+    - [x] Input (in DarkMode) the border is too visible
+    - [x] Link component hides underline on hover , remove it
+    - [x] Popover menu
+    - [x] Radio story displays a card , in Docs mode , radio doesn't display right in dark mode
+    - [x] Toast
+    - [x] Tooltip background color
 
 - [ ] Build a simple site for the main page as a demo

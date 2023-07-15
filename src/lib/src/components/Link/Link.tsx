@@ -79,7 +79,6 @@ export const Link = styled(UnstyledLink)(
                 ? color.textPrimary
                 : color.linkPrimaryHovered
             };
-            text-decoration: none;
         }        
     `
 );

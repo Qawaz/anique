@@ -166,8 +166,8 @@ export const Toast = styled(UrsaToast)(
       '& > .Ursa-Toast': {
         position: 'relative',
         cursor: 'pointer',
-        backgroundColor: "#000",
-        color: "#fff",
+        backgroundColor: color.accentColor,
+        color: color.textPrimary,
         borderRadius: '0.25rem',
         padding: '1.25rem',
         width: '480px',

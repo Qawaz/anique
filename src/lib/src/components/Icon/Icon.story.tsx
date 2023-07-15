@@ -5,7 +5,8 @@ import {
   ComponentStoryFn
 } from '@storybook/react';
 import { Icon } from '.';
-import { HomeMajor } from "../../icons";
+import {SvgHomeMajor} from "../../../config/jest/__mocks__/SvgMock";
+import {AlertMinor} from "../../icons";
 
 export default {
   title: 'Components/Icon',
@@ -16,5 +17,5 @@ const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const DefaultIcon: ComponentStoryFn<typeof Icon> = Template.bind({});
 DefaultIcon.args = {
-  source: HomeMajor
+  source: AlertMinor
 };

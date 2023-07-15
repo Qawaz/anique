@@ -6,7 +6,7 @@ export const Input = styled.input`
   //font-size: 0.8em;
   //font-family: inherit;
   letter-spacing: 0.1em;
-  border: 3px solid #d7d7d7;
+  border: 3px solid ${props=> props.theme.color.textTertiary};
   border-radius: 6px;
   //border-radius: 0 0.4em 0.4em 0;
   transition: border-color 0.3s ease;
