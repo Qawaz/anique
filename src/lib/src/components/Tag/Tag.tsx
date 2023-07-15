@@ -40,25 +40,25 @@ export const Tag = styled(UrsaTag)(
         justify-content: center;
         align-items: center;
         gap: 0.625rem;
-        font-size: ${fontSize['--ursa-font-size-1']};
+        font-size: ${fontSize.fontSize1};
         padding: 0.825em 1.375em;
-        background-color: ${color['--ursa-tag-bg-basic']};
-        color: ${color['--ursa-tag-text']};
-        border-radius: ${border['--ursa-border-radius-2xl']};
+        background-color: ${color.tagBgBasic};
+        color: ${color.tagText};
+        border-radius: ${border.borderRadius2xl};
 
         &:focus {
-          outline: 1px solid ${color['--ursa-btn-primary']};
+          outline: 1px solid ${color.btnPrimary};
         }
 
         ${
           onRemove &&
           `.Ursa-TagClose {
             & > svg {
-              fill: ${color['--ursa-tag-text']};
+              fill: ${color.tagText};
               transition: opacity .15s ease-in-out;
 
               &:hover {
-                fill: ${color['--ursa-black']};
+                fill: ${"#000"};
               }
             }
           }`

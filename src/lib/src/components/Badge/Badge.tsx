@@ -69,14 +69,14 @@ export const Badge = styled(UrsaBadge)(
       min-width: ${variant === 'dot' ? '10px' : '22px'};
       min-height: ${variant === 'dot' ? '10px' : '22px'};
       z-index: 1;
-      border-radius: ${border['--ursa-border-radius-full']};
-      background-color: ${badgeColor ? badgeColor : color['--ursa-btn-alert']};
+      border-radius: ${border.borderRadiusFull};
+      background-color: ${badgeColor ? badgeColor : color.btnAlert};
       transform: scale(0.9);
 
       & > .Ursa-BadgeContent {
-        font-size: ${fontSize['--ursa-font-size-1']};
+        font-size: ${fontSize.fontSize1};
         font-weight: bold;
-        color: ${color['--ursa-white']};
+        color: #fff;
       }
     }
   `

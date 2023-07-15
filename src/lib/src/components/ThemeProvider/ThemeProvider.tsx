@@ -30,9 +30,9 @@ export function AniqueGlobalStyles() {
           }
 
           :root {
-            color-scheme: ${theme.color['--ursa-color-scheme']};
+            color-scheme: ${theme.color.colorScheme};
             font-size: 15px;
-            color: ${theme.color['--ursa-text-primary']};
+            color: ${theme.color.textPrimary};
             font-family: 'Roboto', 'Helvetica', sans-serif;
             width: 100%;
             height: 100%;
@@ -70,7 +70,7 @@ export function AniqueGlobalStyles() {
           table,
           thead,
           tr {
-            border: 1px solid ${theme.color['--ursa-border-secondary']};
+            border: 1px solid ${theme.color.borderSecondary};
           }
 
           textarea {

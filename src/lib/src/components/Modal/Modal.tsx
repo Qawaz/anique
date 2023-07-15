@@ -77,12 +77,12 @@ export const Modal = styled(UrsaModal)(
   height: 100%;
   width: 100%;
   z-index: 9999;
-  color: ${color['--ursa-text-primary']};
+  color: ${color.textPrimary};
     
   .Ursa-Modal {
     display: flex;
     flex-direction: column;
-    background-color: ${color['--ursa-bg-primary']};
+    background-color: ${color.bgPrimary};
     border-radius: 3px;
     width: ${width || '80%'};
     height: ${height || '80%'};
@@ -99,7 +99,7 @@ export const Modal = styled(UrsaModal)(
     flex-grow: 1;
     justify-content: ${yPosition || 'flex-start'};
     padding: 20px;
-    background-color: ${color['--ursa-bg-primary']};
+    background-color: ${color.bgPrimary};
   }
   `
 );

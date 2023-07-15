@@ -16,7 +16,7 @@ const UrsaBackdrop: FC<BackdropProps> = ({
 
 export const Backdrop = styled(UrsaBackdrop)(
   ({ theme: { color }, transparent }) => `
-  background-color: ${transparent ? 'transparent' : color['--ursa-backdrop']};
+  background-color: ${transparent ? 'transparent' : color.backdrop};
   position: fixed;
   display: block;
   top: 0;

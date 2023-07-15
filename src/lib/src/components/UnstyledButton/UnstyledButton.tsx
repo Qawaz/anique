@@ -99,11 +99,11 @@ const UrsaUnstyledButton: FC<UnstyledButtonProps> = ({
 export const UnstyledButton = styled(UrsaUnstyledButton)(
   ({ theme: { color, fontSize } }) => `
         background: none;
-        color: ${color['--ursa-text-primary']};
+        color: ${color.textPrimary};
         border: 0;
         padding: 0;
         margin: 0;
         text-decoration: none;
-        font-size: ${fontSize['--ursa-font-size-5']};
+        font-size: ${fontSize.fontSize5};
     `
 );

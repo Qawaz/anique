@@ -135,8 +135,8 @@ export const Item = styled(NavigationItem)(
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        color: ${color['--ursa-text-primary']};
-        border-left: 4px solid ${color['--ursa-btn-primary']};
+        color: ${color.textPrimary};
+        border-left: 4px solid ${color.btnPrimary};
         padding-left: 10px;
         padding-right: 10px;
         div {
@@ -152,7 +152,7 @@ export const Item = styled(NavigationItem)(
             padding-right: 20px;
             border-radius: 4px;
             &:hover {
-                background-color: ${color['--ursa-nav-item-bg-hovered']};                
+                background-color: ${color.navItemBgHovered};                
             }
         }
     `

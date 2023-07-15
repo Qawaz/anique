@@ -26,8 +26,8 @@ export const ModalHeader = styled(UrsaModalHeader)(
       display: flex;
       align-items: flex-start;
       flex-shrink: 0;
-      background-color: ${color['--ursa-bg-primary']};
+      background-color: ${color.bgPrimary};
       padding-bottom: 1em;
-      border-bottom: 1px solid ${color['--ursa-border-primary']};
+      border-bottom: 1px solid ${color.borderPrimary};
   `
 );

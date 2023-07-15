@@ -1,60 +1,65 @@
-export const commonStyles = {
-  color: {
-    '--ursa-btn-primary': 'rgba(20, 184, 166, 1)',
-    '--ursa-btn-primary-hovered': 'rgba(13, 148, 136, 1)',
-    '--ursa-btn-basic': 'rgba(255, 255, 255, 1)',
-    '--ursa-btn-alert': 'rgba(239, 68, 68, 1)',
-    '--ursa-btn-alert-hovered': 'rgba(220, 38, 38, 1)',
-    '--ursa-btn-disabled': 'rgba(203, 213, 225, 1)',
-    '--ursa-link-primary': 'rgba(59, 130, 246, 1)',
-    '--ursa-link-primary-hovered': 'rgba(37, 99, 235, 1)',
-    '--ursa-border-secondary': 'rgba(148, 163, 184, 1)',
-    '--ursa-tag-bg-basic': 'rgba(156, 163, 175, 1)',
-    '--ursa-tag-text': 'rgba(30, 41, 59, 1)',
-    '--ursa-tab-selected': 'rgba(234, 88, 12, 1)',
-    '--ursa-card-img-bg': 'rgba(21, 128, 61, 1)',
-    '--ursa-badge-img-bg': 'rgba(21, 128, 61, 1)',
-    '--ursa-accent-color': 'rgba(59, 130, 246, 1)',
-    '--ursa-accent-color-hovered': 'rgba(96, 165, 250, 1)',
-    '--ursa-neutral': 'rgb(228 229 231 / 1)',
-    '--ursa-white': 'rgba(255, 255, 255, 1)',
-    '--ursa-black': 'rgba(0, 0, 0, 1)',
-    '--ursa-text-success': 'rgb(21 87 36 / 1)',
-    '--ursa-text-warning': 'rgb(133 100 4 / 1)',
-    '--ursa-text-error': 'rgb(239 68 68 / 1)',
-    '--ursa-text-subdued': 'rgb(128 128 128 / 1)'
-  },
-  font: {
-    '--ursa-font-primary': 'Roboto, Helvetica, Arial, sans-serif'
-  },
-  fontSize: {
-    '--ursa-font-size-1': '0.75rem',
-    '--ursa-font-size-2': '0.84375rem',
-    '--ursa-font-size-3': '0.875rem',
-    '--ursa-font-size-4': '0.9375rem',
-    '--ursa-font-size-5': '1rem',
-    '--ursa-font-size-6': '1.0625rem',
-    '--ursa-font-size-7': '1.25rem',
-    '--ursa-font-size-8': '1.3125rem',
-    '--ursa-font-size-9': '1.5rem',
-    '--ursa-font-size-10': '1.625rem',
-    '--ursa-font-size-11': '1.6875rem',
-    '--ursa-font-size-12': '1.75rem',
-    '--ursa-font-size-13': '2.135rem',
-    '--ursa-font-size-14': '2.625rem'
-  },
-  border: {
-    '--ursa-border-radius-lg': '0.25rem',
-    '--ursa-border-radius-xl': '0.5rem',
-    '--ursa-border-radius-2xl': '1rem',
-    '--ursa-border-radius-full': '9999px'
-  },
-  animation: {
+import {Border, Font, FontSize, Animation} from "../types/theme";
+
+export const CommonColor = {
+    btnPrimary: 'rgba(20, 184, 166, 1)',
+    btnPrimaryHovered: 'rgba(13, 148, 136, 1)',
+    btnBasic: 'rgba(255, 255, 255, 1)',
+    btnAlert: 'rgba(239, 68, 68, 1)',
+    btnAlertHovered: 'rgba(220, 38, 38, 1)',
+    btnDisabled: 'rgba(203, 213, 225, 1)',
+    linkPrimary: 'rgba(59, 130, 246, 1)',
+    linkPrimaryHovered: 'rgba(37, 99, 235, 1)',
+    borderSecondary: 'rgba(148, 163, 184, 1)',
+    tagBgBasic: 'rgba(156, 163, 175, 1)',
+    tagText: 'rgba(30, 41, 59, 1)',
+    tabSelected: 'rgba(234, 88, 12, 1)',
+    cardImgBg: 'rgba(21, 128, 61, 1)',
+    badgeImgBg: 'rgba(21, 128, 61, 1)',
+    accentColor: 'rgba(59, 130, 246, 1)',
+    accentColorHovered: 'rgba(96, 165, 250, 1)',
+    neutral: 'rgb(228 229 231 / 1)',
+    textSuccess: 'rgb(21 87 36 / 1)',
+    textWarning: 'rgb(133 100 4 / 1)',
+    textError: 'rgb(239 68 68 / 1)',
+    textSubdued: 'rgb(128 128 128 / 1)',
+    white: "#fff",
+    black: "#000"
+}
+
+export const CommonFont: Font = {
+    fontPrimary: 'Roboto, Helvetica, Arial, sans-serif',
+    fontSecondary: 'Roboto, Helvetica, Arial, sans-serif', // could be "Quicksand, sans-serif"
+}
+
+export const CommonFontSize: FontSize = {
+    fontSize1: '0.75rem',
+    fontSize2: '0.84375rem',
+    fontSize3: '0.875rem',
+    fontSize4: '0.9375rem',
+    fontSize5: '1rem',
+    fontSize6: '1.0625rem',
+    fontSize7: '1.25rem',
+    fontSize8: '1.3125rem',
+    fontSize9: '1.5rem',
+    fontSize10: '1.625rem',
+    fontSize11: '1.6875rem',
+    fontSize12: '1.75rem',
+    fontSize13: '2.135rem',
+    fontSize14: '2.625rem'
+}
+
+export const CommonBorder: Border = {
+    borderRadiusLg: '0.25rem',
+    borderRadiusXl: '0.5rem',
+    borderRadius2xl: '1rem',
+    borderRadiusFull: '9999px'
+}
+
+export const CommonAnimation: Animation = {
     timing: {
-      '--ursa-animation-timing-ease': 'cubic-bezier(0.25, 0.1, 0.25, 1)',
-      '--ursa-animation-timing-slider': 'cubic-bezier(0.05, 0.95, 0.35, 1.05)',
-      '--ursa-animation-timing-slidestop': 'cubic-bezier(0.05, 0.05, 0, 1)',
-      '--ursa-animation-timing-throttle': 'cubic-bezier(0.95, 0, 0.95, 0.25)'
+        animationTimingEase: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
+        animationTimingSlider: 'cubic-bezier(0.05, 0.95, 0.35, 1.05)',
+        animationTimingSlideStop: 'cubic-bezier(0.05, 0.05, 0, 1)',
+        animationTimingThrottle: 'cubic-bezier(0.95, 0, 0.95, 0.25)'
     }
-  }
-};
+}

@@ -98,16 +98,16 @@ export const Radio = styled(UrsaRadio)(
 
       & > input[type="radio"].Ursa-RadioButtonInput {
         flex: 1 1 auto;
-        font-size: ${fontSize['--ursa-font-size-5']};
+        font-size: ${fontSize.fontSize5};
         width: 1.2em;
         height: 1.2em;
-        accent-color: ${color['--ursa-accent-color']};
+        accent-color: ${color.accentColor};
         cursor: pointer;
       }
   
       & > label.Ursa-RadioButtonLabel {
         flex: 1 1 auto;
-        font-size: ${fontSize['--ursa-font-size-5']};
+        font-size: ${fontSize.fontSize5};
         padding-left: 10px;
         cursor: pointer;
       }
@@ -115,7 +115,7 @@ export const Radio = styled(UrsaRadio)(
 
     & > .Ursa-RadioButtonHelpText {
       padding-left: calc(2 * 1.2rem);
-      color: ${color['--ursa-text-secondary']}
+      color: ${color.textSecondary}
     }
   `
 );

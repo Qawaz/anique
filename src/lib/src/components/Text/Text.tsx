@@ -125,25 +125,25 @@ export const Text = styled(UrsaText)(
     };
 
     const colors: { [C in Color]: string } = {
-      normal: color['--ursa-text-primary'],
-      success: color['--ursa-text-success'],
-      warning: color['--ursa-text-warning'],
-      error: color['--ursa-text-error'],
-      subdued: color['--ursa-text-subdued']
+      normal: color.textPrimary,
+      success: color.textSuccess,
+      warning: color.textWarning,
+      error: color.textError,
+      subdued: color.textSubdued
     };
 
     const sizes: { [V in Variant]: string } = {
-      heading4XL: fontSize['--ursa-font-size-13'],
-      heading3XL: fontSize['--ursa-font-size-12'],
-      heading2XL: fontSize['--ursa-font-size-11'],
-      headingXL: fontSize['--ursa-font-size-9'],
-      headingL: fontSize['--ursa-font-size-8'],
-      headingM: fontSize['--ursa-font-size-7'],
-      headingS: fontSize['--ursa-font-size-6'],
-      headingXS: fontSize['--ursa-font-size-5'],
-      bodyL: fontSize['--ursa-font-size-6'],
-      bodyM: fontSize['--ursa-font-size-5'],
-      bodyS: fontSize['--ursa-font-size-4']
+      heading4XL: fontSize.fontSize13,
+      heading3XL: fontSize.fontSize12,
+      heading2XL: fontSize.fontSize11,
+      headingXL: fontSize.fontSize9,
+      headingL: fontSize.fontSize8,
+      headingM: fontSize.fontSize7,
+      headingS: fontSize.fontSize6,
+      headingXS: fontSize.fontSize5,
+      bodyL: fontSize.fontSize6,
+      bodyM: fontSize.fontSize5,
+      bodyS: fontSize.fontSize4
     };
 
     const as = !inputAs || inputAs === 'inherit' ? 'p' : inputAs;

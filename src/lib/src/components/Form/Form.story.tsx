@@ -6,7 +6,8 @@ import {
 } from '@storybook/react';
 
 import { Form } from '.';
-import { Textfield, Button } from '../../';
+import { Button } from '../../';
+import {Textfield} from "../Textfield";
 
 export default {
   title: 'Components/Form',

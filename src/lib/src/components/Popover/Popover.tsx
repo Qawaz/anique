@@ -37,8 +37,8 @@ export interface PopoverProps {
 
 const PopoverContent = styled.div(({ theme: { color } }) => ({
   position: 'absolute',
-  backgroundColor: color['--ursa-white'],
-  color: color['--ursa-black'],
+  backgroundColor: "#fff",
+  color: "#000",
   marginTop: '0.25rem',
   maxWidth: '20%',
   borderRadius: '0.625rem',

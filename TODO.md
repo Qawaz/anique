@@ -32,7 +32,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [ ] Remove usages of generating an id at runtime
 
-- [ ] Remove unused icons
+- [x] Remove unused icons
 
 - [x] Upgrade story book to v7
 
@@ -42,7 +42,9 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Remove turbo
 
-- [ ] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access
+- [x] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access
+
+- [ ] Introduce custom components for easier adoption in account-management
 
 - [ ] Fix components compatibility with both themes
 

@@ -26,7 +26,7 @@ const StyledAccordionHeader = styled.h4(
         align-items: center;
         cursor: pointer;
         padding: 0.25rem;
-        border-bottom: 1px solid ${color['--ursa-border-primary']};
+        border-bottom: 1px solid ${color.borderPrimary};
 
         & > span.Ursa-AccordionLabelText {
             flex-grow: 1;

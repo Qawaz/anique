@@ -71,14 +71,14 @@ export const ProgressBar = styled(UrsaProgressBar)(
       width: '100%',
       height: `${computedSize}rem`,
       borderRadius: rounded ? '0.825rem' : 'initial',
-      backgroundColor: color['--ursa-neutral'],
+      backgroundColor: color.neutral,
 
       '& > .Ursa-ProgressBarIndicator': {
         transform: computedTransform,
         transformOrigin: '0 50%',
         height: 'inherit',
         borderRadius: 'inherit',
-        backgroundColor: color['--ursa-accent-color'],
+        backgroundColor: color.accentColor,
         transition:
           preset === 'countdown' ? 'transform 0.09s linear' : undefined,
         animation: computedAnimation

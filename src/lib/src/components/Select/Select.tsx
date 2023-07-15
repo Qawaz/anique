@@ -132,7 +132,7 @@ const Select = styled(UrsaSelect)(
   ({ theme: { color, font, fontSize }, disabled }) => `
         display: flex;
         flex-direction: column;     
-        font-family: ${font['--ursa-font-primary']};
+        font-family: ${font.fontPrimary};
 
         & > label {
             padding-bottom: 2px;
@@ -147,10 +147,10 @@ const Select = styled(UrsaSelect)(
           & > select {
             width: 100%;
             padding: 0.625rem;
-            border: 1px solid ${color['--ursa-btn-disabled']};
+            border: 1px solid ${color.btnDisabled};
             border-radius: 4px;
-            font-size: ${fontSize['--ursa-font-size-4']};
-            background-color: ${color['--ursa-white']};
+            font-size: ${fontSize.fontSize4};
+            background-color: ${"#fff"};
             transition: outline 0.05s ease-in-out;
             background-color: transparent;
             appearance: none;
@@ -162,20 +162,20 @@ const Select = styled(UrsaSelect)(
             }
           }
           & > select option {
-            background-color: ${color['--ursa-btn-basic']};
-            color: ${color['--ursa-black']};
+            background-color: ${color.btnBasic};
+            color: ${"#000"};
           }
           & > .Ursa-Icon {
             position: absolute;
             right: 1rem;
-            color: ${disabled ? color['--ursa-btn-disabled'] : 'currentColor'}
+            color: ${disabled ? color.btnDisabled : 'currentColor'}
           }
         }
         & > .Ursa-SelectCurrentSelected {
           padding: 0.625rem;
         }
         & > .Ursa-SelectLabelHelpText {
-          color: ${color['--ursa-text-secondary']};
+          color: ${color.textSecondary};
         }
         
     `

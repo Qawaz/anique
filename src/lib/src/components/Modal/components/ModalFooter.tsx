@@ -32,7 +32,7 @@ export const ModalFooter = styled(UrsaModalFooter)(
     gap: 20px;
     padding: 20px;
     bottom: 0;
-    border-top: 1px solid ${color['--ursa-border-primary']};
-    background-color: ${color['--ursa-bg-primary']};
+    border-top: 1px solid ${color.borderPrimary};
+    background-color: ${color.bgPrimary};
     `
 );

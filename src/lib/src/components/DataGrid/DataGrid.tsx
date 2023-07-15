@@ -479,8 +479,8 @@ const UrsaDataGrid: FC<DataGridProps> = ({
 
 export const DataGrid = styled(UrsaDataGrid)(
   ({ theme: { color, fontSize } }) => `
-        background-color: ${color['--ursa-bg-primary']};
-        color: ${color['--ursa-text-primary']};
+        background-color: ${color.bgPrimary};
+        color: ${color.textPrimary};
         margin-top: 2.15rem;
         padding-top: 1rem;
         border-top-left-radius: 4px;
@@ -497,11 +497,11 @@ export const DataGrid = styled(UrsaDataGrid)(
         }
 
         .Ursa-DataGridControllerButton {
-          font-size: ${fontSize['--ursa-font-size-5']};
+          font-size: ${fontSize.fontSize5};
           padding-left: 10px;
 
           .Ursa-CheckboxLabelText {
-            font-size: ${fontSize['--ursa-font-size-3']};
+            font-size: ${fontSize.fontSize3};
           }
         }
 
@@ -536,14 +536,14 @@ export const DataGrid = styled(UrsaDataGrid)(
 
         .Ursa-DataGridHeader {
           align-items: flex-start;
-          border: 1px solid ${color['--ursa-border-secondary']};
+          border: 1px solid ${color.borderSecondary};
         }
 
         tbody.Ursa-DataGridBody {
-          border: 1px solid ${color['--ursa-border-secondary']};
+          border: 1px solid ${color.borderSecondary};
           
           & > .Ursa-DataGridRow {
-            border: 1px solid ${color['--ursa-border-secondary']};
+            border: 1px solid ${color.borderSecondary};
           }
         }
 

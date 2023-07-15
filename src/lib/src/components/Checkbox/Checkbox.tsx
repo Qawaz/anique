@@ -133,7 +133,7 @@ const UrsaCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(
             {...indeterminateAttributes}
           />
           <span className="Ursa-CheckboxIcon">
-            <Icon source={iconSource} color={'--ursa-white'} />
+            <Icon source={iconSource} color={"white"} />
           </span>
 
           <span className="Ursa-CheckboxLabelText">{label}</span>
@@ -165,7 +165,7 @@ export const Checkbox = styled(UrsaCheckbox)(
     input[type="checkbox"].Ursa-Checkbox {
         width: 1.2em;
         height: 1.2em;
-        border: 2px solid ${color['--ursa-text-primary']};
+        border: 2px solid ${color.textPrimary};
         clip: rect(0, 0, 0, 0);
         clip-path: inset(50%);
         height: 1px;
@@ -184,12 +184,12 @@ export const Checkbox = styled(UrsaCheckbox)(
       border-radius: 2px;
       margin-right: ${labelHidden ? '0' : '10px'};
       background-color: ${
-        checked ? color['--ursa-accent-color'] : color['--ursa-white']
+        checked ? color.accentColor : "#fff"
       };
       border-color: ${
         checked
-          ? color['--ursa-accent-color']
-          : color['--ursa-border-secondary']
+          ? color.accentColor
+          : color.borderSecondary
       };
     }
     .Ursa-CheckboxLabelText {
@@ -197,7 +197,7 @@ export const Checkbox = styled(UrsaCheckbox)(
     }
     & > .Ursa-CheckboxHelpText {
       padding-left: calc(1.2rem + 2px + 0.625rem);
-      color: ${color['--ursa-text-secondary']}
+      color: ${color.textSecondary}
     }
     `
 );

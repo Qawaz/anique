@@ -24,8 +24,8 @@ const StyledNavigation = styled.div(
         height: 100%;
         max-width: 100%;
         min-height: calc(100vh - 2rem);
-        border-right: 1px solid ${color['--ursa-border-secondary']};
-        background-color: ${color['--ursa-nav-bg-primary']};
+        border-right: 1px solid ${color.borderSecondary};
+        background-color: ${color.navBgPrimary};
     `
 );
 

@@ -1,38 +1,40 @@
 export type ColorScheme = 'light' | 'dark';
 
 export interface Color {
-  '--ursa-color-scheme': string;
-  '--ursa-bg-primary': string;
-  '--ursa-backdrop': string;
-  '--ursa-text-primary': string;
-  '--ursa-text-secondary': string;
-  '--ursa-text-tertiary': string;
-  '--ursa-text-success': string;
-  '--ursa-text-warning': string;
-  '--ursa-text-error': string;
-  '--ursa-text-subdued': string;
-  '--ursa-btn-primary': string;
-  '--ursa-btn-primary-hovered': string;
-  '--ursa-btn-basic': string;
-  '--ursa-btn-alert': string;
-  '--ursa-btn-alert-hovered': string;
-  '--ursa-btn-disabled': string;
-  '--ursa-link-primary': string;
-  '--ursa-link-primary-hovered': string;
-  '--ursa-border-primary': string;
-  '--ursa-border-secondary': string;
-  '--ursa-action-pressed': string;
-  '--ursa-nav-bg-primary': string;
-  '--ursa-nav-item-bg-active': string;
-  '--ursa-nav-item-bg-hovered': string;
-  '--ursa-tag-bg-basic': string;
-  '--ursa-tag-text': string;
-  '--ursa-tab-selected': string;
-  '--ursa-card-img-bg': string;
-  '--ursa-badge-img-bg': string;
-  '--ursa-accent-color': string;
-  '--ursa-accent-color-hovered': string;
-  '--ursa-neutral': string;
-  '--ursa-white': string;
-  '--ursa-black': string;
+
+    colorScheme: string
+    bgPrimary: string
+    backdrop: string
+    textPrimary: string
+    textSecondary: string
+    textTertiary: string
+    textSuccess: string
+    textWarning: string
+    textError: string
+    textSubdued: string
+    btnPrimary: string
+    btnPrimaryHovered: string
+    btnBasic: string
+    btnAlert: string
+    btnAlertHovered: string
+    btnDisabled: string
+    linkPrimary: string
+    linkPrimaryHovered: string
+    borderPrimary: string
+    borderSecondary: string
+    actionPressed: string
+    navBgPrimary: string
+    navItemBgActive: string
+    navItemBgHovered: string
+    tagBgBasic: string
+    tagText: string
+    tabSelected: string
+    cardImgBg: string
+    badgeImgBg: string
+    accentColor: string
+    accentColorHovered: string
+    neutral: string
+    white: string
+    black: string
+
 }

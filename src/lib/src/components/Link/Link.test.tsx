@@ -18,7 +18,7 @@ describe('components/Link', () => {
     expect(linkEl).toHaveAttribute('href', DefaultLink.args?.url);
     expect(linkText).toHaveTextContent(textContent);
     expect(linkEl).toHaveStyle({
-      color: lightTheme.color['--ursa-link-primary'],
+      color: lightTheme.color.linkPrimary,
       'text-decoration': 'underline'
     });
   });
@@ -33,7 +33,7 @@ describe('components/Link', () => {
     expect(linkEl).toHaveAttribute('rel', 'noopener noreferrer');
     expect(linkText).toHaveTextContent(ExternalLink.args?.children as string);
     expect(linkEl).toHaveStyle({
-      color: lightTheme.color['--ursa-link-primary']
+      color: lightTheme.color.linkPrimary
     });
     expect(externalIcon).not.toBeNull();
   });
@@ -45,7 +45,7 @@ describe('components/Link', () => {
     expect(linkEl).toHaveAttribute('href', MonochromeLink.args?.url);
     expect(linkText).toHaveTextContent(MonochromeLink.args?.children as string);
     expect(linkEl).toHaveStyle({
-      color: lightTheme.color['--ursa-text-primary'],
+      color: lightTheme.color.textPrimary,
       'text-decoration': 'underline'
     });
   });
@@ -57,7 +57,7 @@ describe('components/Link', () => {
     expect(linkEl).toHaveAttribute('href', UnstyledLink.args?.url);
     expect(linkText).toHaveTextContent(UnstyledLink.args?.children as string);
     expect(linkEl).toHaveStyle({
-      color: lightTheme.color['--ursa-text-primary'],
+      color: lightTheme.color.textPrimary,
       'text-decoration': 'none'
     });
   });

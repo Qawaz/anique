@@ -22,9 +22,9 @@ const StyledError = styled.p(
         display: inline-flex;
         flex-flow: row wrap;
         gap: 5px;
-        font-family: ${font['--ursa-font-primary']};
-        font-size: ${fontSize['--ursa-font-size-3']};
-        color: ${color['--ursa-btn-alert']};
+        font-family: ${font.fontPrimary};
+        font-size: ${fontSize.fontSize3};
+        color: ${color.btnAlert};
     `
 );
 
@@ -41,7 +41,7 @@ export const Error = ({
       className={`Ursa-Error ${className || ''}`}
       role="alert"
     >
-      {icon && <Icon source={AlertMinor} color="--ursa-btn-alert" />}
+      {icon && <Icon source={AlertMinor} color="btnAlert" />}
       <span id={`${_id}-text`} className="Ursa-ErrorText">
         {children}
       </span>

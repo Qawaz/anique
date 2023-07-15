@@ -36,7 +36,7 @@ const UrsaAccordionPanel = ({
 export const AccordionPanel = styled(UrsaAccordionPanel)(
   ({ theme: { color }, active }) => `
         display: ${active ? 'flex' : 'none'};
-        color: ${color['--ursa-text-primary']};
+        color: ${color.textPrimary};
         padding: 1.25rem 0.625rem;
         opacity: 0;
         animation: fadeIn 0.2s ease-in-out 0.1s forwards;

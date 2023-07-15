@@ -40,7 +40,7 @@ export const UrsaPagination: FC<PaginationProps> = ({
             <Icon
               source={ArrowLeftMinor}
               color={`${
-                prevPageExists ? '--ursa-text-secondary' : '--ursa-btn-disabled'
+                prevPageExists ? 'textSecondary' : 'btnDisabled'
               }`}
             />
           </div>
@@ -54,7 +54,7 @@ export const UrsaPagination: FC<PaginationProps> = ({
             <Icon
               source={ArrowRightMinor}
               color={`${
-                nextPageExists ? '--ursa-text-secondary' : '--ursa-btn-disabled'
+                nextPageExists ? 'textSecondary' : 'btnDisabled'
               }`}
             />
           </div>
@@ -76,12 +76,12 @@ export const Pagination = styled(UrsaPagination)(
       padding: 10px;
       border-width: 1px;
       border-style: solid;
-      border-color: ${color['--ursa-border-primary']};
+      border-color: ${color.borderPrimary};
     }
 
     & > .Ursa-PaginationPrevious.active, .Ursa-PaginationNext.active {
       cursor: pointer;
-      border-color: ${color['--ursa-border-secondary']};
+      border-color: ${color.borderSecondary};
     }
   `
 );

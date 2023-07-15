@@ -127,7 +127,7 @@ export interface TextfieldProps extends BaseInputField {
   togglePasswordIcon?: boolean;
 }
 
-const UrsaTextfield = forwardRef<
+const AniqueTextfield = forwardRef<
   HTMLInputElement | HTMLTextAreaElement,
   TextfieldProps
 >(
@@ -377,7 +377,7 @@ const UrsaTextfield = forwardRef<
   }
 );
 
-export const Textfield = styled(UrsaTextfield)(
+export const Textfield = styled(AniqueTextfield)(
   ({
     theme: { color, fontSize },
     uppercase,
@@ -398,7 +398,7 @@ export const Textfield = styled(UrsaTextfield)(
           align-items: center;
 
           & > .Ursa-TextfieldLabel {
-            font-size: ${fontSize['--ursa-font-size-4']};
+            font-size: ${fontSize.fontSize4};
           }
         }
 
@@ -414,7 +414,7 @@ export const Textfield = styled(UrsaTextfield)(
           & > .Ursa-TextfieldPrefix {
             position: absolute;
             left: 0.5rem;
-            color: ${color['--ursa-text-secondary']}
+            color: ${color.textSecondary}
           }
 
           & > .Ursa-Input {
@@ -422,10 +422,10 @@ export const Textfield = styled(UrsaTextfield)(
             min-height: ${multiline ? '6.75rem' : 'inherit'};
             padding: 0.625rem;
             padding-left: ${prefix && '1.625rem'};
-            border: 1px solid ${color['--ursa-btn-disabled']};
+            border: 1px solid ${color.btnDisabled};
             border-radius: 4px;
             font-family: ${monospaced ? 'monospace' : 'inherit'};
-            font-size: ${fontSize['--ursa-font-size-4']};
+            font-size: ${fontSize.fontSize4};
             text-align: ${align};
             text-transform: ${uppercase ? 'uppercase' : 'none'};
             transition: outline 0.05s ease-in-out;

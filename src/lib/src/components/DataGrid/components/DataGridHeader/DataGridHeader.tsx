@@ -46,7 +46,7 @@ export const DataGridHeader = styled(UrsaDataGridHeader)(
     .Ursa-DataGridColumnContent {
 
       .Ursa-DataGridColumnLabel {
-        font-size: ${fontSize['--ursa-font-size-4']};
+        font-size: ${fontSize.fontSize4};
       }
 
       .Ursa-DataGridColumnSort {

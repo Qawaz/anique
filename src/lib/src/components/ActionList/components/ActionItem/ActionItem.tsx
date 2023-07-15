@@ -77,16 +77,16 @@ export const ActionItem = styled(UrsaActionItem)(
       transition: outline-color 0.2s linear;
 
       &:focus {
-        outline-color: ${color['--ursa-accent-color']};
+        outline-color: ${color.accentColor};
       }
 
       &:active {
         outline: none;
-        background: ${color['--ursa-action-pressed']};
+        background: ${color.actionPressed};
       }
 
       &: hover {
-        background: ${color['--ursa-action-pressed']};
+        background: ${color.actionPressed};
       }
 
       .Ursa-ActionItemContainer {
@@ -106,12 +106,12 @@ export const ActionItem = styled(UrsaActionItem)(
             min-width: 0;
             max-width: 100%;
             flex: 1 1 auto;
-            color: ${color['--ursa-black']};
+            color: ${"#000"};
           }
         ${
           helpText &&
           `& > .Ursa-ActionItemHelpText {
-            color: ${color['--ursa-text-secondary']};
+            color: ${color.textSecondary};
             padding-top: 0.325rem;
           }`
         }

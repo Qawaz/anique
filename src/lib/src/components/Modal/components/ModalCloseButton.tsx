@@ -19,7 +19,7 @@ const CloseButton = styled.button(
         margin: 0;
         padding: 0;
         width: auto;
-        color: ${color['--ursa-text-secondary']};
+        color: ${color.textSecondary};
         transition: color 0.1s ease-in-out;
         font: inherit;
         text-align: inherit;
@@ -29,7 +29,7 @@ const CloseButton = styled.button(
         -webkit-appearance: none;
         
         &:hover {
-          color: ${color['--ursa-text-primary']};
+          color: ${color.textPrimary};
         }
     `
 );

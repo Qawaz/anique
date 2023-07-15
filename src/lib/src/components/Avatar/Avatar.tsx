@@ -89,10 +89,10 @@ export const Avatar = styled(UrsaAvatar)(
       width: ${avatarPx};
       height: ${avatarPx};
       border-radius: ${
-        variant === 'square' ? 0 : border['--ursa-border-radius-full']
+        variant === 'square' ? 0 : border.borderRadiusFull
       };
       background-color: ${
-        !src ? (bgColor ? bgColor : color['--ursa-card-img-bg']) : 'none'
+        !src ? (bgColor ? bgColor : color.cardImgBg) : 'none'
       };
       & > img {
           width: ${
@@ -102,7 +102,7 @@ export const Avatar = styled(UrsaAvatar)(
             size === 'small' ? '28px' : size === 'large' ? '112px' : '56px'
           };
           border-radius: ${
-            variant === 'square' ? 0 : border['--ursa-border-radius-full']
+            variant === 'square' ? 0 : border.borderRadiusFull
           };
       }
 
@@ -112,7 +112,7 @@ export const Avatar = styled(UrsaAvatar)(
           justify-content: center;
           align-items: center;
           height: 100%;
-          color: ${color['--ursa-text-primary']};
+          color: ${color.textPrimary};
           font-weight: bold;
       }
   `;

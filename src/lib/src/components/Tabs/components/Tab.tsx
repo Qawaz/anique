@@ -42,7 +42,7 @@ export const Tab = styled(UrsaTab)(
       margin: 0;
       padding: 0;
       color: ${
-        selected ? color['--ursa-text-primary'] : color['--ursa-text-secondary']
+        selected ? color.textPrimary : color.textSecondary
       };
       
   
@@ -58,13 +58,13 @@ export const Tab = styled(UrsaTab)(
             layout === 'vertical'
               ? '0'
               : `0.3em solid ${
-                  selected ? color['--ursa-btn-primary'] : 'transparent'
+                  selected ? color.btnPrimary : 'transparent'
                 }`
           };
           border-left: ${
             layout === 'vertical'
               ? `0.3em solid ${
-                  selected ? color['--ursa-btn-primary'] : 'transparent'
+                  selected ? color.btnPrimary : 'transparent'
                 }`
               : '0'
           };
@@ -73,18 +73,18 @@ export const Tab = styled(UrsaTab)(
           transition-timing-function: ease-in-out;
       }
       &:hover {
-          color: ${color['--ursa-text-primary']};
+          color: ${color.textPrimary};
   
           .Ursa-Tab {
             padding: ${layout === 'vertical' ? '0.75em 1.5em' : '0.6em 1.5em'};
             border-bottom: ${
               layout === 'vertical'
                 ? '0'
-                : `0.3em solid ${!selected && color['--ursa-text-secondary']}`
+                : `0.3em solid ${!selected && color.textSecondary}`
             };
             border-left: ${
               layout === 'vertical'
-                ? `0.3em solid ${!selected && color['--ursa-text-secondary']}`
+                ? `0.3em solid ${!selected && color.textSecondary}`
                 : '0'
             };
           }

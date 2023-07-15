@@ -151,10 +151,10 @@ export const Toast = styled(UrsaToast)(
       position: 'absolute',
       ...computedWrapperPosition,
       // ${slideInBottom} 0.3s ${
-      //   animation.timing['--ursa-animation-timing-slider']
+      //   animation.timing.animationTimingSlider
       // } forwards
       // animation: `${bounceInBottom} 0.3s ${
-      //   animation.timing['--ursa-animation-timing-slider']
+      //   animation.timing.ursaAnimationTimingSlider
       // } forwards,
       // ${slideOutBottom} 0.3s ease-in-out ${duration + 0.1}s forwards`,
       animation: toastAnimation,
@@ -166,8 +166,8 @@ export const Toast = styled(UrsaToast)(
       '& > .Ursa-Toast': {
         position: 'relative',
         cursor: 'pointer',
-        backgroundColor: color['--ursa-black'],
-        color: color['--ursa-white'],
+        backgroundColor: "#000",
+        color: "#fff",
         borderRadius: '0.25rem',
         padding: '1.25rem',
         width: '480px',
@@ -188,11 +188,11 @@ export const Toast = styled(UrsaToast)(
           top: '0.625rem',
           right: '0.625rem',
           zIndex: 50,
-          color: color['--ursa-text-secondary'],
+          color: color.textSecondary,
           transition: 'color 0.15s ease-in-out',
 
           '&:hover': {
-            color: color['--ursa-white']
+            color: "#fff"
           }
         }
       }

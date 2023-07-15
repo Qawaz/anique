@@ -120,9 +120,9 @@ const StyledCard = styled(UrsaCard)(
     }
 
     return {
-      borderRadius: border['--ursa-border-radius-xl'],
-      backgroundColor: color['--ursa-white'],
-      color: color['--ursa-black'],
+      borderRadius: border.borderRadiusXl,
+      backgroundColor: "#fff",
+      color: "#000",
       boxShadow:
         '0 0 0.3125rem rgb(23 24 25 / 10%), 0 0 0.625rem rgb(23 24 25 / 15%)',
 
@@ -134,11 +134,11 @@ const StyledCard = styled(UrsaCard)(
       },
 
       '& h2, h3': {
-        color: color['--ursa-black']
+        color: "#000"
       },
 
       '& > .Ursa-CardSection + .Ursa-CardSection': {
-        borderTop: `1px solid ${color['--ursa-btn-disabled']}`
+        borderTop: `1px solid ${color.btnDisabled}`
       }
     };
   }

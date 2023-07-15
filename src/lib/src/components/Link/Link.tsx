@@ -23,7 +23,7 @@ export interface LinkProps {
 const UnstyledAnchorTag = styled.a(
   ({ theme: { color } }) => `
     text-decoration: none;
-    color: ${color['--ursa-text-primary']};
+    color: ${color.textPrimary};
   `
 );
 
@@ -49,7 +49,7 @@ export const UnstyledLink: FC<LinkProps> = forwardRef(
               <Icon
                 source={ExternalSmallMinor}
                 size="large"
-                color={'--ursa-link-primary'}
+                color={'linkPrimary'}
               />
             </span>
           )}
@@ -66,8 +66,8 @@ export const Link = styled(UnstyledLink)(
         gap: 5px;
         color: ${
           monochrome || unstyled
-            ? color['--ursa-text-primary']
-            : color['--ursa-link-primary']
+            ? color.textPrimary
+            : color.linkPrimary
         };
         text-decoration: ${unstyled ? 'none' : 'underline'};
         transition-property: color;
@@ -76,8 +76,8 @@ export const Link = styled(UnstyledLink)(
         &:hover {
             color: ${
               monochrome || unstyled
-                ? color['--ursa-text-primary']
-                : color['--ursa-link-primary-hovered']
+                ? color.textPrimary
+                : color.linkPrimaryHovered
             };
             text-decoration: none;
         }        

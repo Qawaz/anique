@@ -347,16 +347,16 @@ export const Button = styled(UrsaButton)(
   }) => {
     const ButtonTextColor = `${
       disabled
-        ? color['--ursa-btn-disabled']
+        ? color.btnDisabled
         : (primary || alert) && !outline
         ? 'white'
         : alert
-        ? color['--ursa-btn-alert']
+        ? color.btnAlert
         : outline
         ? alert
-          ? color['--ursa-btn-alert']
-          : color['--ursa-btn-primary']
-        : color['--ursa-text-secondary']
+          ? color.btnAlert
+          : color.btnPrimary
+        : color.textSecondary
     };`;
 
     return `
@@ -372,7 +372,7 @@ export const Button = styled(UrsaButton)(
   width: ${fullWidth ? '100%' : 'auto'};
   min-width: ${iconOnly ? 'auto' : '85px'};
   padding: 0.875em 1.5em;
-  font-size: ${fontSize['--ursa-font-size-3']};
+  font-size: ${fontSize.fontSize3};
   font-weight: bold;
   text-transform: ${uppercase ? 'uppercase' : 'none'};
   text-decoration: none;
@@ -381,12 +381,12 @@ export const Button = styled(UrsaButton)(
   border-radius: 4px;
   border-color: ${
     disabled
-      ? color['--ursa-btn-disabled']
+      ? color.btnDisabled
       : alert
-      ? color['--ursa-btn-alert']
+      ? color.btnAlert
       : primary || outline
-      ? color['--ursa-btn-primary']
-      : color['--ursa-border-primary']
+      ? color.btnPrimary
+      : color.borderPrimary
   };
   background-color: ${
     disabled
@@ -394,9 +394,9 @@ export const Button = styled(UrsaButton)(
       : outline
       ? 'transparent'
       : alert
-      ? color['--ursa-btn-alert']
+      ? color.btnAlert
       : primary || loading
-      ? color['--ursa-btn-primary']
+      ? color.btnPrimary
       : 'white'
   };
   color: ${ButtonTextColor};
@@ -408,7 +408,7 @@ export const Button = styled(UrsaButton)(
     outline: 2px solid transparent;
     outline-offset: 1px;
     transition: outline-color 0.2s linear;
-    outline-color: ${color['--ursa-accent-color']};
+    outline-color: ${color.accentColor};
   }
 
   &:hover {
@@ -417,18 +417,18 @@ export const Button = styled(UrsaButton)(
       disabled || outline
         ? 'transparent'
         : alert
-        ? color['--ursa-btn-alert-hovered']
+        ? color.btnAlertHovered
         : primary || loading
-        ? color['--ursa-btn-primary-hovered']
+        ? color.btnPrimaryHovered
         : '#F8F8F8'
     };
     border-color: ${
       disabled
-        ? color['--ursa-btn-disabled']
+        ? color.btnDisabled
         : alert
-        ? color['--ursa-btn-alert-hovered']
+        ? color.btnAlertHovered
         : primary || outline || loading
-        ? color['--ursa-btn-primary-hovered']
+        ? color.btnPrimaryHovered
         : 'auto'
     };
     cursor: ${disabled ? 'auto' : 'pointer'};
