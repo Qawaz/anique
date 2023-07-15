@@ -5,16 +5,16 @@ import { matchers } from '@emotion/jest';
 // Add the custom matchers provided by '@emotion/jest'
 expect.extend(matchers);
 
-import { ThemeProvider } from '../ThemeProvider';
+import { AniqueSystemThemeProvider } from '../ThemeProvider';
 import { Backdrop } from './Backdrop';
 
 describe('components/Backdrop', () => {
   it('Snapshot Test', () => {
     const backdrop = renderer
       .create(
-        <ThemeProvider>
+        <AniqueSystemThemeProvider>
           <Backdrop />
-        </ThemeProvider>
+        </AniqueSystemThemeProvider>
       )
       .toJSON();
     expect(backdrop).toMatchSnapshot();
@@ -23,9 +23,9 @@ describe('components/Backdrop', () => {
   it('Transparent background', () => {
     const backdrop = renderer
       .create(
-        <ThemeProvider>
+        <AniqueSystemThemeProvider>
           <Backdrop transparent={true} />
-        </ThemeProvider>
+        </AniqueSystemThemeProvider>
       )
       .toJSON();
 

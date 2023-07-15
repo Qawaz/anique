@@ -1,24 +1,6 @@
-export { ThemeProvider, useColorScheme } from './components/ThemeProvider';
-export type { ThemeProviderProps } from './components/ThemeProvider';
-
-export type {
-  BaseButton,
-  DataGridFilter,
-  DataGridView,
-  DataGridColumn,
-  DataGridRow,
-  DataGridProps,
-  IconSource,
-  ModalProps,
-  SelectProps,
-  StackProps,
-  TabPanelProps,
-  TabsProps,
-  TabProps,
-  TagProps,
-  UploadOptions,
-  UploadButtonProps
-} from './types';
+export * from "./components/ThemeProvider"
+export * from "./styles"
+export * from "./types"
 
 export { Accordion } from './components/Accordion';
 export type { AccordionProps } from './components/Accordion';

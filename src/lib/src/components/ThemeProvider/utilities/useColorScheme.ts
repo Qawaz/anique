@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import { ColorScheme } from '../../../types/theme';
-import { getColorScheme } from '../../../utilities';
+
+export const getColorScheme = (): ColorScheme =>
+    process.env.NODE_ENV !== 'production'
+        ? 'light'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
 
 export const useColorScheme = () => {
   const defaultScheme = getColorScheme();
@@ -11,9 +17,7 @@ export const useColorScheme = () => {
     if (window) {
       const media = window.matchMedia('(prefers-color-scheme: dark)');
       /** Run the first time */
-      if (!colorScheme) {
-        return setColorScheme(media.matches ? 'dark' : 'light');
-      }
+      setColorScheme(media.matches ? 'dark' : 'light');
       const themeSetter = () => {
         if (media.matches) {
           setColorScheme('dark');
@@ -23,7 +27,7 @@ export const useColorScheme = () => {
       return () => media.removeEventListener('change', themeSetter);
     }
     return;
-  }, [colorScheme]);
+  }, []);
 
   return colorScheme;
 };

@@ -65,7 +65,7 @@ interface AnimationProps {
   enterDelay?: number;
   enterFillMode?: AnimationFillMode;
   enterDirection?: AnimationDirection;
-  enterIterationCount?: AnimationIterationCount;
+  enterIterationCount?: number;
   exit?: AnimationPreset;
   exitFrom?: number;
   exitTo?: number;
@@ -74,7 +74,7 @@ interface AnimationProps {
   exitDelay?: number;
   exitFillMode?: AnimationFillMode;
   exitDirection?: AnimationDirection;
-  exitIterationCount?: AnimationIterationCount;
+  exitIterationCount?: number;
 }
 
 /**

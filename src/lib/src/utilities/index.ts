@@ -2,7 +2,6 @@ export * from './components';
 export * from './debounce';
 export * from './DOM-utils';
 export * from './generateUniqueID';
-export * from './getColorScheme';
 export * from './getElementOffset';
 export * from './getSelectionText';
 export * from './isIconSource';

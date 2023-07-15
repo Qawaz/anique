@@ -3,7 +3,7 @@ import React, {
   useRef,
   useImperativeHandle,
   forwardRef,
-  NamedExoticComponent
+  NamedExoticComponent, AriaRole
 } from 'react';
 import styled from '@emotion/styled';
 import { ActionItem, ActionSection } from './components';
@@ -47,9 +47,9 @@ const ActionList = forwardRef<
     const finalSections = items ? [{ items }, ...sections] : sections;
     const hasMultipleSections = finalSections.length > 1;
     const Element = hasMultipleSections ? 'ul' : 'div';
-    const actionListRole =
+    const actionListRole : AriaRole | undefined =
       hasMultipleSections && actionRole === 'menuitem' ? 'menu' : undefined;
-    const actionListTabIndex =
+    const actionListTabIndex : number | undefined =
       hasMultipleSections && actionRole === 'menuitem' ? -1 : undefined;
 
     useImperativeHandle(ref, () =>

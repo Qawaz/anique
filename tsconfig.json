@@ -12,7 +12,7 @@
     ".cache",
     "examples",
     "config/jest",
-    "config/.storybook/main.js",
+    ".storybook/main.js",
     "node_modules",
     "src/ursa-*/**/*.test.*",
     "src/ursa-*/esm/**/*",

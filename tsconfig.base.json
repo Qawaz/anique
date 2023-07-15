@@ -2,7 +2,7 @@
   "exclude": [
     "node_modules",
     "jest.config.js",
-    "config/.storybook/main.js",
+    ".storybook/main.js",
     "lib/**/*",
     "esm/**/*",
     "cjs/**/*"

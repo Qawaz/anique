@@ -1,8 +1,7 @@
 import React from 'react';
 import {
-  ComponentMeta,
-  ComponentStory,
-  ComponentStoryFn
+  Meta,
+  StoryFn
 } from '@storybook/react';
 
 import { ActionList } from './ActionList';
@@ -12,13 +11,13 @@ import { ImportMinor, ExportMinor } from "../../icons";
 export default {
   title: 'Components/ActionList',
   component: ActionList
-} as ComponentMeta<typeof ActionList>;
+} as Meta<typeof ActionList>;
 
-const Template: ComponentStory<typeof ActionList> = (args) => (
+const Template: StoryFn<typeof ActionList> = (args) => (
   <ActionList {...args} />
 );
 
-export const DefaultActionList: ComponentStoryFn<typeof ActionList> =
+export const DefaultActionList: StoryFn<typeof ActionList> =
   Template.bind({});
 DefaultActionList.args = {
   actionRole: 'menuitem',
@@ -36,7 +35,7 @@ DefaultActionList.args = {
   ]
 };
 
-export const ActionListWithHelpText: ComponentStoryFn<typeof ActionList> =
+export const ActionListWithHelpText: StoryFn<typeof ActionList> =
   Template.bind({});
 ActionListWithHelpText.args = {
   actionRole: 'menuitem',
@@ -56,7 +55,7 @@ ActionListWithHelpText.args = {
   ]
 };
 
-export const ActionListWithPrefix: ComponentStoryFn<typeof ActionList> =
+export const ActionListWithPrefix: StoryFn<typeof ActionList> =
   Template.bind({});
 ActionListWithPrefix.args = {
   actionRole: 'menuitem',

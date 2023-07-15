@@ -20,12 +20,24 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Shift icons package to new branch (svgr-icons)
 
+- [x] Rename folder ursa-core to lib
+
+- [ ] Make headings simpler , use H1,H2,H3,H4,H5,H6
+
 - [ ] Create a demo package to view all components in action for docs website
 
-- [ ] Rename folder ursa-core to lib
+- [ ] Test generated test in link library in demo package
+
+- [ ] Migrate storybook components types
+
+- [ ] Remove usages of generating an id at runtime
 
 - [ ] Remove unused icons
 
-- [ ] Upgrade story book to v7
+- [x] Upgrade story book to v7
+
+- [x] Build storybook working
+
+- [ ] Deploy Storybook to gh-pages
 
 - [ ] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access

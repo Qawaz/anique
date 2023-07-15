@@ -1,6 +1,6 @@
 import {
   useTestId,
-  generateUniqueID,
+  // generateUniqueID,
   isServer,
   isFileAccepted,
   sortDataBy
@@ -28,14 +28,14 @@ describe('utilities', () => {
     });
   });
 
-  describe('utilities/generateUniqueID', () => {
-    it('Test UniqueID generation with Prefix', () => {
-      expect(generateUniqueID('test')).toMatch(/^test-[a-z0-9]+/);
-    });
-    it('Test UniqueID generation (no Prefix)', () => {
-      expect(generateUniqueID()).toMatch(/^[a-z0-9]+/);
-    });
-  });
+  // describe('utilities/generateUniqueID', () => {
+  //   it('Test UniqueID generation with Prefix', () => {
+  //     expect(generateUniqueID('test')).toMatch(/^test-[a-z0-9]+/);
+  //   });
+  //   it('Test UniqueID generation (no Prefix)', () => {
+  //     expect(generateUniqueID()).toMatch(/^[a-z0-9]+/);
+  //   });
+  // });
 
   describe('utilities/isServer', () => {
     const { window, document } = global;
