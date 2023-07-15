@@ -121,8 +121,8 @@ const StyledCard = styled(UrsaCard)(
 
     return {
       borderRadius: border.borderRadiusXl,
-      backgroundColor: "#fff",
-      color: "#000",
+      backgroundColor: color.bgPrimary,
+      color: color.textPrimary,
       boxShadow:
         '0 0 0.3125rem rgb(23 24 25 / 10%), 0 0 0.625rem rgb(23 24 25 / 15%)',
 
@@ -134,7 +134,7 @@ const StyledCard = styled(UrsaCard)(
       },
 
       '& h2, h3': {
-        color: "#000"
+        color: color.textPrimary
       },
 
       '& > .Ursa-CardSection + .Ursa-CardSection': {

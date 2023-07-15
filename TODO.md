@@ -49,7 +49,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 - [ ] Fix components compatibility with both themes
 
     - [x] ActionList
-    - [ ] Card
+    - [x] Card
     - [ ] Icon (in stories) not displaying in both themes
     - [ ] Input (in DarkMode) the border is too visible
     - [ ] Link component hides underline on hover , remove it
