@@ -10,6 +10,7 @@ import externals from 'rollup-plugin-node-externals';
 import typescript from '@rollup/plugin-typescript';
 import summary from 'rollup-plugin-summary';
 import pkg from "./package.json" assert { type: "json" }
+import terser from "@rollup/plugin-terser";
 
 const { move } = fsExtra;
 const input = 'src/index.ts';
@@ -48,6 +49,7 @@ export default [
       /@emotion\/react/
     ],
     plugins: [
+      terser(),
       externals(),
       typescript(),
       nodeResolve({ extensions }),
