@@ -1,6 +1,6 @@
 {
   "name": "@qawaz/anique",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Minimal React & Emotion UI Component Library",
   "author": "Qawaz",
   "license": "MIT",
@@ -50,16 +50,17 @@
     "ts-check": "tsc --noemit"
   },
   "dependencies": {
-    "@emotion/react": ">=11.9.0",
-    "@emotion/styled": ">=11.8.1"
+
   },
   "devDependencies": {
-    "@types/react": ">=18.0.0",
-    "@types/react-dom": ">=18.0.0",
+    "@types/react": ">=18.2.15",
+    "@types/react-dom": ">=18.2.7",
     "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
-    "react-dom": ">=18.0.0"
+    "react-dom": ">=18.0.0",
+    "@emotion/react": ">=11.9.0",
+    "@emotion/styled": ">=11.8.1"
   }
 }

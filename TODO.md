@@ -18,10 +18,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 - [ ] Component Separation
 
     - [ ] Icon Button
-    - [ ] Build a complex form and analyze the source code and build required components
     - [ ] Allow to change helper text color with color key
     - [ ] Checkbox , Labeled Checkbox & Helper Text
     - [ ] Radio Button , Labeled Radio & Helper Text
-    - [ ] Textfield
-
-- [ ] Build a simple site for the main page as a demo
+    - [ ] Textfield & Input , with & without leading & trailing icon
