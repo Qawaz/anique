@@ -13,7 +13,6 @@ import React, {
 } from 'react';
 import styled from '@emotion/styled';
 import { generateUniqueID } from '../../utilities';
-import { Error } from '../Error';
 import { Icon } from '../Icon';
 import {
   ViewMinor,
@@ -107,8 +106,6 @@ export interface TextfieldProps extends BaseInputField {
   align?: TextAlign;
   /** Whether monospaced font should be used */
   monospaced?: boolean;
-  /** A List of Errors, if any */
-  errors?: string[];
   /** Whether multiline textfield */
   multiline?: boolean | number;
   /** Whether spellcheck is allowed */
@@ -146,7 +143,6 @@ const AniqueTextfield = forwardRef<
       min,
       max,
       pattern,
-      errors,
       labelHidden,
       labelAction,
       multiline,
@@ -275,9 +271,6 @@ const AniqueTextfield = forwardRef<
 
     /** Accessibility Props */
     const accessibilityProps = {
-      'aria-describedby': errors?.length
-        ? errors.map((e, i) => `${id}-${i + 1}-error-text`).join(' ')
-        : undefined,
       'aria-labelledby': _labelid,
       'aria-required': required || undefined
     };
@@ -362,16 +355,6 @@ const AniqueTextfield = forwardRef<
           {toggleShowPasswordMarkup}
           {clearMarkup}
         </div>
-        {/* Error Handling - If errors = [] is passed as props */}
-        {errors?.length && (
-          <div id={`${id}-errors`} className="Anique-TextfieldErrors">
-            {errors.map((error, indx) => (
-              <Error id={`${id}-${indx + 1}-error`} key={indx}>
-                {error}
-              </Error>
-            ))}
-          </div>
-        )}
       </div>
     );
   }
@@ -443,10 +426,6 @@ export const Textfield = styled(AniqueTextfield)(
             right: 0.5rem;
           }
         }
-        
-        .Anique-TextfieldErrors {
-          display: flex;
-          flex-direction: column;
-        }
+
     `
 );

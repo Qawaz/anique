@@ -1,5 +1,9 @@
 export * from "./ThemeProvider"
 
+export * from "./Textfield"
+export * from "./ToggleSwitch"
+export * from "./FormField"
+
 export {Accordion} from './Accordion';
 export type {AccordionProps} from './Accordion';
 
@@ -48,8 +52,7 @@ export type {InvisibleProps} from './Invisible';
 export {Label} from './Label';
 export type {LabelProps} from './Label';
 
-export {Link} from './Link';
-export type {LinkProps} from './Link';
+export * from "./Link"
 
 export {Modal} from './Modal';
 

@@ -44,9 +44,12 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [x] Fix theme color names to not be prefixed with double dashes, use direct accessor instead of string access
 
-- [ ] Introduce custom components for easier adoption in account-management
+- [ ] Introduce custom components for easier adoption
 
-- [ ] Fix components compatibility with both themes
+    - [ ] Icon Button
+    - [ ] Ripple
+
+- [x] Fix components compatibility with both themes
 
     - [x] ActionList
     - [x] Card
@@ -60,10 +63,14 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 
 - [ ] Component Separation
 
+    - [ ] Icon Button
+    - [x] Anchor & ExternalAnchor
+    - [x] FormField
+    - [x] ToggleSwitch
     - [ ] Build a complex form and analyze the source code and build required components
     - [ ] Allow to change helper text color with color key
     - [ ] Checkbox , Labeled Checkbox & Helper Text
     - [ ] Radio Button , Labeled Radio & Helper Text
-    - [ ] Input
+    - [ ] Textfield
 
 - [ ] Build a simple site for the main page as a demo

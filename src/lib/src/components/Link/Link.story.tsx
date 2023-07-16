@@ -2,17 +2,34 @@ import React from 'react';
 import {
   ComponentMeta,
   ComponentStory,
-  ComponentStoryFn
+  ComponentStoryFn, StoryFn, StoryObj
 } from '@storybook/react';
 
-import { Link } from '.';
+import {Anchor, ExternalAnchor, Link} from '.';
 
 export default {
   title: 'Components/Link',
-  component: Link
-} as ComponentMeta<typeof Link>;
+  component: Anchor
+} as ComponentMeta<typeof Anchor>;
 
 const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
+
+export const AnchorObj : { args: { children: string; underlineOnHover: boolean; underlined: boolean; colored: boolean; href: string }; name: string } = {
+  name : "Anchor",
+  args : {
+      underlined : true,
+      colored : true,
+      underlineOnHover : false,
+      href : "http://github.com/Qawaz/anique",
+      children : "My Anchor Link"
+  }
+}
+
+export const ExternalAnchorComponent : StoryFn<typeof ExternalAnchor> = () => {
+  return (
+      <ExternalAnchor href={"https://github.com/Qawaz/anique"}>My External Link</ExternalAnchor>
+  )
+}
 
 export const DefaultLink: ComponentStoryFn<typeof Link> = Template.bind({});
 DefaultLink.args = {

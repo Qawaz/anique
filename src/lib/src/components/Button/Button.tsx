@@ -56,9 +56,9 @@ export interface ButtonProps extends BaseButton {
   connectedDisclosure?: ConnectedDisclosure;
 }
 
-const ButtonContainer = styled.div(() => ({
-  display: 'inline-flex'
-}));
+const ButtonContainer = styled.div`
+  display: inline-flex;
+`
 
 const AniqueButton = forwardRef<
   HTMLButtonElement | HTMLInputElement,

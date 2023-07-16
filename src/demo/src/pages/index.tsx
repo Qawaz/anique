@@ -1,7 +1,29 @@
 import * as React from "react"
 import type {HeadFC, PageProps} from "gatsby"
 import styled from "@emotion/styled"
-import {AniqueSystemThemeProvider, H1, Link} from "@qawaz/anique";
+import {
+    AniqueSystemThemeProvider,
+    Button,
+    H1,
+    H2,
+    Anchor,
+    useColorScheme,
+    darkTheme,
+    lightTheme,
+    AniqueThemeProvider
+} from "@qawaz/anique";
+import {css, Global} from "@emotion/react";
+import {Link} from "gatsby";
+import {FormDemo} from "../components/FormDemo";
+import {useState} from "react";
+
+const GlobalStyles = css`
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+`
 
 const Container = styled.main`
   display: flex;
@@ -12,25 +34,92 @@ const Container = styled.main`
 `
 
 const Header = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
 `
 
+const HeaderNav = styled.nav`
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+`
+
+const Hero = styled.div`
+  width: 100%;
+  height: 300px;
+  background: ${props => props.theme.color.bgPrimary};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 1em;
+`
+
+const HeroHeading = styled.span`
+  font-size: ${props => props.theme.fontSize.fontSize13};
+  text-align: center;
+  font-family: ${props => props.theme.font.fontPrimary};
+`
+
+const HeroText = styled.p`
+  margin-top: 1em;
+  margin-bottom: 1em;
+`
+
+const Footer = styled.div`
+  width: 100%;
+  background: ${props => props.theme.color.bgPrimary};
+  padding: 1em;
+  margin-top: 1em;
+`
+
+const AnchorLink = Anchor.withComponent(Link)
+
+const ButtonLink = Button.withComponent(AnchorLink)
+
 const IndexPage: React.FC<PageProps> = (props) => {
+    const colorScheme = useColorScheme()
+    const [isDarkTheme, setIsDarkTheme] = useState<boolean>(colorScheme == "dark")
     return (
         <>
-            <AniqueSystemThemeProvider>
+            <Global styles={GlobalStyles}/>
+            <AniqueThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
                 <Container>
                     <Header>
-                        <H1>Anique</H1>
+                        <H2>Anique</H2>
+                        <HeaderNav>
+                            <Anchor href={"./storybook"} underlined={false}>
+                                Storybook
+                            </Anchor>
+                            <AnchorLink to={"/docs"} underlined={false}>
+                                Docs
+                            </AnchorLink>
+                        </HeaderNav>
                     </Header>
-                    <p>
-                        Anique is a UI component library build with React & Emotion, This is is docs site
-                        At the moment You can view Anique components in the storybook as this site is under development
-                    </p>
-                    <Link href={"./storybook"}>Anique Storybook</Link>
+                    <Hero>
+                        <HeroHeading>
+                            Minimal React Emotion Component Library
+                        </HeroHeading>
+                        <HeroText>
+                            Easy, Performant & Beautiful Components
+                        </HeroText>
+                        <ButtonLink to={"/docs/setup"} primary underlineOnHover={false} colored={false}>Get
+                            Started</ButtonLink>
+                    </Hero>
+                    <FormDemo
+                        isDarkTheme={isDarkTheme}
+                        toggleDarkTheme={() => setIsDarkTheme(!isDarkTheme)}
+                    />
+                    <Footer>
+                        Copyright &copy; 2023 Anique
+                    </Footer>
                 </Container>
-            </AniqueSystemThemeProvider>
+            </AniqueThemeProvider>
         </>
     )
 }

@@ -1,23 +1,21 @@
-import React, { useState, useCallback, ChangeEvent } from 'react';
+import React, {ChangeEvent, useCallback, useState} from 'react';
 import {
-  ComponentMeta,
-  ComponentStory,
-  ComponentStoryFn
+  StoryFn,
+  Meta
 } from '@storybook/react';
 import { Textfield } from './Textfield';
-import { number } from 'yargs';
 
 export default {
   title: 'components/Textfield',
   component: Textfield
-} as ComponentMeta<typeof Textfield>;
+} as Meta<typeof Textfield>;
 
 /**************************************************************************/
 /** Templates */
 /**************************************************************************/
 
 /** Template 1 */
-const Template: ComponentStory<typeof Textfield> = ({
+const Template: StoryFn<typeof Textfield> = ({
   value,
   onChange,
   ...args
@@ -35,7 +33,7 @@ const Template: ComponentStory<typeof Textfield> = ({
 };
 
 /** Template 2 */
-const ClearTemplate: ComponentStory<typeof Textfield> = ({
+const ClearTemplate: StoryFn<typeof Textfield> = ({
   value,
   onClearButtonClick,
   onChange,
@@ -66,14 +64,14 @@ const ClearTemplate: ComponentStory<typeof Textfield> = ({
 /**************************************************************************/
 /** Stories */
 /**************************************************************************/
-export const DefaultTextfield: ComponentStoryFn<typeof Textfield> =
+export const DefaultTextfield: StoryFn<typeof Textfield> =
   Template.bind({});
 DefaultTextfield.args = {
   label: 'Name',
   value: 'Jayanta Samaddar'
 };
 
-export const RequiredEmail_with_LabelHidden: ComponentStoryFn<
+export const RequiredEmail_with_LabelHidden: StoryFn<
   typeof Textfield
 > = Template.bind({});
 RequiredEmail_with_LabelHidden.args = {
@@ -84,7 +82,7 @@ RequiredEmail_with_LabelHidden.args = {
   value: 'jayanta@zenius.one'
 };
 
-export const Password_with_Errors: ComponentStoryFn<typeof Textfield> =
+export const Password_with_Errors: StoryFn<typeof Textfield> =
   Template.bind({});
 Password_with_Errors.args = {
   name: 'password',
@@ -97,7 +95,7 @@ Password_with_Errors.args = {
   ]
 };
 
-export const MultilineField: ComponentStoryFn<typeof Textfield> = Template.bind(
+export const MultilineField: StoryFn<typeof Textfield> = Template.bind(
   {}
 );
 MultilineField.args = {
@@ -107,7 +105,7 @@ MultilineField.args = {
   max: 8
 };
 
-export const MonospacedFont: ComponentStoryFn<typeof Textfield> = Template.bind(
+export const MonospacedFont: StoryFn<typeof Textfield> = Template.bind(
   {}
 );
 MonospacedFont.args = {
@@ -117,21 +115,21 @@ MonospacedFont.args = {
   value: 'Leave us a message...'
 };
 
-export const Disabled: ComponentStoryFn<typeof Textfield> = Template.bind({});
+export const Disabled: StoryFn<typeof Textfield> = Template.bind({});
 Disabled.args = {
   label: 'Organization Name',
   disabled: true,
   value: 'Zenius'
 };
 
-export const ReadOnly: ComponentStoryFn<typeof Textfield> = Template.bind({});
+export const ReadOnly: StoryFn<typeof Textfield> = Template.bind({});
 ReadOnly.args = {
   label: 'Organization Name',
   readOnly: true,
   value: 'Zenius'
 };
 
-export const TextfieldSelectedOnFocus: ComponentStoryFn<typeof Textfield> =
+export const TextfieldSelectedOnFocus: StoryFn<typeof Textfield> =
   Template.bind({});
 TextfieldSelectedOnFocus.args = {
   label: 'Organization Name',
@@ -139,13 +137,13 @@ TextfieldSelectedOnFocus.args = {
   value: 'Zenius'
 };
 
-export const TextfieldWithClearButton: ComponentStoryFn<typeof Textfield> =
+export const TextfieldWithClearButton: StoryFn<typeof Textfield> =
   ClearTemplate.bind({});
 TextfieldWithClearButton.args = {
   label: 'Tag'
 };
 
-export const NumberWithPrefix: ComponentStoryFn<typeof Textfield> =
+export const NumberWithPrefix: StoryFn<typeof Textfield> =
   Template.bind({});
 NumberWithPrefix.args = {
   label: 'Amount',
