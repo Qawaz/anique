@@ -3,6 +3,7 @@ export * from "./ThemeProvider"
 export * from "./Textfield"
 export * from "./ToggleSwitch"
 export * from "./FormField"
+export * from "./HorizontalDivider"
 
 export {Accordion} from './Accordion';
 export type {AccordionProps} from './Accordion';

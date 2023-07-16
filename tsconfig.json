@@ -2,7 +2,6 @@
   "extends": "./tsconfig.base.json",
   "include": [
     "src/*/src/",
-    "./docs/src",
     "./scripts",
     "./config/types",
     "./tests"
@@ -11,16 +10,14 @@
     "public",
     "docs",
     ".cache",
-    "examples",
     "config/jest",
-    ".storybook/main.js",
+    ".storybook/main.ts",
     "node_modules",
     "src/*/**/*.test.*",
     "src/*/esm/**/*",
     "src/*/types/**/*",
     "src/*/cjs/**/*",
-    "src/*/coverage",
-    "src/*/.turbo"
+    "src/*/coverage"
   ],
   "compilerOptions": {
     "paths": {
