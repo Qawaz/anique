@@ -38,7 +38,9 @@ const ButtonColorModeSwitch = styled(Label)`
   position: relative;
 `
 
-const ButtonColorModeSwitchInner = styled(Label)<{ checked: boolean }>`
+const ButtonColorModeSwitchInner = styled(Label,{
+    shouldForwardProp : (prop) => prop != "checked"
+})<{ checked: boolean }>`
   margin: 0px;
   width: 140px;
   height: 30px;
@@ -82,14 +84,8 @@ const ButtonColorModeSwitchInner = styled(Label)<{ checked: boolean }>`
     ${props => props.checked && css`
         content: attr(data-on);
         left: 68px;
-        //background: #3c3c3c;
     `}
   }
-
-  // ${props => props.checked && css`
-  //   background: #151515;
-  //   color: #fff;
-  // `}
 
 `
 

@@ -80,8 +80,6 @@ const Footer = styled.div`
 
 const AnchorLink = Anchor.withComponent(Link)
 
-const ButtonLink = Button.withComponent(AnchorLink)
-
 const IndexPage: React.FC<PageProps> = (props) => {
     const colorScheme = useColorScheme()
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(colorScheme == "dark")
@@ -108,8 +106,11 @@ const IndexPage: React.FC<PageProps> = (props) => {
                         <HeroText>
                             Easy, Performant & Beautiful Components
                         </HeroText>
-                        <ButtonLink to={"/docs/setup"} primary underlineOnHover={false} colored={false}>Get
-                            Started</ButtonLink>
+                        <AnchorLink to={"/docs/setup"} underlineOnHover={false} colored={false}>
+                            <Button primary>
+                                Get Started
+                            </Button>
+                        </AnchorLink>
                     </Hero>
                     <FormDemo
                         isDarkTheme={isDarkTheme}

@@ -26,7 +26,7 @@ export function FormField(props: FormFieldProps) {
                 {props.children}
             </GapColumn>
             {props.errors.map((errorText) => (
-                <Error>{errorText}</Error>
+                <Error key={errorText}>{errorText}</Error>
             ))}
         </GapColumn>
     )

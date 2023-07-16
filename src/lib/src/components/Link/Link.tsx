@@ -55,26 +55,28 @@ const AnchorStyles = (color: Color, colored: boolean, underlined: boolean, under
   }
 `
 
-export const Anchor = styled.a<AnchorProps>`
+export const Anchor = styled("a",{
+    shouldForwardProp : (name) => name != "colored" && name != "underlined" && name != "underlineOnHover"
+})<AnchorProps>`
   ${props => AnchorStyles(props.theme.color, props.colored ?? true, props.underlined ?? true, props.underlineOnHover ?? true)}
 `
 
 interface ExternalAnchorProps extends AnchorProps {
-    className ?: string
-    id ?: string
-    href ?: string
-    target ?: HTMLAttributeAnchorTarget
+    className?: string
+    id?: string
+    href?: string
+    target?: HTMLAttributeAnchorTarget
     referrerPolicy?: HTMLAttributeReferrerPolicy | undefined;
     download?: any;
 }
 
-const ExternalAnchorTag = styled(Anchor)`
+const ExternalAnchorTag = styled(Anchor)<ExternalAnchorProps>`
   display: inline-flex;
   align-items: center;
   gap: 5px;
 `
 
-export function ExternalAnchor(props : ExternalAnchorProps) {
+export function ExternalAnchor(props: ExternalAnchorProps) {
     return (
         <span className={props.className} id={props.id}>
             <ExternalAnchorTag

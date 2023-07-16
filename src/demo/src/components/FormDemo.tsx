@@ -4,8 +4,8 @@ import {Button, Checkbox, Error, Form, FormField, H1, Radio, Select, ToggleSwitc
 import {Textfield} from "@qawaz/anique";
 
 interface FormDemoProps {
-    isDarkTheme : boolean
-    toggleDarkTheme : () => void
+    isDarkTheme: boolean
+    toggleDarkTheme: () => void
 }
 
 const DemoContainer = styled.div`
@@ -101,6 +101,9 @@ export function FormDemo(props: FormDemoProps) {
                     value={true}
                     label={"Accept terms and services"}
                     helpText={"You must read Terms and Services of our company"}
+                    onChange={() => {
+                        // TODO
+                    }}
                 />
                 <CenteredButton
                     primary
