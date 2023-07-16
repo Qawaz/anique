@@ -7,12 +7,15 @@
     "./tests"
   ],
   "exclude": [
-    "public",
+    "node_modules",
+    "jest.config.js",
+    ".storybook/*",
+    "lib/**/*",
+    "esm/**/*",
+    "cjs/**/*",
     "docs",
     ".cache",
     "config/jest",
-    ".storybook/main.ts",
-    "node_modules",
     "src/*/**/*.test.*",
     "src/*/esm/**/*",
     "src/*/types/**/*",

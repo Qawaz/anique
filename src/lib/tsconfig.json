@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["./src", "../../config/types"],
+  "include": ["./src"],
   "exclude": [
     "**/*.story.tsx",
     "**/*.mock.ts",
@@ -9,14 +9,5 @@
     "**/*.test.ts",
     "**/*.snap.ts",
     "coverage"
-  ],
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "strictBindCallApply": true,
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react"
-  }
+  ]
 }
