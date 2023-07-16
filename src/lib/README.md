@@ -1,6 +1,6 @@
-# Ursa
+# Anique
 
-[![npm version](https://img.shields.io/npm/v/@qawaz/anique.svg?label=%40zenius%2Fursa&style=flat)](https://www.npmjs.com/package/@qawaz/anique)
+[![npm version](https://img.shields.io/npm/v/@qawaz/anique.svg?label=%40qawaz%2Fanique&style=flat)](https://www.npmjs.com/package/@qawaz/anique)
 [![npm downloads](https://img.shields.io/npm/dm/@qawaz/anique?style=flat)](https://www.npmjs.com/package/@qawaz/anique)
 
 Anique is a minimal react emotion component library that provides performant and beautiful components with an easy api
