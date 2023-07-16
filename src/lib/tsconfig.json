@@ -8,7 +8,6 @@
     "**/*.test.tsx",
     "**/*.test.ts",
     "**/*.snap.ts",
-    ".turbo",
     "coverage"
   ],
   "compilerOptions": {
