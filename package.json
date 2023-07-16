@@ -73,7 +73,6 @@
     "rollup-plugin-summary": "^2.0.0",
     "storybook": "7.0.27",
     "syncpack": "^10.7.3",
-    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "tslib": "^2.6.0",
     "typescript": "^5.1.6",
     "webpack": "5"

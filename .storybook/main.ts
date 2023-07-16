@@ -2,7 +2,7 @@ const path = require('path');
 // const {
 //     argv
 // } = require('yargs');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin').default;
+// const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin').default;
 const storiesPath = //!argv._[0] ? path.resolve(__dirname, '../src/**/*.@(story|stories).@(js|jsx|ts|tsx)').replace(/\\/g, '/') :
     path.resolve(__dirname, `../src/lib/**/*.@(story|stories).@(js|jsx|ts|tsx)`).replace(/\\/g, '/');
 
@@ -16,10 +16,10 @@ module.exports = {
     webpackFinal: async config => {
         config.resolve = {
             ...config.resolve,
-            plugins: [...(config.resolve.plugins || []), new TsconfigPathsPlugin({
-                extensions: ['.ts', '.tsx', '.js', '.jsx'],
-                configFile: path.join(__dirname, '../tsconfig.json')
-            })],
+            // plugins: [...(config.resolve.plugins || []), new TsconfigPathsPlugin({
+            //     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+            //     configFile: path.join(__dirname, '../tsconfig.json')
+            // })],
             fallback: {
                 fs: false,
                 timers: false,
@@ -32,9 +32,6 @@ module.exports = {
                 ...config.resolve.fallback,
             }
         };
-
-        // Turn off docgen plugin as it breaks bundle with displayName
-        config.plugins.pop();
         return config;
     },
     framework: {
