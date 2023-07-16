@@ -6,7 +6,6 @@
   "workspaces": [
     "src/*"
   ],
-  "main": "index.js",
   "author": "Qawaz",
   "repository": "https://github.com/Qawaz/anique.git",
   "license": "MIT",
