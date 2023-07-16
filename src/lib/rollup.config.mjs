@@ -1,5 +1,4 @@
 import path from 'path';
-import fsExtra from 'fs-extra';
 
 import { fileURLToPath } from 'url';
 
@@ -12,12 +11,8 @@ import summary from 'rollup-plugin-summary';
 import pkg from "./package.json" assert { type: "json" }
 import terser from "@rollup/plugin-terser";
 
-const { move } = fsExtra;
 const input = 'src/index.ts';
-// Read package.json
-// const pkg = JSON.parse(
-//   readFileSync(new URL('./package.json', import.meta.url).pathname)
-// );
+
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
