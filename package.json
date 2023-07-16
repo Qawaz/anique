@@ -17,8 +17,7 @@
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@emotion/utils": "^1.2.1",
-    "react": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -57,7 +56,6 @@
     "@types/jest": "^29.5.3",
     "@types/react": ">=18.2.15",
     "@types/react-dom": ">=18.2.7",
-    "@types/react-router-dom": "^5.3.3",
     "@types/react-test-renderer": "^18.0.0",
     "@types/yargs": "^17.0.24",
     "babel-jest": "^29.6.1",
