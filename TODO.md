@@ -22,3 +22,8 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
     - [ ] Checkbox , Labeled Checkbox & Helper Text
     - [ ] Radio Button , Labeled Radio & Helper Text
     - [ ] Textfield & Input , with & without leading & trailing icon
+
+- [ ] Ensure components supports AniqueBaseProps
+
+    - [x] Spinner
+    - [ ] Other Components
