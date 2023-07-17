@@ -1,21 +1,20 @@
 import * as React from "react"
+import {useState} from "react"
 import type {HeadFC, PageProps} from "gatsby"
+import {Link} from "gatsby";
 import styled from "@emotion/styled"
 import {
-    AniqueSystemThemeProvider,
-    Button,
-    H1,
-    H2,
     Anchor,
-    useColorScheme,
+    AniqueThemeProvider,
+    Button,
+    ColorScheme,
     darkTheme,
+    H2,
     lightTheme,
-    AniqueThemeProvider
+    useColorScheme
 } from "@qawaz/anique";
 import {css, Global} from "@emotion/react";
-import {Link} from "gatsby";
 import {FormDemo} from "../components/FormDemo";
-import {useState} from "react";
 
 const GlobalStyles = css`
   html, body {
@@ -30,6 +29,7 @@ const Container = styled.main`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  background : ${props=> props.theme.color.bg};
   gap: 0.5em;
 `
 
@@ -51,7 +51,7 @@ const HeaderNav = styled.nav`
 const Hero = styled.div`
   width: 100%;
   height: 300px;
-  background: ${props => props.theme.color.bgPrimary};
+  background: ${props => props.theme.color.primary};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +73,7 @@ const HeroText = styled.p`
 
 const Footer = styled.div`
   width: 100%;
-  background: ${props => props.theme.color.bgPrimary};
+  background: ${props => props.theme.color.bg200};
   padding: 1em;
   margin-top: 1em;
 `
@@ -81,12 +81,11 @@ const Footer = styled.div`
 const AnchorLink = Anchor.withComponent(Link)
 
 const IndexPage: React.FC<PageProps> = (props) => {
-    const colorScheme = useColorScheme()
-    const [isDarkTheme, setIsDarkTheme] = useState<boolean>(colorScheme == "dark")
+    const [colorScheme,setColorScheme] = useColorScheme()
     return (
         <>
             <Global styles={GlobalStyles}/>
-            <AniqueThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+            <AniqueThemeProvider theme={colorScheme === ColorScheme.Dark ? darkTheme : lightTheme} scheme={colorScheme}>
                 <Container>
                     <Header>
                         <H2>Anique</H2>
@@ -113,8 +112,8 @@ const IndexPage: React.FC<PageProps> = (props) => {
                         </AnchorLink>
                     </Hero>
                     <FormDemo
-                        isDarkTheme={isDarkTheme}
-                        toggleDarkTheme={() => setIsDarkTheme(!isDarkTheme)}
+                        isDarkTheme={colorScheme === ColorScheme.Dark}
+                        toggleDarkTheme={() => setColorScheme(colorScheme === ColorScheme.Dark ? ColorScheme.Light : ColorScheme.Dark)}
                     />
                     <Footer>
                         Copyright &copy; 2023 Anique
