@@ -1,6 +1,17 @@
-import {Border, Font, FontSize, Animation} from "../types/theme";
+import {Border, Font, FontSize, Animation, ResultColors, DeprecatedOldCommonColors} from "../types/theme";
 
-export const CommonColor = {
+export const CommonResultColors: ResultColors = {
+    success: "rgb(21,87,36)",
+    onSuccess: '#fff',
+    warning: "rgb(133,100,4)",
+    onWarning: '#fff',
+    error: "rgb(239,68,68)",
+    onError: "rgb(189,189,189)",
+    info: "rgb(68,148,239)",
+    onInfo: "rgb(189,189,189)"
+}
+
+export const CommonColor: DeprecatedOldCommonColors = {
     btnPrimary: 'rgba(20, 184, 166, 1)',
     btnPrimaryHovered: 'rgba(13, 148, 136, 1)',
     btnBasic: 'rgba(255, 255, 255, 1)',

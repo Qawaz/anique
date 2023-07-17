@@ -1,18 +1,14 @@
-import React, {PropsWithChildren, ReactElement, ReactNode} from 'react';
-import {
-    css,
-    Global,
-    Theme,
-    ThemeProvider as EmotionThemeProvider, useTheme
-} from '@emotion/react';
+import React, {PropsWithChildren, ReactElement} from 'react';
+import {css, Global, Theme, ThemeProvider as EmotionThemeProvider, useTheme} from '@emotion/react';
 
-import {lightTheme, darkTheme} from '../../styles';
-import {useColorScheme} from './utilities';
+import {darkTheme, lightTheme} from '../../styles';
+import {ColorScheme, useColorScheme} from './utilities';
 
-export function AniqueGlobalStyles() {
+export function AniqueGlobalStyles(props: { scheme: ColorScheme }) {
     const theme = useTheme()
     return (
         <Global styles={css`
+
           @font-face {
             font-family: 'Roboto';
             font-style: normal;
@@ -30,7 +26,7 @@ export function AniqueGlobalStyles() {
           }
 
           :root {
-            color-scheme: ${theme.color.colorScheme};
+            color-scheme: ${props.scheme === ColorScheme.Dark ? "dark" : "light"};
             font-size: 15px;
             color: ${theme.color.textPrimary};
             font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -90,21 +86,27 @@ export function AniqueGlobalStyles() {
     )
 }
 
-export function AniqueThemeProvider({theme, children}: { theme: Theme } & PropsWithChildren): ReactElement {
+export function AniqueThemeProvider(
+    {
+        theme,
+        scheme,
+        children
+    }: { theme: Theme, scheme: ColorScheme } & PropsWithChildren
+): ReactElement {
     return (
         <EmotionThemeProvider theme={theme}>
-            <AniqueGlobalStyles/>
+            <AniqueGlobalStyles scheme={scheme}/>
             {children}
         </EmotionThemeProvider>
     );
 }
 
 export function AniqueSystemThemeProvider({children}: PropsWithChildren): ReactElement {
-    const colorScheme = useColorScheme()
-    const selectedTheme = colorScheme === 'light' ? lightTheme : darkTheme;
+    const [colorScheme] = useColorScheme()
+    const selectedTheme = colorScheme === ColorScheme.Light ? lightTheme : darkTheme;
     return (
         <EmotionThemeProvider theme={selectedTheme}>
-            <AniqueGlobalStyles/>
+            <AniqueGlobalStyles scheme={colorScheme}/>
             {children}
         </EmotionThemeProvider>
     );

@@ -1,33 +1,36 @@
-import {useState, useEffect} from 'react';
-import {ColorScheme} from '../../../types/theme';
+import {useState, useEffect, SetStateAction, Dispatch} from 'react';
+
+export enum ColorScheme {
+    Dark = 0,
+    Light = 1
+}
 
 export const getColorScheme = (): ColorScheme =>
     process.env.NODE_ENV !== 'production'
-        ? 'light'
+        ? ColorScheme.Light
         : window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'dark'
-            : 'light';
+            ? ColorScheme.Dark
+            : ColorScheme.Light;
 
-export const useColorScheme = () => {
-    const [colorScheme, setColorScheme] = useState<ColorScheme>("dark");
-
+export const useColorScheme = (initial ?: ColorScheme) : [ColorScheme, Dispatch<SetStateAction<ColorScheme>>] => {
+    const colorSchemeStateArr = useState<ColorScheme>(initial ?? ColorScheme.Dark);
+    const [colorScheme, setColorScheme] = colorSchemeStateArr
     useEffect(() => {
         if (process.env.NODE_ENV === 'test' && colorScheme) return;
         if (typeof window !== "undefined") {
             setColorScheme(getColorScheme())
             const media = window.matchMedia('(prefers-color-scheme: dark)');
             /** Run the first time */
-            setColorScheme(media.matches ? 'dark' : 'light');
+            setColorScheme(media.matches ? ColorScheme.Dark : ColorScheme.Light);
             const themeSetter = () => {
                 if (media.matches) {
-                    setColorScheme('dark');
-                } else setColorScheme('light');
+                    setColorScheme(ColorScheme.Dark);
+                } else setColorScheme(ColorScheme.Light);
             };
             media.addEventListener('change', themeSetter);
             return () => media.removeEventListener('change', themeSetter);
         }
         return;
     }, []);
-
-    return colorScheme;
+    return colorSchemeStateArr;
 };
