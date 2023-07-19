@@ -29,6 +29,7 @@ We will be moving to a lightweight ui library that doesn't include icons and oth
 - [ ] Component Separation
 
     - [ ] Icon Button
+    - [ ] Button
     - [ ] Allow to change helper text color with color key
     - [ ] Checkbox , Labeled Checkbox & Helper Text
     - [ ] Radio Button , Labeled Radio & Helper Text

@@ -15,7 +15,7 @@ import React, {
 import {Icon} from '../Icon';
 import {ExternalSmallMinor} from "../../icons";
 import {css, Theme} from "@emotion/react";
-import {Color} from "../../types/theme";
+import {ThemeColors} from "../../types/theme";
 
 export interface LinkProps {
     url: string;
@@ -43,7 +43,7 @@ interface AnchorProps extends PropsWithChildren {
 
 }
 
-const AnchorStyles = (color: Color, colored: boolean, underlined: boolean, underlineOnHover: boolean) => css`
+const AnchorStyles = (color: ThemeColors, colored: boolean, underlined: boolean, underlineOnHover: boolean) => css`
   color: ${colored ? color.linkPrimary : color.textPrimary};
   text-decoration: ${underlined ? 'underline' : 'none'};
 

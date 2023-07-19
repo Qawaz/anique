@@ -82,6 +82,14 @@ export function AniqueGlobalStyles(props: { scheme: ColorScheme }) {
           .hidden {
             display: none;
           }
+          
+          @keyframes ripple {
+            to {
+              transform: scale(4);
+              opacity: 0;
+            }
+          }
+
         `}/>
     )
 }

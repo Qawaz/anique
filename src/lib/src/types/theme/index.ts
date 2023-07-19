@@ -1,4 +1,4 @@
-export * from './Color';
+export * from './ThemeColors';
 export * from './Font';
 export * from './Border';
 export * from './Animation';

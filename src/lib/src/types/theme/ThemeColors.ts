@@ -1,3 +1,8 @@
+export type RGBColor = `rgb(${number},${number},${number})`;
+
+export type RGBAColor = `rgba(${number},${number},${number},${number})`
+
+
 export interface DeprecatedOldCommonColors {
 
     /**
@@ -135,7 +140,7 @@ interface OldDeprecatedThemeColors {
 
 }
 
-interface ThemeColors {
+interface BrandColors {
     /**
      * The primary brand color,
      * Variations can be brighter or darker,
@@ -229,14 +234,14 @@ export interface ResultColors {
     onInfo: string
 }
 
-export interface Color extends ThemeColors, ResultColors, DeprecatedOldCommonColors, OldDeprecatedThemeColors {
+export interface ThemeColors extends BrandColors, ResultColors, DeprecatedOldCommonColors, OldDeprecatedThemeColors {
 
     /**
      * bg is the main background color
      * Variations are brighter in dark mode and darker in light mode
      * e.g. dark mode : #000 , light mode : #fff
      */
-    bg: string
+    bg: RGBColor
     /**
      * brighter or darker shade of bg
      */
@@ -262,7 +267,7 @@ export interface Color extends ThemeColors, ResultColors, DeprecatedOldCommonCol
      * Variations are darker in dark mode and brighter in light mode
      * e.g. dark mode : #fff , light mode : #000
      */
-    onBg: string
+    onBg: RGBColor
     /**
      * brighter or darker shade of onBg
      */

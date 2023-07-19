@@ -24,7 +24,7 @@ export const darkTheme: AniqueTheme = {
         accent400: "#b1cefb",
         accent500: "#cee0fd",
 
-        bg: "#02070d",
+        bg: "rgb(2,7,13)",
         bgPrimary: '#02070d',
 
         bg100: "#07182c",
@@ -33,7 +33,7 @@ export const darkTheme: AniqueTheme = {
         bg400: "#154784",
         bg500: "#1957a3",
 
-        onBg: "#fff",
+        onBg: "rgb(255,255,255)",
         textPrimary: '#fff',
 
         onBg100: "#ededed",

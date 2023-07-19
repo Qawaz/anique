@@ -1,7 +1,7 @@
 import React, {FC, ReactElement, MouseEvent, MouseEventHandler} from 'react';
 import {IconSource} from '../../types';
 import styled from '@emotion/styled';
-import type {Color as ThemeColor} from '../../types/theme';
+import type {ThemeColors as ThemeColor} from '../../types/theme';
 import {generateUniqueID, useTestId} from '../../utilities';
 
 type ThemColorKey = keyof ThemeColor;

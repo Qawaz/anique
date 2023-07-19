@@ -1,10 +1,10 @@
-import {Color} from "./Color";
+import {ThemeColors} from "./ThemeColors";
 import {Font, FontSize} from "./Font";
 import {Border} from "./Border";
 import {Animation} from "./Animation";
 
 export interface AniqueTheme {
-    color: Color;
+    color: ThemeColors;
     font: Font;
     fontSize: FontSize;
     border: Border;

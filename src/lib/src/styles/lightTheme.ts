@@ -24,7 +24,7 @@ export const lightTheme: AniqueTheme = {
         accent400: "#07409c",
         accent500: "#06327a",
 
-        bg: "#f6f6f7",
+        bg: "rgb(246,246,247)",
         bgPrimary: '#f6f6f7',
 
         bg100: "#e1e1e5",
@@ -33,7 +33,7 @@ export const lightTheme: AniqueTheme = {
         bg400: "#a0a0ab",
         bg500: "#8b8b98",
 
-        onBg: "#000",
+        onBg: "rgb(0,0,0)",
         textPrimary: '#000',
 
         onBg100: "#171717",
