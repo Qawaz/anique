@@ -52,7 +52,7 @@ describe('components/Avatar', () => {
     const borderRadius =
       Square_with_NoImage_Avatar.args?.variant === 'square'
         ? 0
-        : lightTheme.border.borderRadiusFull;
+        : "99em";
     render(<Square_with_NoImage_Avatar />);
     const iconEl = screen.getByTestId('avatar-placeholder');
     expect(iconEl).not.toBeNull(); // Element is Present

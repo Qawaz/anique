@@ -44,7 +44,7 @@ export const Tag = styled(AniqueTag)(
         padding: 0.825em 1.375em;
         background-color: ${color.tagBgBasic};
         color: ${color.tagText};
-        border-radius: ${border.borderRadius2xl};
+        border-radius: ${border.lgRadius};
 
         &:focus {
           outline: 1px solid ${color.btnPrimary};

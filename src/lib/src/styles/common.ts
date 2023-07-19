@@ -60,10 +60,9 @@ export const CommonFontSize: FontSize = {
 }
 
 export const CommonBorder: Border = {
-    borderRadiusLg: '0.25rem',
-    borderRadiusXl: '0.5rem',
-    borderRadius2xl: '1rem',
-    borderRadiusFull: '9999px'
+    smRadius : "0.25em",
+    mdRadius : "0.5em",
+    lgRadius : "1em"
 }
 
 export const CommonAnimation: Animation = {

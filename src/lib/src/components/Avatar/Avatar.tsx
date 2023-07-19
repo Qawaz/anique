@@ -89,7 +89,7 @@ export const Avatar = styled(AniqueAvatar)(
       width: ${avatarPx};
       height: ${avatarPx};
       border-radius: ${
-        variant === 'square' ? 0 : border.borderRadiusFull
+        variant === 'square' ? 0 : "99em"
       };
       background-color: ${
         !src ? (bgColor ? bgColor : color.cardImgBg) : 'none'
@@ -102,7 +102,7 @@ export const Avatar = styled(AniqueAvatar)(
             size === 'small' ? '28px' : size === 'large' ? '112px' : '56px'
           };
           border-radius: ${
-            variant === 'square' ? 0 : border.borderRadiusFull
+            variant === 'square' ? 0 : "99em"
           };
       }
 

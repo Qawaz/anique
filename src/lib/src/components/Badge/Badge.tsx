@@ -69,7 +69,7 @@ export const Badge = styled(AniqueBadge)(
       min-width: ${variant === 'dot' ? '10px' : '22px'};
       min-height: ${variant === 'dot' ? '10px' : '22px'};
       z-index: 1;
-      border-radius: ${border.borderRadiusFull};
+      border-radius: 99em
       background-color: ${badgeColor ? badgeColor : color.btnAlert};
       transform: scale(0.9);
 

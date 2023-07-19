@@ -1,11 +1,12 @@
 import {CommonAnimation, CommonBorder, CommonColor, CommonFont, CommonFontSize, CommonResultColors} from './common';
-import {AniqueTheme} from "../types/theme";
+import {AniqueTheme, DefaultThemeBreakpoints} from "../types/theme";
 
 export const lightTheme: AniqueTheme = {
     font: CommonFont,
     fontSize: CommonFontSize,
     border: CommonBorder,
     animation: CommonAnimation,
+    breakpoints : new DefaultThemeBreakpoints(),
     color: {
         ...CommonColor,
         ...CommonResultColors,

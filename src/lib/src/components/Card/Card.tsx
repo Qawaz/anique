@@ -120,7 +120,7 @@ const StyledCard = styled(AniqueCard)(
     }
 
     return {
-      borderRadius: border.borderRadiusXl,
+      borderRadius: border.mdRadius,
       backgroundColor: color.bgPrimary,
       color: color.textPrimary,
       boxShadow:
