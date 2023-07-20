@@ -25,13 +25,17 @@ export function AniqueGlobalStyles(props: { scheme: ColorScheme }) {
             box-sizing: border-box;
           }
 
+          html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+          }
+
           :root {
             color-scheme: ${props.scheme === ColorScheme.Dark ? "dark" : "light"};
             font-size: 15px;
-            color: ${theme.color.textPrimary};
+            color: ${theme.color.onBg};
             font-family: 'Roboto', 'Helvetica', sans-serif;
-            width: 100%;
-            height: 100%;
           }
 
           div,
@@ -82,7 +86,7 @@ export function AniqueGlobalStyles(props: { scheme: ColorScheme }) {
           .hidden {
             display: none;
           }
-          
+
           @keyframes ripple {
             to {
               transform: scale(4);
